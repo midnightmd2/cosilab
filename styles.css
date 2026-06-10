@@ -40,7 +40,7 @@ body {
   font-family: var(--sans);
   font-weight: 400;
   color: var(--ink);
-  background: linear-gradient(168deg, #FCFDFF 0%, #F0F4FD 52%, #F3F1FD 100%);
+  background: radial-gradient(40% 50% at 100% 2%, rgba(108,177,242,0.18), transparent 62%), radial-gradient(38% 48% at 0% 100%, rgba(120,108,238,0.13), transparent 60%), linear-gradient(168deg, #F7FAFF 0%, #E8EFFB 52%, #ECE9FB 100%);
   background-attachment: fixed;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -122,7 +122,7 @@ nav.links a.btn-solid, nav.links a.btn-solid:hover { color: #fff; }
 .figure-card figcaption { font-family: var(--mono); font-size: 11.5px; color: var(--slate); line-height: 1.55; margin-top: 16px; }
 
 /* ---- page banner (subpages) ---- */
-.page-head { padding: clamp(48px, 7vw, 92px) 0 0; border-bottom: 1px solid var(--line); }
+.page-head { padding: clamp(48px, 7vw, 92px) 0 0; border-bottom: 1px solid var(--line); background: radial-gradient(50% 86% at 84% -16%, rgba(108,177,242,0.20), transparent 60%); }
 .page-head .inner { padding-bottom: clamp(32px, 4vw, 48px); max-width: 72ch; }
 .page-head h1 { font-size: clamp(32px, 4.6vw, 52px); margin: 20px 0 20px; }
 .page-head p { font-size: clamp(16px, 1.9vw, 19px); color: var(--slate); max-width: 60ch; line-height: 1.55; }
