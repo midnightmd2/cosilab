@@ -111,7 +111,7 @@ nav.links a.btn-solid, nav.links a.btn-solid:hover { color: #fff; }
 
 /* ---- hero ---- */
 .hero { padding: clamp(56px, 9vw, 110px) 0 clamp(48px, 7vw, 88px); background: radial-gradient(46% 72% at 87% 10%, rgba(108,177,242,0.30), transparent 66%), linear-gradient(180deg, #FFFFFF 0%, #F3F8FE 100%); }
-.hero-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: clamp(40px, 6vw, 72px); align-items: center; }
+.hero-grid { display: block; max-width: 900px; }
 .hero h1 { margin: 22px 0 24px; }
 .hero p.lede { font-size: clamp(17px, 1.9vw, 20px); color: var(--slate); max-width: 46ch; margin-bottom: 34px; line-height: 1.5; }
 .hero-ctas { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
@@ -308,7 +308,6 @@ footer nav a:hover { color: var(--teal-ink); text-decoration: none; }
 @media (max-width: 900px) {
   .hero-grid, .join-grid, .pi-feature, .rd { grid-template-columns: 1fr; }
   .hero p.lede { max-width: none; }
-  .figure-card { order: -1; }
   .page-head .inner { padding-bottom: 28px; }
   .proof-grid { grid-template-columns: repeat(2, 1fr); }
   .proof-cell { border-top: 1px solid rgba(255,255,255,0.12); }
