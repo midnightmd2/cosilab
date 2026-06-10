@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Problems — COSI Lab | UCSF Orthopaedic Surgery</title>
+<meta name="description" content="Open research problems the COSI Lab is working on or looking to take up, each with the data and methods it involves.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" style="text-decoration:none"><span class="wordmark"><span class="mark">COSI</span><span class="org">UCSF&nbsp;ORTHOPAEDIC&nbsp;SURGERY</span></span></a>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+    <nav class="links" id="primary-nav">
+      <a href="research.html">Research</a>
+      <a href="problems.html" class="active">Open problems</a>
+      <a href="publications.html">Publications</a>
+      <a href="people.html">People</a>
+      <a href="join.html" class="btn btn-solid">Join the lab</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<div class="page-head">
+  <div class="wrap inner">
+    <span class="kicker">Open problems</span>
+    <h1>Open problems.</h1>
+    <p>Questions the lab is working on now or looking to take up. Each is concrete and unsolved, and each lists the data and methods it involves. Together they describe where the research is headed; individually they are good places to start a new project.</p>
+  </div>
+</div>
+
+<section class="problems">
+  <div class="wrap">
+
+    <div class="problem">
+      <span class="pno">OP-01</span>
+      <div>
+        <h3>Predicting which abductor tendon repairs fail</h3>
+        <p>Gluteus medius repairs fail at meaningful rates, and outcomes vary widely. Using imaging, intraoperative findings, and longitudinal outcomes from our repair cohort, the goal is a model that identifies repairs at high risk of failure and the factors that drive it.</p>
+        <span class="needs">DATA: IMAGING, OPERATIVE, OUTCOMES &nbsp;·&nbsp; METHODS: ML, SURVIVAL ANALYSIS</span>
+      </div>
+    </div>
+
+    <div class="problem">
+      <span class="pno">OP-02</span>
+      <div>
+        <h3>From intraoperative data to a structured operative record</h3>
+        <p>Robotic platforms log detailed data for every case, but little of it reaches surgical registries because the translation is manual. The problem is an agentic pipeline that converts intraoperative and EHR data into structured, auditable documentation a surgeon would sign.</p>
+        <span class="needs">DATA: ROBOTIC LOGS, EHR &nbsp;·&nbsp; METHODS: LLM AGENTS, FHIR</span>
+      </div>
+    </div>
+
+    <div class="problem">
+      <span class="pno">OP-03</span>
+      <div>
+        <h3>Separating cause from association in drug-osteoarthritis screens</h3>
+        <p>A medication-wide screen surfaces many drugs associated with osteoarthritis. Association is not cause. The work is to take the strongest signals and test them with negative controls, target-trial emulation, and sensitivity analysis to see what holds.</p>
+        <span class="needs">DATA: FEDERATED EHR &nbsp;·&nbsp; METHODS: CAUSAL INFERENCE, PHARMACOEPIDEMIOLOGY</span>
+      </div>
+    </div>
+
+    <div class="problem">
+      <span class="pno">OP-04</span>
+      <div>
+        <h3>A fast surrogate for patient-specific finite element analysis</h3>
+        <p>A full finite element model of a repair construct takes hours to build and solve. A learned surrogate that predicts the stress field from imaging in seconds, accurately enough to inform a decision, would make this usable in clinic.</p>
+        <span class="needs">DATA: IMAGING, FE MODELS &nbsp;·&nbsp; METHODS: SURROGATE MODELING, GEOMETRY PROCESSING</span>
+      </div>
+    </div>
+
+    <div class="problem">
+      <span class="pno">OP-05</span>
+      <div>
+        <h3>Correcting the robot's gap prediction across deformity</h3>
+        <p>Robotic knee replacement underpredicts the medial gap as native coronal deformity increases. The problem is to characterize that error across the full deformity range and build a correction a surgeon can use intraoperatively.</p>
+        <span class="needs">DATA: ROBOTIC ARTHROPLASTY &nbsp;·&nbsp; METHODS: MODELING, DATA SCIENCE</span>
+      </div>
+    </div>
+
+    <div class="problem">
+      <span class="pno">OP-06</span>
+      <div>
+        <h3>A reproducible classification for concealed abductor tears</h3>
+        <p>Partial, subsurface abductor tears sit under intact superficial fibers and are described in the literature under competing names. The work is an imaging-based, reproducible classification, ideally with automated segmentation, that the field can use consistently.</p>
+        <span class="needs">DATA: MRI &nbsp;·&nbsp; METHODS: SEGMENTATION, CLINICAL RESEARCH</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="note" style="margin: 32px 0 0;">Placeholder set, drafted from the lab's active research lines. Matt and Dr. Bini to finalize before launch.</div>
+  <p class="thesis" style="margin: 24px 0 0;">If one of these is close to what you do, see <a href="join.html">how to join</a>.</p>
+</div>
+
+<section style="padding-bottom: 84px;"></section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="aff"><strong>COSI Lab</strong>Computational Orthopaedics &amp; Surgical Innovation. A research laboratory in the UCSF Department of Orthopaedic Surgery, San Francisco.</div>
+      <nav>
+        <a href="research.html">Research</a>
+        <a href="problems.html">Open problems</a>
+        <a href="publications.html">Publications</a>
+        <a href="people.html">People</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </div>
+    <div class="fineprint">&copy; 2026 THE REGENTS OF THE UNIVERSITY OF CALIFORNIA · COSI LAB · <a href="https://docsf.health" target="_blank" rel="noopener">DOCSF &#8599;</a> · <a href="https://orthosurgery.ucsf.edu" target="_blank" rel="noopener">UCSF ORTHOPAEDIC SURGERY &#8599;</a></div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

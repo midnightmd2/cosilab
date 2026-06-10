@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COSI Lab — Computational Orthopaedics &amp; Surgical Innovation | UCSF</title>
+<meta name="description" content="The Computational Orthopaedics and Surgical Innovation (COSI) Lab is a research group in the UCSF Department of Orthopaedic Surgery, led by Stefano Bini, MD, studying hip and knee surgery with machine learning, large clinical datasets, biomechanical modeling, and surgical-robotics data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" style="text-decoration:none"><span class="wordmark"><span class="mark">COSI</span><span class="org">UCSF&nbsp;ORTHOPAEDIC&nbsp;SURGERY</span></span></a>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+    <nav class="links" id="primary-nav">
+      <a href="research.html">Research</a>
+      <a href="problems.html">Open problems</a>
+      <a href="publications.html">Publications</a>
+      <a href="people.html">People</a>
+      <a href="join.html" class="btn btn-solid">Join the lab</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ Hero ============ -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">UCSF Department of Orthopaedic Surgery</span>
+      <h1>Computational orthopaedics and surgical innovation.</h1>
+      <p class="lede">We are a research lab led by Professor Stefano A. Bini, MD. We study hip and knee surgery using machine learning, large clinical datasets, biomechanical modeling, and data from surgical robots, with a focus on hip abductor disease and joint replacement.</p>
+      <div class="hero-ctas">
+        <a href="research.html" class="btn btn-solid">Our research</a>
+        <a href="join.html" class="btn btn-ghost">Join us</a>
+      </div>
+    </div>
+    <figure class="figure-card">
+      <svg data-figure="femoralMesh" id="hero-fig" viewBox="0 0 300 250" role="img" aria-label="Generated technical figure from the lab" style="width:100%;display:block"></svg>
+      <figcaption id="hero-cap">Patient-specific finite element model of a gluteus medius repair construct.</figcaption>
+      <div class="fig-switch" role="group" aria-label="Switch figure">
+        <button type="button" data-fig="femoralMesh" class="on">FE mesh</button>
+        <button type="button" data-fig="loadCurve">Load to failure</button>
+        <button type="button" data-fig="gapPlot">Robotic gap</button>
+      </div>
+    </figure>
+  </div>
+</div>
+
+<!-- ============ Domain band (real focus areas, not vanity metrics) ============ -->
+<div class="proof">
+  <div class="wrap proof-grid">
+    <div class="proof-cell"><div class="num" style="font-size:20px;line-height:1.25">Hip abductor disease</div><div class="lab">Gluteus medius tendon injury, from imaging to repair</div></div>
+    <div class="proof-cell"><div class="num" style="font-size:20px;line-height:1.25">Joint replacement</div><div class="lab">Hip and knee arthroplasty, including new techniques</div></div>
+    <div class="proof-cell"><div class="num" style="font-size:20px;line-height:1.25">Surgical robotics</div><div class="lab">Intraoperative data from robotic arthroplasty</div></div>
+    <div class="proof-cell"><div class="num" style="font-size:20px;line-height:1.25">Computation &amp; AI</div><div class="lab">Clinical datasets, biomechanics, and agents</div></div>
+  </div>
+</div>
+
+<!-- ============ Research ============ -->
+<section id="research">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Research</span><h2>What we work on</h2></div>
+      <a class="more" href="research.html">All research areas &rarr;</a>
+    </div>
+    <p class="thesis" style="margin: -8px 0 28px;">The lab works in five areas, listed below and described in full on the research page. They connect: clinical data raises mechanical questions, models inform new techniques, and those techniques generate new data.</p>
+    <a class="program" href="research.html">
+      <span class="no">01</span><h3>Population-scale evidence</h3>
+      <p>Analyses of routinely collected clinical data to screen for risk factors in musculoskeletal disease, with attention to confounding and study design.</p>
+      <span class="arrow">&rarr;</span>
+    </a>
+    <a class="program" href="research.html">
+      <span class="no">02</span><h3>Computational biomechanics</h3>
+      <p>Patient-specific finite element models of surgical repairs: how a construct shares load, and where it is likely to fail.</p>
+      <span class="arrow">&rarr;</span>
+    </a>
+    <a class="program" href="research.html">
+      <span class="no">03</span><h3>Robotics and intraoperative data</h3>
+      <p>Treating the robot's surgical plan as a prediction and testing it against what the surgeon measures and does.</p>
+      <span class="arrow">&rarr;</span>
+    </a>
+    <a class="program" href="research.html">
+      <span class="no">04</span><h3>AI agents in the clinical workflow</h3>
+      <p>Software the lab builds and uses for evidence synthesis, cohort assembly, and documentation, evaluated against the task it claims to do.</p>
+      <span class="arrow">&rarr;</span>
+    </a>
+    <a class="program" href="research.html">
+      <span class="no">05</span><h3>Surgical technique innovation</h3>
+      <p>Taking anatomic and biomechanical findings to the operating room as new approaches and repair strategies, then measuring them.</p>
+      <span class="arrow">&rarr;</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ Selected publications ============ -->
+<section id="work" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Selected work</span></div>
+      <a class="more" href="publications.html">All publications &rarr;</a>
+    </div>
+    <div class="work-grid">
+      <div class="work-card">
+        <span class="tag">POPULATION-SCALE EVIDENCE</span>
+        <h3>A medication-wide association study of hip and knee osteoarthritis across 50 drugs</h3>
+        <p style="font-size:13.5px;color:var(--navy-70)">Screening dozens of medications at once for their association with osteoarthritis in a federated clinical dataset.</p>
+        <span class="meta">AAOS 2027 · UNDER REVIEW</span>
+      </div>
+      <div class="work-card">
+        <span class="tag">COMPUTATIONAL BIOMECHANICS</span>
+        <h3>Load-sharing mechanics of scaffold augmentation in gluteus medius repair</h3>
+        <p style="font-size:13.5px;color:var(--navy-70)">How a scaffold redistributes load across a tendon repair, modeled patient by patient.</p>
+        <span class="meta">AAOS 2027 · UNDER REVIEW</span>
+      </div>
+      <div class="work-card">
+        <span class="tag">ROBOTICS &amp; INTRAOPERATIVE DATA</span>
+        <h3>Native coronal deformity and gap prediction in robotic-assisted knee replacement</h3>
+        <p style="font-size:13.5px;color:var(--navy-70)">Why the robot underpredicts the medial gap as native deformity increases.</p>
+        <span class="meta">AAOS 2027 · UNDER REVIEW</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Quiet recruiting line ============ -->
+<section style="padding-top: 0;">
+  <div class="wrap">
+    <p class="thesis">The lab takes on undergraduates, medical students, orthopaedic trainees, and postdoctoral collaborators on a rolling basis. See <a href="join.html">how to join</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="aff"><strong>COSI Lab</strong>Computational Orthopaedics &amp; Surgical Innovation. A research laboratory in the UCSF Department of Orthopaedic Surgery, San Francisco.</div>
+      <nav>
+        <a href="research.html">Research</a>
+        <a href="problems.html">Open problems</a>
+        <a href="publications.html">Publications</a>
+        <a href="people.html">People</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </div>
+    <div class="fineprint">&copy; 2026 THE REGENTS OF THE UNIVERSITY OF CALIFORNIA · COSI LAB · <a href="https://docsf.health" target="_blank" rel="noopener">DOCSF &#8599;</a> · <a href="https://orthosurgery.ucsf.edu" target="_blank" rel="noopener">UCSF ORTHOPAEDIC SURGERY &#8599;</a></div>
+  </div>
+</footer>
+
+<script src="figures.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

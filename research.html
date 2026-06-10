@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — COSI Lab | UCSF Orthopaedic Surgery</title>
+<meta name="description" content="Five research programs at the COSI Lab: population-scale evidence, computational biomechanics, surgical robotics, AI agents in the clinical workflow, and surgical technique innovation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" style="text-decoration:none"><span class="wordmark"><span class="mark">COSI</span><span class="org">UCSF&nbsp;ORTHOPAEDIC&nbsp;SURGERY</span></span></a>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+    <nav class="links" id="primary-nav">
+      <a href="research.html" class="active">Research</a>
+      <a href="problems.html">Open problems</a>
+      <a href="publications.html">Publications</a>
+      <a href="people.html">People</a>
+      <a href="join.html" class="btn btn-solid">Join the lab</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<div class="page-head">
+  <div class="wrap inner">
+    <span class="kicker">Research</span>
+    <h1>Research.</h1>
+    <p>The lab works in five areas. They are connected: clinical data raises mechanical questions, biomechanical models inform new techniques, those techniques generate new data, and the lab's own software moves the work along. Each area is described below with representative studies.</p>
+  </div>
+</div>
+
+<section style="padding-top: 24px;">
+  <div class="wrap">
+
+    <!-- 01 -->
+    <div class="rd">
+      <div class="rd-side">
+        <span class="no">PROGRAM 01</span>
+        <h2>Population-scale evidence</h2>
+        <span class="needs">METHODS<br>Federated EHR analysis<br>Pharmacoepidemiology<br>Causal inference<br>Survival modeling</span>
+      </div>
+      <div class="rd-body">
+        <p>Randomized trials answer one question at a time and take years. Modern electronic health record networks hold the records of tens of millions of patients, enough to screen entire classes of exposure against a disease in a single, carefully controlled analysis. We build those analyses for musculoskeletal disease.</p>
+        <p>The work is methodological as much as clinical: controlling confounding by indication, handling immortal-time and selection bias, and making federated estimates that hold up across institutions. Done well, it turns routine care data into hypotheses worth testing and, sometimes, into answers.</p>
+        <div class="example">
+          <span class="tag">REPRESENTATIVE STUDY</span>
+          <span class="t">A medication-wide screen of 50 drugs for association with hip and knee osteoarthritis, using a federated network of routinely collected clinical data.</span>
+        </div>
+        <div class="example">
+          <span class="tag">REPRESENTATIVE STUDY</span>
+          <span class="t">Post-menopausal hormone therapy and greater trochanteric pain syndrome: a retrospective cohort of 385,868 women, including the effect of initiation timing.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="rd">
+      <div class="rd-side">
+        <span class="no">PROGRAM 02</span>
+        <h2>Computational biomechanics</h2>
+        <span class="needs">METHODS<br>Finite element analysis<br>Patient-specific modeling<br>Image-based meshing<br>Constitutive modeling</span>
+      </div>
+      <div class="rd-body">
+        <p>Some questions are mechanical and cannot be answered by any trial: how a surgical construct shares load, where it concentrates stress, and where it will fail first. We build patient-specific finite element models from clinical imaging to answer them, then tie the predictions back to real outcomes.</p>
+        <p>Our current focus is the hip abductors. Tendon repairs fail often, and augmentation with a scaffold is increasingly common without a clear mechanical rationale. We model exactly how a scaffold redistributes load across the repair, patient by patient, to understand who benefits and why.</p>
+        <figure class="figure-card" style="max-width: 360px; margin-top: 8px;">
+          <svg data-figure="loadCurve" viewBox="0 0 300 250" role="img" aria-label="Load-displacement curves comparing native and scaffold-augmented tendon repair constructs" style="width:100%;display:block"></svg>
+          <figcaption>Fig. — Load to failure: native repair versus scaffold-augmented construct (schematic).</figcaption>
+        </figure>
+        <div class="example">
+          <span class="tag">REPRESENTATIVE STUDY</span>
+          <span class="t">Load-sharing mechanics of scaffold augmentation in gluteus medius tendon repairs: a patient-specific finite element analysis.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="rd">
+      <div class="rd-side">
+        <span class="no">PROGRAM 03</span>
+        <h2>Robotics and intraoperative data</h2>
+        <span class="needs">METHODS<br>Robotic arthroplasty data<br>Prediction vs ground truth<br>Computer vision<br>Registry linkage</span>
+      </div>
+      <div class="rd-body">
+        <p>Robotic platforms for joint replacement record every cut, gap, and alignment angle, an unusually rich, structured stream of intraoperative data. Most of it is never analyzed. We treat the robot's plan as a prediction and test it against what the surgeon actually finds and does.</p>
+        <p>The first results are already pointing somewhere useful: as a patient's native coronal deformity increases, the platform systematically underpredicts the medial gap, with direct implications for how the knee is balanced. That is the kind of quiet, measurable gap between model and reality that this program exists to close.</p>
+        <figure class="figure-card" style="max-width: 440px; margin-top: 8px;">
+          <svg id="igap" viewBox="0 0 300 250" role="img" aria-label="Interactive plot of medial gap against native coronal deformity" style="width:100%;display:block"></svg>
+          <div class="ictl">
+            <label for="igap-range">Deformity</label>
+            <input type="range" id="igap-range" min="0" max="15" step="1" value="6" aria-describedby="igap-readout">
+            <span class="val" id="igap-val">6°</span>
+          </div>
+          <div class="ireadout" id="igap-readout"></div>
+          <figcaption style="margin-top:12px;">Interactive and schematic. Drag the slider to see the measured gap diverge from the robot's plan as native deformity grows.</figcaption>
+        </figure>
+        <div class="example">
+          <span class="tag">REPRESENTATIVE STUDY</span>
+          <span class="t">Increasing native coronal deformity is associated with medial gap underprediction in robotic-assisted total knee arthroplasty.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <div class="rd">
+      <div class="rd-side">
+        <span class="no">PROGRAM 04</span>
+        <h2>AI agents in the clinical workflow</h2>
+        <span class="needs">METHODS<br>LLM &amp; agent engineering<br>Retrieval &amp; evidence synthesis<br>FHIR / clinical data<br>Evaluation &amp; safety</span>
+      </div>
+      <div class="rd-body">
+        <p>The lab runs on software it builds. We design agentic systems to do real work in a surgical department: synthesizing evidence, assembling cohorts from messy clinical data, and drafting structured documentation. Because they operate where care happens, we hold them to a clinical standard, evaluated, audited, and measured against the task they claim to do.</p>
+        <p>This is the through-line of the whole lab. The same agents that accelerate a literature review or a database build are prototypes for tools that could one day sit inside the clinical workflow itself. We are interested in both: the research accelerant and the eventual product.</p>
+        <div class="example">
+          <span class="tag">DIRECTION</span>
+          <span class="t">Agents that turn intraoperative and EHR data into registry-ready, auditable surgical documentation, evaluated like any other clinical intervention.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 -->
+    <div class="rd">
+      <div class="rd-side">
+        <span class="no">PROGRAM 05</span>
+        <h2>Surgical technique innovation</h2>
+        <span class="needs">METHODS<br>Surgical anatomy<br>Approach &amp; construct design<br>Cadaveric &amp; clinical validation<br>Outcome measurement</span>
+      </div>
+      <div class="rd-body">
+        <p>New evidence and new mechanics are only worth as much as what reaches the operating room. This program takes anatomic and biomechanical insight all the way to technique: new approaches, instruments, and repair strategies, then measures whether they actually help.</p>
+        <p>Recent work includes a novel superior approach to total hip arthroplasty and a re-examination of how partial, concealed abductor tears are classified, an under-recognized lesion that standard descriptions miss. The aim is a technique that changes practice, supported by data.</p>
+        <div class="example">
+          <span class="tag">REPRESENTATIVE WORK</span>
+          <span class="t">The Superior Transverse Anatomic Reconstruction (STAR) approach in total hip arthroplasty.</span>
+        </div>
+        <div class="example">
+          <span class="tag">REPRESENTATIVE WORK</span>
+          <span class="t">Partial subsurface detachment of the hip abductors: a concealed lesion described across nine studies under competing names.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <p class="thesis">Where each area is headed is set out on the <a href="problems.html">open problems</a> page. Full output is in <a href="publications.html">publications</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="aff"><strong>COSI Lab</strong>Computational Orthopaedics &amp; Surgical Innovation. A research laboratory in the UCSF Department of Orthopaedic Surgery, San Francisco.</div>
+      <nav>
+        <a href="research.html">Research</a>
+        <a href="problems.html">Open problems</a>
+        <a href="publications.html">Publications</a>
+        <a href="people.html">People</a>
+        <a href="join.html">Join</a>
+      </nav>
+    </div>
+    <div class="fineprint">&copy; 2026 THE REGENTS OF THE UNIVERSITY OF CALIFORNIA · COSI LAB · <a href="https://docsf.health" target="_blank" rel="noopener">DOCSF &#8599;</a> · <a href="https://orthosurgery.ucsf.edu" target="_blank" rel="noopener">UCSF ORTHOPAEDIC SURGERY &#8599;</a></div>
+  </div>
+</footer>
+
+<script src="figures.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
