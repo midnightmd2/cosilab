@@ -35,7 +35,7 @@ function boot(canvas) {
     return t < 0.5 ? c.copy(GA).lerp(GB, t / 0.5) : c.copy(GB).lerp(GC, (t - 0.5) / 0.5);
   }
 
-  const DUR = 5.6, BUILD_X = -0.17, BUILD_Y = -0.45, BASE_OP = 0.5;
+  const DUR = 5.6, BUILD_X = -0.17, BUILD_Y = -0.45, BASE_OP = 0.3;
   let ready = false, built = false, lastTs = null, buildT = 0;
   const slices = [];
 
@@ -53,7 +53,7 @@ function boot(canvas) {
     }
   }
 
-  fetch('femur_slices.json').then((r) => r.json()).then((data) => {
+  fetch('femur_slices.json?v=16').then((r) => r.json()).then((data) => {
     const arr = data.slices.slice().sort((a, b) => a.y - b.y);
     const lo = arr[0].y, hi = arr[arr.length - 1].y, span = Math.max(1e-4, hi - lo);
     arr.forEach((sl) => {
