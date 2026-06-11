@@ -27,7 +27,7 @@ function boot(canvas) {
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100);
-  camera.position.set(0, 0, 3.3);
+  camera.position.set(0, 0, 2.9);
 
   const pmrem = new THREE.PMREMGenerator(renderer);
   scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
@@ -112,6 +112,7 @@ function boot(canvas) {
     });
 
     group.rotation.set(BUILD_TILT, -0.45, 0);
+    group.position.y = -0.16;   // bias head up; short shaft stub bleeds off the bottom
     ready = true;
     canvas.classList.add('is-ready');
     resize();
