@@ -1,7 +1,8 @@
 /* COSI Lab — hero femur (real Visible Human mesh, decimated to femur.glb).
-   Studio-lit WebGL centerpiece: soft auto-rotation, drag-to-spin on desktop
-   (mobile keeps scrolling — no rotation hijack), renders only while visible,
-   and degrades to nothing if WebGL or the model is unavailable. */
+   Frosted candy material with a smooth pastel gradient + a GSAP "scan
+   reconstruction" intro: a horizontal slice sweeps up from the bottom and
+   the bone builds in behind it, as if assembled from imaging slices.
+   Desktop drag-to-spin; mobile keeps scrolling; reduced-motion = static. */
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
@@ -16,58 +17,49 @@ function boot(canvas) {
   let renderer;
   try {
     renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
-  } catch (e) { return; }                       // no WebGL — leave the glow-only fallback
+  } catch (e) { return; }
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.04;
+  renderer.toneMappingExposure = 1.05;
+  renderer.localClippingEnabled = true;
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100);
   camera.position.set(0, 0, 4.4);
 
-  /* soft studio reflections (no HDR file needed) */
   const pmrem = new THREE.PMREMGenerator(renderer);
   scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
 
-  /* lighting: warm key, cool periwinkle rim (brand halo), gentle fill */
-  const hemi = new THREE.HemisphereLight(0xffffff, 0x9aa7bd, 0.4);
-  scene.add(hemi);
-  const key = new THREE.DirectionalLight(0xfff4e6, 1.15);
-  key.position.set(3.2, 4.5, 3.0);
-  scene.add(key);
-  const rim = new THREE.DirectionalLight(0x6cb1f2, 1.4);     // periwinkle edge
-  rim.position.set(-3.5, 1.5, -3.2);
-  scene.add(rim);
-  const fill = new THREE.DirectionalLight(0xdfe7ff, 0.35);
-  fill.position.set(-2.4, -1.5, 2.6);
-  scene.add(fill);
-  const blush = new THREE.DirectionalLight(0xff9ec6, 0.7);   // warm pink from lower-right
-  blush.position.set(3.0, -1.4, -1.8);
-  scene.add(blush);
+  /* soft, even, low-contrast lighting — frosted look, no hotspots, gentle
+     blue/pink two-tone on the sides */
+  scene.add(new THREE.HemisphereLight(0xffffff, 0xccd8ec, 0.95));
+  const key = new THREE.DirectionalLight(0xffffff, 0.5);
+  key.position.set(1.6, 3.6, 2.6); scene.add(key);
+  const cool = new THREE.DirectionalLight(0x8fb6ff, 0.5);
+  cool.position.set(-3.4, 0.6, -1.4); scene.add(cool);
+  const warm = new THREE.DirectionalLight(0xffa9cd, 0.5);
+  warm.position.set(3.2, -1.6, 0.8); scene.add(warm);
 
   const group = new THREE.Group();
   scene.add(group);
 
-  /* bake a pastel candy gradient across the mesh (vertical ramp + a faint
-     horizontal warm/cool shimmer), the way Isomorphic tints its molecules */
+  /* smooth pastel candy gradient baked along the bone's length */
   function candyColors(geo) {
     geo.computeBoundingBox();
     const bb = geo.boundingBox, pos = geo.attributes.position;
     const minY = bb.min.y, hY = Math.max(1e-4, bb.max.y - bb.min.y);
-    const minX = bb.min.x, wX = Math.max(1e-4, bb.max.x - bb.min.x);
     const stops = [
-      [0.00, new THREE.Color(0xf48ab9)],  // condyles — pink
-      [0.26, new THREE.Color(0xf9b870)],  // peach
-      [0.52, new THREE.Color(0x77ddbb)],  // mint
-      [0.76, new THREE.Color(0x6cbef0)],  // sky
-      [1.00, new THREE.Color(0x8e9bf2)]   // head — periwinkle
+      [0.00, new THREE.Color(0xf2a3c4)],  // condyles — pink
+      [0.28, new THREE.Color(0xf7bf8a)],  // peach
+      [0.54, new THREE.Color(0x86dcc0)],  // mint
+      [0.78, new THREE.Color(0x77c2ee)],  // sky
+      [1.00, new THREE.Color(0x97a4ee)]   // head — periwinkle
     ];
-    const warm = new THREE.Color(0xf7a9c8), cool = new THREE.Color(0x9fb6ff);
-    const col = new THREE.Color(), tmp = new THREE.Color();
+    const col = new THREE.Color();
     const arr = new Float32Array(pos.count * 3);
     for (let i = 0; i < pos.count; i++) {
-      const ty = (pos.getY(i) - minY) / hY, tx = (pos.getX(i) - minX) / wX;
+      const ty = (pos.getY(i) - minY) / hY;
       let a = stops[0][1], b = stops[stops.length - 1][1], seg = 0;
       for (let s = 0; s < stops.length - 1; s++) {
         if (ty >= stops[s][0] && ty <= stops[s + 1][0]) {
@@ -76,45 +68,75 @@ function boot(canvas) {
         }
       }
       col.copy(a).lerp(b, seg);
-      tmp.copy(cool).lerp(warm, tx);
-      col.lerp(tmp, 0.13);
       arr[i * 3] = col.r; arr[i * 3 + 1] = col.g; arr[i * 3 + 2] = col.b;
     }
     geo.setAttribute('color', new THREE.BufferAttribute(arr, 3));
   }
 
-  let model = null, ready = false;
+  /* world-space clipping plane: keep points with y <= constant (build up) */
+  const clip = new THREE.Plane(new THREE.Vector3(0, -1, 0), 0);
+
+  let ready = false, built = false, scan = null;
   new GLTFLoader().load('femur.glb', (gltf) => {
-    model = gltf.scene;
+    const model = gltf.scene;
     const meshes = [];
-    model.traverse((o) => { if (o.isMesh) meshes.push(o); });   // collect first — don't mutate mid-traverse
+    model.traverse((o) => { if (o.isMesh) meshes.push(o); });
     meshes.forEach((o) => {
       candyColors(o.geometry);
       o.material = new THREE.MeshPhysicalMaterial({
-        vertexColors: true, roughness: 0.34, metalness: 0.0,
-        clearcoat: 0.9, clearcoatRoughness: 0.22,
-        sheen: 0.6, sheenRoughness: 0.5, sheenColor: new THREE.Color(0xffe6f1),
-        iridescence: 0.25, iridescenceIOR: 1.3,
-        transmission: 0.06, thickness: 1.2, ior: 1.3,
-        attenuationColor: new THREE.Color(0xffd9ec), attenuationDistance: 3.0,
-        envMapIntensity: 0.8, transparent: true
+        vertexColors: true, roughness: 0.42, metalness: 0.0,
+        clearcoat: 0.5, clearcoatRoughness: 0.42,
+        sheen: 0.6, sheenRoughness: 0.6, sheenColor: new THREE.Color(0xffffff),
+        envMapIntensity: 0.6, side: THREE.DoubleSide,
+        clippingPlanes: [clip]
       });
-      o.castShadow = o.receiveShadow = false;
-      /* faint surface mesh, the Isomorphic "scientific" texture */
+      /* faint even surface mesh — the Isomorphic "scientific" grid */
       o.add(new THREE.Mesh(o.geometry, new THREE.MeshBasicMaterial({
-        color: 0x9fb0e8, wireframe: true, transparent: true, opacity: 0.05, depthWrite: false
+        color: 0xaebbe8, wireframe: true, transparent: true, opacity: 0.06,
+        depthWrite: false, clippingPlanes: [clip]
       })));
     });
-    /* tilt slightly off-axis so the head reads as anatomy, not a club */
     group.rotation.set(0.12, -0.5, 0.06);
     group.add(model);
+
+    /* world bounding box -> clip range + scan-slice size */
+    const box = new THREE.Box3().setFromObject(group);
+    const size = new THREE.Vector3(), ctr = new THREE.Vector3();
+    box.getSize(size); box.getCenter(ctr);
+    const yMin = box.min.y, yMax = box.max.y;
+
+    /* the glowing imaging slice that sweeps up */
+    const sg = new THREE.PlaneGeometry(size.x * 1.5, size.z * 1.5);
+    scan = new THREE.Mesh(sg, new THREE.MeshBasicMaterial({
+      color: 0x7fd2f5, transparent: true, opacity: 0.0,
+      side: THREE.DoubleSide, depthWrite: false
+    }));
+    scan.rotation.x = -Math.PI / 2;
+    scan.position.set(ctr.x, yMin, ctr.z);
+    scene.add(scan);
+
     ready = true;
     canvas.classList.add('is-ready');
     resize();
-    if (reduced) renderer.render(scene, camera);  // one frame, no spin
+
+    if (window.gsap && !reduced) {
+      clip.constant = yMin - 0.02;                 // hidden
+      const tl = window.gsap.timeline();
+      tl.to(scan.material, { opacity: 0.55, duration: 0.4, ease: 'sine.out' }, 0);
+      tl.to(clip, {
+        constant: yMax + 0.02, duration: 2.4, ease: 'power2.inOut',
+        onUpdate: () => { scan.position.y = clip.constant; }
+      }, 0);
+      tl.to(scan.material, { opacity: 0.0, duration: 0.5, ease: 'sine.in' }, 2.1);
+      tl.add(() => { built = true; });
+    } else {
+      clip.constant = yMax + 0.02;                 // full reveal
+      built = true;
+      if (reduced) renderer.render(scene, camera);
+    }
   });
 
-  /* ---- interaction: desktop drag + inertia; mobile scroll untouched ---- */
+  /* desktop drag + inertia; mobile untouched (page scrolls) */
   let dragging = false, lastX = 0, lastY = 0, velY = 0, tiltTarget = 0.12;
   const AUTO = 0.0032;
   if (fine) {
@@ -135,24 +157,20 @@ function boot(canvas) {
     canvas.addEventListener('pointercancel', release);
   }
 
-  /* ---- render only while the hero is on screen ---- */
   let visible = true;
   if ('IntersectionObserver' in window) {
-    new IntersectionObserver((ents) => { visible = ents[0].isIntersecting; })
-      .observe(canvas);
+    new IntersectionObserver((ents) => { visible = ents[0].isIntersecting; }).observe(canvas);
   }
 
   function frame() {
     requestAnimationFrame(frame);
-    if (!ready || !visible) return;
-    if (reduced) return;                          // static for reduced-motion
-    if (!dragging) { group.rotation.y += AUTO + velY; velY *= 0.94; }
+    if (!ready || !visible || reduced) return;
+    if (built && !dragging) { group.rotation.y += AUTO + velY; velY *= 0.94; }
     group.rotation.x += (tiltTarget - group.rotation.x) * 0.08;
     renderer.render(scene, camera);
   }
   requestAnimationFrame(frame);
 
-  /* ---- sizing ---- */
   function resize() {
     const r = canvas.getBoundingClientRect();
     const w = Math.max(1, r.width), h = Math.max(1, r.height);
