@@ -10,9 +10,9 @@
   --ink: #0E1B2E;
   --slate: #54647B;
   --slate-2: #5E6A82;
-  --teal: #18A3AC;
-  --teal-ink: #0B7E85;
-  --teal-wash: #EAF6F7;
+  --teal: #5868EA;      /* brand accent (logo periwinkle) */
+  --teal-ink: #4150DE;  /* accent for text/links — AA on light washes */
+  --teal-wash: #ECEFFC;
   --green: #6E9B1F;
   --paper: #FFFFFF;
   --mist: #F4F7FD;
@@ -150,7 +150,7 @@ section { padding: clamp(60px, 8.5vw, 116px) 0; }
 
 /* ---- research programs (list) ---- */
 .program {
-  display: grid; grid-template-columns: 64px 1fr 1.5fr 36px; gap: 28px;
+  display: grid; grid-template-columns: 1fr 1.5fr 36px; gap: 28px;
   padding: clamp(24px, 2.6vw, 34px) 16px; border-top: 1px solid var(--line); align-items: center;
   color: inherit; border-radius: var(--r-sm);
   transition: background .18s ease, padding-left .18s ease, padding-right .18s ease;
@@ -180,7 +180,7 @@ section { padding: clamp(60px, 8.5vw, 116px) 0; }
   border: 1px solid var(--line); border-radius: var(--r); padding: 28px;
   display: flex; flex-direction: column; gap: 16px; background: var(--paper);
 }
-.work-card .tag { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal-ink); font-weight: 500; }
+.work-card .tag { font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--slate); font-weight: 600; }
 .work-card h3 { font-size: 19px; line-height: 1.32; color: var(--navy); flex: 1; }
 .work-card p { font-size: 14.5px; color: var(--slate); line-height: 1.55; }
 .work-card .meta { font-family: var(--mono); font-size: 11px; color: var(--slate-2); letter-spacing: 0.06em; text-transform: uppercase; }
@@ -317,8 +317,8 @@ footer nav a:hover { color: var(--teal-ink); text-decoration: none; }
   .team-grid { grid-template-columns: repeat(2, 1fr); gap: 26px 20px; }
   .headshot { width: 160px; height: 160px; font-size: 40px; }
   .pi-feature { grid-template-columns: 1fr; }
-  .program { grid-template-columns: 40px 1fr; gap: 8px 16px; padding: 22px 12px; }
-  .program p { grid-column: 2; }
+  .program { grid-template-columns: 1fr; gap: 8px 16px; padding: 22px 12px; }
+  .program p { grid-column: 1; }
   .program .arrow { display: none; }
   .news-item { grid-template-columns: 1fr; gap: 6px; }
   .band-grid { flex-direction: column; align-items: flex-start; }
