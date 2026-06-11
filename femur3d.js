@@ -1,12 +1,10 @@
-/* COSI Lab — hero proximal femur (real Visible Human mesh -> femur.glb).
-   Intro: bright cross-section contours (computed from the mesh) light up and
-   stack from the bottom into the bone's shape, then the solid frosted model
-   materializes over them — imaging slices adding together into the mesh.
-   Driven by this module's own rAF clock. Desktop drag-to-spin; mobile keeps
-   scrolling; reduced-motion = static. */
+/* COSI Lab — hero proximal femur as a stack of imaging slices.
+   100 filled axial cross-sections (femur_slices.json, built from the real
+   Visible Human mesh) reveal bottom-to-top as if scrolling through an MRI
+   study — the slices stack into the bone. Driven by this module's own rAF
+   clock (accumulated clamped deltas). Desktop drag-to-spin; mobile keeps
+   scrolling; reduced-motion = static stack. */
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 const canvas = document.getElementById('femur-canvas');
 if (canvas) boot(canvas);
@@ -21,140 +19,65 @@ function boot(canvas) {
   } catch (e) { return; }
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
   renderer.outputColorSpace = THREE.SRGBColorSpace;
-  renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.05;
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100);
   camera.position.set(0, 0, 3.6);
 
-  const pmrem = new THREE.PMREMGenerator(renderer);
-  scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
-
-  scene.add(new THREE.HemisphereLight(0xffffff, 0xccd8ec, 0.95));
-  const key = new THREE.DirectionalLight(0xffffff, 0.5);
-  key.position.set(1.4, 3.4, 2.6); scene.add(key);
-  const fillA = new THREE.DirectionalLight(0x9fc0ff, 0.45);
-  fillA.position.set(-3.4, 0.8, -1.0); scene.add(fillA);
-  const fillB = new THREE.DirectionalLight(0xeaf0ff, 0.35);
-  fillB.position.set(2.8, -1.8, 1.0); scene.add(fillB);
-
   const group = new THREE.Group();
   scene.add(group);
 
-  function candyColors(geo) {
-    geo.computeBoundingBox();
-    const bb = geo.boundingBox, pos = geo.attributes.position;
-    const minY = bb.min.y, hY = Math.max(1e-4, bb.max.y - bb.min.y);
-    const stops = [
-      [0.00, new THREE.Color(0xaad6f2)], [0.50, new THREE.Color(0x88a9ee)],
-      [1.00, new THREE.Color(0xa6a2f1)]
-    ];
-    const col = new THREE.Color();
-    const arr = new Float32Array(pos.count * 3);
-    for (let i = 0; i < pos.count; i++) {
-      const ty = (pos.getY(i) - minY) / hY;
-      let a = stops[0][1], b = stops[stops.length - 1][1], seg = 0;
-      for (let s = 0; s < stops.length - 1; s++) {
-        if (ty >= stops[s][0] && ty <= stops[s + 1][0]) {
-          a = stops[s][1]; b = stops[s + 1][1];
-          seg = (ty - stops[s][0]) / (stops[s + 1][0] - stops[s][0]); break;
-        }
-      }
-      col.copy(a).lerp(b, seg);
-      arr[i * 3] = col.r; arr[i * 3 + 1] = col.g; arr[i * 3 + 2] = col.b;
-    }
-    geo.setAttribute('color', new THREE.BufferAttribute(arr, 3));
+  /* cool gradient by height (no rainbow) */
+  const GA = new THREE.Color(0xa4d8f4), GB = new THREE.Color(0x86a8ef), GC = new THREE.Color(0xa6a2f1);
+  const WHITE = new THREE.Color(0xffffff);
+  function gradAt(t) {
+    const c = new THREE.Color();
+    return t < 0.5 ? c.copy(GA).lerp(GB, t / 0.5) : c.copy(GB).lerp(GC, (t - 0.5) / 0.5);
   }
 
-  function sliceSegments(geo, N) {
-    const pos = geo.attributes.position, idx = geo.index;
-    geo.computeBoundingBox();
-    const bb = geo.boundingBox, H = bb.max.y - bb.min.y;
-    const y0 = bb.min.y + H * 0.02, y1 = bb.max.y - H * 0.02;
-    const triN = idx ? idx.count / 3 : pos.count / 3;
-    const out = [];
-    for (let s = 0; s < N; s++) {
-      const h = y0 + (y1 - y0) * (s / (N - 1)), seg = [];
-      for (let t = 0; t < triN; t++) {
-        const a = idx ? idx.getX(t * 3) : t * 3;
-        const b = idx ? idx.getX(t * 3 + 1) : t * 3 + 1;
-        const c = idx ? idx.getX(t * 3 + 2) : t * 3 + 2;
-        const ay = pos.getY(a), by = pos.getY(b), cy = pos.getY(c);
-        if (h < Math.min(ay, by, cy) || h > Math.max(ay, by, cy)) continue;
-        const hit = [];
-        const E = [[a, b, ay, by], [b, c, by, cy], [c, a, cy, ay]];
-        for (const [i0, i1, u, w] of E) {
-          if ((u <= h && w >= h) || (w <= h && u >= h)) {
-            if (u === w) continue;
-            const f = (h - u) / (w - u);
-            hit.push(pos.getX(i0) + (pos.getX(i1) - pos.getX(i0)) * f, h,
-              pos.getZ(i0) + (pos.getZ(i1) - pos.getZ(i0)) * f);
-          }
-        }
-        if (hit.length >= 6) seg.push(hit[0], hit[1], hit[2], hit[3], hit[4], hit[5]);
-      }
-      out.push(new Float32Array(seg));
-    }
-    return out;
-  }
-
-  const N = 22, STAG = 0.16;
-  const SOLID_AT = N * STAG + 0.35, SOLID_DUR = 1.7;
-  const BUILD_X = -0.17, BUILD_Y = -0.45;
-
+  const DUR = 5.6, BUILD_X = -0.17, BUILD_Y = -0.45, BASE_OP = 0.5;
   let ready = false, built = false, lastTs = null, buildT = 0;
-  const mats = [], slices = [];
-  function smooth(x) { x = Math.max(0, Math.min(1, x)); return x * x * (3 - 2 * x); }
+  const slices = [];
 
   function updateBuild(T) {
-    const fade = smooth((T - SOLID_AT) / SOLID_DUR);   // 0..1 solidify
+    const front = Math.min(1, T / DUR) * slices.length;   // scan position
     for (let i = 0; i < slices.length; i++) {
-      const up = smooth((T - i * STAG) / 0.28);         // contour ramps in
-      slices[i].material.opacity = up * 0.8 * (1 - fade);
+      const s = slices[i], d = front - i;
+      if (d < 0) { s.mat.opacity = 0; }
+      else if (d < 1) { s.mat.opacity = 0.95; s.mat.color.copy(s.base).lerp(WHITE, 0.6); }  // active cursor
+      else { s.mat.opacity = BASE_OP; s.mat.color.copy(s.base); }
     }
-    for (const mm of mats) mm.opacity = fade;
-    if (T > SOLID_AT + SOLID_DUR + 0.1) {
+    if (T / DUR >= 1) {
       built = true;
-      for (const mm of mats) mm.opacity = 1;
-      for (const l of slices) l.material.opacity = 0;
+      for (const s of slices) { s.mat.opacity = BASE_OP; s.mat.color.copy(s.base); }
     }
   }
 
-  new GLTFLoader().load('femur.glb', (gltf) => {
-    const model = gltf.scene;
-    const meshes = [];
-    model.traverse((o) => { if (o.isMesh) meshes.push(o); });
-    meshes.forEach((o) => {
-      candyColors(o.geometry);
-      o.material = new THREE.MeshPhysicalMaterial({
-        vertexColors: true, roughness: 0.42, metalness: 0.0,
-        clearcoat: 0.5, clearcoatRoughness: 0.4,
-        sheen: 0.6, sheenRoughness: 0.6, sheenColor: new THREE.Color(0xffffff),
-        envMapIntensity: 0.6, side: THREE.FrontSide,
-        transparent: true, opacity: reduced ? 1 : 0, depthWrite: true
+  fetch('femur_slices.json').then((r) => r.json()).then((data) => {
+    const arr = data.slices.slice().sort((a, b) => a.y - b.y);
+    const lo = arr[0].y, hi = arr[arr.length - 1].y, span = Math.max(1e-4, hi - lo);
+    arr.forEach((sl) => {
+      const g = new THREE.BufferGeometry();
+      g.setAttribute('position', new THREE.Float32BufferAttribute(sl.v, 3));
+      g.setIndex(sl.f);
+      const base = gradAt((sl.y - lo) / span);
+      const mat = new THREE.MeshBasicMaterial({
+        color: base.clone(), transparent: true, opacity: reduced ? BASE_OP : 0,
+        side: THREE.DoubleSide, depthWrite: false
       });
-      mats.push(o.material);
-      sliceSegments(o.geometry, N).forEach((arr) => {
-        const g = new THREE.BufferGeometry();
-        g.setAttribute('position', new THREE.BufferAttribute(arr, 3));
-        const line = new THREE.LineSegments(g, new THREE.LineBasicMaterial({
-          color: 0x2f9fe0, transparent: true, opacity: 0, depthTest: false, depthWrite: false
-        }));
-        line.renderOrder = 2; o.add(line); slices.push(line);
-      });
+      group.add(new THREE.Mesh(g, mat));
+      slices.push({ mat, base });
     });
-    group.add(model);
     group.rotation.set(BUILD_X, BUILD_Y, 0);
 
     ready = true;
     canvas.classList.add('is-ready');
     resize();
     if (reduced) { built = true; renderer.render(scene, camera); }
-  });
+  }).catch((e) => console.error('[femur] slices load failed:', e && e.message));
 
   let dragging = false, lastX = 0, lastY = 0, velY = 0, tiltTarget = BUILD_X;
-  const AUTO = 0.0030;
+  const AUTO = 0.0028;
   if (fine) {
     canvas.style.cursor = 'grab';
     canvas.addEventListener('pointerdown', (e) => {
