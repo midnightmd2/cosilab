@@ -27,7 +27,7 @@ function boot(canvas) {
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100);
-  camera.position.set(0, 0, 3.35);
+  camera.position.set(0, 0, 3.3);
 
   const pmrem = new THREE.PMREMGenerator(renderer);
   scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
@@ -72,8 +72,8 @@ function boot(canvas) {
   }
 
   Promise.all([
-    fetch('femur_mesh.json?v=21').then((r) => r.json()),
-    fetch('femur_slices.json?v=21').then((r) => r.json())
+    fetch('femur_mesh.json?v=22').then((r) => r.json()),
+    fetch('femur_slices.json?v=22').then((r) => r.json())
   ]).then(([meshData, sliceData]) => {
     /* solid mesh: lit, opaque, revealed by the clipping plane */
     const mg = new THREE.BufferGeometry();
