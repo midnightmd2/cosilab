@@ -16,7 +16,6 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="home.css">
-<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.min.js" } }</script>
 </head>
 <body class="home">
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -33,35 +32,28 @@
     </nav>
   </div>
 </header>
-<script>document.querySelector('header').classList.add('over-hero');</script>
 
 <main id="main" tabindex="-1">
 
 <!-- ============ Hero ============ -->
-<section class="hero-dark">
-  <div class="hero-bg" aria-hidden="true">
-    <canvas id="hero-canvas"></canvas>
-    <div class="hero-vignette"></div>
-  </div>
-  <div class="wrap hero-inner">
+<section class="hero-ed">
+  <div class="wrap">
     <h1 class="hero-title">Computational Orthopaedics<br><em>&amp; Surgical Innovation</em></h1>
     <p class="lede">We are a research lab led by Professor Stefano A. Bini, MD. We study hip and knee surgery using machine learning, large clinical datasets, biomechanical modeling, and data from surgical robots, with a focus on hip abductor disease and joint replacement.</p>
     <div class="hero-ctas">
-      <a href="research.html" class="btn btn-hero-solid" data-magnetic>Our research</a>
-      <a href="join.html" class="btn btn-hero-ghost" data-magnetic>Join us</a>
+      <a href="research.html" class="btn btn-solid">Our research</a>
+      <a href="join.html" class="btn btn-ghost">Join us</a>
     </div>
   </div>
-  <div class="scroll-hint" aria-hidden="true"><span class="scroll-line"></span><span class="scroll-txt">Scroll</span></div>
-</section>
-
-<!-- ============ Focus-area marquee ============ -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <span>Hip abductor disease&nbsp;&middot;&nbsp;Joint replacement&nbsp;&middot;&nbsp;Surgical robotics&nbsp;&middot;&nbsp;Computation &amp; AI&nbsp;&middot;&nbsp;</span>
-    <span>Hip abductor disease&nbsp;&middot;&nbsp;Joint replacement&nbsp;&middot;&nbsp;Surgical robotics&nbsp;&middot;&nbsp;Computation &amp; AI&nbsp;&middot;&nbsp;</span>
+  <div class="wrap">
+    <div class="focus-index">
+      <div class="focus-cell"><span class="n">01</span><span class="t">Hip abductor disease</span><span class="d">From imaging to repair</span></div>
+      <div class="focus-cell"><span class="n">02</span><span class="t">Joint replacement</span><span class="d">Hip &amp; knee arthroplasty</span></div>
+      <div class="focus-cell"><span class="n">03</span><span class="t">Surgical robotics</span><span class="d">Intraoperative data</span></div>
+      <div class="focus-cell"><span class="n">04</span><span class="t">Computation &amp; AI</span><span class="d">Datasets, models, agents</span></div>
+    </div>
   </div>
-</div>
-<p class="sr-only">Focus areas: hip abductor disease, joint replacement, surgical robotics, and computation &amp; AI.</p>
+</section>
 
 <!-- ============ Research ============ -->
 <section id="research">
@@ -162,6 +154,5 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
 <script src="site.js"></script>
 <script src="home.js"></script>
-<script type="module" src="hero3d.js"></script>
 </body>
 </html>
