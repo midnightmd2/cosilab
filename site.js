@@ -3,8 +3,24 @@
 (function () {
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* Smooth scrolling (Lenis). On the homepage GSAP's ticker drives it
+     (see home.js); on other pages we run our own rAF loop. */
+  function initLenis() {
+    if (reduce || !window.Lenis) return;
+    try {
+      var lenis = new Lenis({ duration: 1.05 });
+      window.__lenis = lenis;
+      if (!window.gsap) {
+        var raf = function (t) { lenis.raf(t); requestAnimationFrame(raf); };
+        requestAnimationFrame(raf);
+      }
+    } catch (e) {}
+  }
+  initLenis();
+
   function initReveal() {
     if (reduce || !('IntersectionObserver' in window)) return;
+    if (document.body.classList.contains('home') && window.gsap) return;
     var sel = '.program, .work-card, .rd, .problem, .level, .member, .pub, .step, .collab, .news-item, .pi-feature, .section-head, .figure-card';
     var els = Array.prototype.slice.call(document.querySelectorAll(sel));
     els.forEach(function (el, i) {
