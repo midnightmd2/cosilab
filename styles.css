@@ -98,9 +98,10 @@ header {
 }
 header::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--grad); }
 .nav { display: flex; justify-content: space-between; align-items: center; height: 74px; }
-.wordmark { display: flex; align-items: baseline; gap: 13px; color: var(--navy); }
-.wordmark .mark { font-family: var(--display); font-size: 25px; font-weight: 400; letter-spacing: 0.02em; }
-.wordmark .org { font-family: var(--mono); font-size: 10.5px; font-weight: 500; color: var(--slate); letter-spacing: 0.08em; border-left: 1px solid var(--line-2); padding-left: 13px; }
+.wordmark { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 5px; color: var(--navy); line-height: 1; }
+.wordmark .mark { font-family: var(--display); font-size: 24px; font-weight: 400; letter-spacing: 0.02em; line-height: 1; }
+.wordmark .org { font-family: var(--mono); font-size: 10px; font-weight: 500; color: var(--slate); letter-spacing: 0.05em; line-height: 1; }
+@media (max-width: 640px) { .wordmark .org { display: none; } }
 nav.links { display: flex; gap: 30px; align-items: center; }
 nav.links a { font-size: 14.5px; color: var(--ink); font-weight: 450; transition: color .15s; }
 nav.links a:hover { color: var(--teal-ink); text-decoration: none; }
