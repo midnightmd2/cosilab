@@ -246,7 +246,7 @@ section { padding: clamp(60px, 8.5vw, 116px) 0; }
 .levels { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .level { border: 1px solid var(--line); border-radius: var(--r); padding: 32px; display: flex; flex-direction: column; background: var(--paper); }
 .level .lk { font-family: var(--mono); font-size: 11px; letter-spacing: 0.09em; color: var(--teal-ink); text-transform: uppercase; font-weight: 500; }
-.level h3 { font-size: 22px; color: var(--navy); margin: 12px 0 12px; }
+.level h3 { font-size: 22px; color: var(--navy); margin: 0 0 12px; }
 .level p { font-size: 15px; color: var(--slate); margin-bottom: 16px; line-height: 1.6; }
 .level .llab { font-family: var(--mono); font-size: 11px; color: var(--slate-2); letter-spacing: 0.05em; margin-top: auto; text-transform: uppercase; }
 .steps { counter-reset: step; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
