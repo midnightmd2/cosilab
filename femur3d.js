@@ -45,31 +45,43 @@ function boot(canvas) {
   group.add(sliceGroup);
   scene.add(group);
 
-  const GA = new THREE.Color(0xa4d8f4), GB = new THREE.Color(0x86a8ef), GC = new THREE.Color(0xa6a2f1);
-  const WHITE = new THREE.Color(0xffffff);
+  /* light frosted palette for the lit mesh */
+  const GA = new THREE.Color(0x9cc8ee), GB = new THREE.Color(0x88a8ef), GC = new THREE.Color(0xa6a2f1);
   function gradAt(t) {
     const c = new THREE.Color();
     return t < 0.5 ? c.copy(GA).lerp(GB, t / 0.5) : c.copy(GB).lerp(GC, (t - 0.5) / 0.5);
   }
+  /* deeper palette for the unlit slices so they read on the light page */
+  const SA = new THREE.Color(0x3f6ec6), SB = new THREE.Color(0x4a59cf), SC = new THREE.Color(0x6a63d8);
+  const CURSOR = new THREE.Color(0x1f2db4);   // deep periwinkle scan band
+  function gradSlice(t) {
+    const c = new THREE.Color();
+    return t < 0.5 ? c.copy(SA).lerp(SB, t / 0.5) : c.copy(SB).lerp(SC, (t - 0.5) / 0.5);
+  }
   function smooth(x) { x = Math.max(0, Math.min(1, x)); return x * x * (3 - 2 * x); }
 
-  const SCROLL_DUR = 4.6, FADE_AT = 4.7, FADE_DUR = 1.7, BASE_OP = 0.3;
-  const TOTAL = FADE_AT + FADE_DUR + 0.1;
+  /* timing: sweep is snappy and visible from the first slice; the solid mesh
+     rises IN UNDER the slices before they leave (no brightness dip) */
+  const SCROLL_DUR = 3.4, FADE_AT = 3.2, MESH_IN = 1.1, SLICE_OUT_AT = 3.8, SLICE_OUT = 1.2;
+  const BAND = 10, BASE_OP = 0.5;
+  const BUILD_TILT = -0.62, REST_TILT = -0.16;   // look down onto slices, then settle
+  const TOTAL = SLICE_OUT_AT + SLICE_OUT + 0.1;
   let ready = false, built = false, lastTs = null, buildT = 0;
   const slices = [];
   let meshMat = null;
 
   function updateBuild(T) {
     const front = Math.min(1, T / SCROLL_DUR) * slices.length;
-    const fade = smooth((T - FADE_AT) / FADE_DUR);          // slices -> mesh
-    const inv = 1 - fade;
+    const meshIn = smooth((T - FADE_AT) / MESH_IN);
+    const keep = 1 - smooth((T - SLICE_OUT_AT) / SLICE_OUT);
     for (let i = 0; i < slices.length; i++) {
       const s = slices[i], d = front - i;
-      if (d < 0) { s.mat.opacity = 0; }
-      else if (d < 1) { s.mat.opacity = 0.95 * inv; s.mat.color.copy(s.base).lerp(WHITE, 0.6); }
-      else { s.mat.opacity = BASE_OP * inv; s.mat.color.copy(s.base); }
+      if (d < 0) { s.mat.opacity = 0; continue; }
+      const hot = d < BAND ? 1 - d / BAND : 0;            // scan-band falloff
+      s.mat.opacity = (BASE_OP + (0.95 - BASE_OP) * hot) * keep;
+      s.mat.color.copy(s.base).lerp(CURSOR, hot * 0.85);
     }
-    if (meshMat) meshMat.opacity = fade;
+    if (meshMat) meshMat.opacity = meshIn;
     if (T > TOTAL) {
       built = true;
       sliceGroup.visible = false;
@@ -78,8 +90,8 @@ function boot(canvas) {
   }
 
   Promise.all([
-    fetch('femur_slices.json?v=17').then((r) => r.json()),
-    fetch('femur_mesh.json?v=17').then((r) => r.json())
+    fetch('femur_slices.json?v=18').then((r) => r.json()),
+    fetch('femur_mesh.json?v=18').then((r) => r.json())
   ]).then(([sliceData, meshData]) => {
     /* slices */
     const arr = sliceData.slices.slice().sort((a, b) => a.y - b.y);
@@ -88,9 +100,9 @@ function boot(canvas) {
       const g = new THREE.BufferGeometry();
       g.setAttribute('position', new THREE.Float32BufferAttribute(sl.v, 3));
       g.setIndex(sl.f);
-      const base = gradAt((sl.y - lo) / span);
+      const base = gradSlice((sl.y - lo) / span);
       const mat = new THREE.MeshBasicMaterial({
-        color: base.clone(), transparent: true, opacity: reduced ? 0 : 0,
+        color: base.clone(), transparent: true, opacity: 0,
         side: THREE.DoubleSide, depthWrite: false
       });
       sliceGroup.add(new THREE.Mesh(g, mat));
@@ -118,14 +130,14 @@ function boot(canvas) {
     });
     group.add(new THREE.Mesh(mg, meshMat));
 
-    group.rotation.set(-0.17, -0.45, 0);
+    group.rotation.set(BUILD_TILT, -0.45, 0);
     ready = true;
     canvas.classList.add('is-ready');
     resize();
     if (reduced) { built = true; sliceGroup.visible = false; renderer.render(scene, camera); }
   }).catch((e) => console.error('[femur] load failed:', e && e.message));
 
-  let dragging = false, lastX = 0, lastY = 0, velY = 0, tiltTarget = -0.17;
+  let dragging = false, lastX = 0, lastY = 0, velY = 0, tiltTarget = REST_TILT;
   const AUTO = 0.0028;
   if (fine) {
     canvas.style.cursor = 'grab';
