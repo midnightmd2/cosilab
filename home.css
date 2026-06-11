@@ -9,7 +9,7 @@
 .hero-ed { padding: clamp(96px, 14vh, 170px) 0 0; }
 .hero-title {
   font-family: var(--display); font-weight: 500; color: var(--navy);
-  font-size: clamp(50px, 7.4vw, 106px); line-height: 1.03; letter-spacing: -0.015em;
+  font-size: clamp(50px, 7.4vw, 106px); line-height: 1.08; letter-spacing: -0.015em;
   margin: 0 0 30px;
 }
 .hero-title em { font-style: italic; font-weight: 400; }
@@ -25,14 +25,26 @@
 .focus-cell .t { font-family: var(--display); font-weight: 500; font-size: 19px; color: var(--navy); display: block; margin-bottom: 6px; line-height: 1.3; }
 .focus-cell .d { font-size: 13px; color: var(--slate); line-height: 1.5; }
 
+/* ---- manifesto ---- */
+.manifesto p {
+  font-family: var(--display); font-weight: 500; color: var(--navy);
+  font-size: clamp(24px, 3vw, 38px); line-height: 1.34; letter-spacing: -0.005em;
+  max-width: 30em;
+}
+.manifesto .m2 { margin-top: 1em; }
+.manifesto em { font-style: italic; font-weight: 400; }
+
 /* ---- scaled-up type on home sections ---- */
 .home #research h2, .home #work h2 { font-size: clamp(30px, 4.2vw, 54px); }
 .home .program h3 { font-size: clamp(21px, 2vw, 26px); }
 
 /* ---- end CTA band ---- */
-.home-cta .band-grid { align-items: center; }
 .home-cta h2 { font-size: clamp(30px, 4.4vw, 56px); }
-.home-cta p { font-size: 16px; max-width: 54ch; }
+.involve-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 4vw, 56px); margin-top: clamp(28px, 4vw, 44px); }
+.inv { border-top: 1px solid rgba(255,255,255,.25); padding-top: 26px; }
+.inv h3 { font-family: var(--display); font-weight: 500; color: #fff; font-size: 24px; margin-bottom: 10px; }
+.inv p { color: rgba(255,255,255,.85); font-size: 15.5px; line-height: 1.6; max-width: 44ch; margin-bottom: 22px; }
+@media (max-width: 700px) { .involve-grid { grid-template-columns: 1fr; } }
 
 @media (max-width: 900px) {
   .focus-index { grid-template-columns: 1fr 1fr; }
