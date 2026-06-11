@@ -6,16 +6,30 @@
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 
 /* ---- hero ---- */
-.hero-ed { padding: clamp(80px, 13vh, 168px) 0 clamp(72px, 11vh, 132px); overflow: hidden; }
+.hero-ed { padding: clamp(64px, 10vh, 130px) 0 clamp(64px, 10vh, 120px); overflow: hidden; }
+.hero-grid2 { display: grid; grid-template-columns: 1.04fr 0.96fr; gap: clamp(24px, 4vw, 64px); align-items: center; }
 .hero-title {
   font-family: var(--display); font-weight: 500; color: var(--navy);
-  font-size: clamp(46px, 6.6vw, 92px); line-height: 1.06; letter-spacing: -0.018em;
-  margin: 0 0 30px; max-width: 16ch;
+  font-size: clamp(44px, 5.6vw, 82px); line-height: 1.06; letter-spacing: -0.018em;
+  margin: 0 0 30px; max-width: 13ch;
 }
 .hero-title .hl-line { display: block; }
 .hero-title em { font-style: italic; font-weight: 400; }
-.hero-ed .lede { font-size: clamp(16.5px, 1.85vw, 20px); color: var(--slate); max-width: 56ch; line-height: 1.62; margin-bottom: 36px; }
+.hero-ed .lede { font-size: clamp(16.5px, 1.85vw, 20px); color: var(--slate); max-width: 52ch; line-height: 1.62; margin-bottom: 36px; }
 .hero-ed .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* ---- hero figure: real femur (WebGL) ---- */
+.hero-fig { position: relative; margin: 0; min-height: 520px; }
+.hero-fig::before {
+  content: ""; position: absolute; inset: 4% -6% 4% -6%; z-index: 0; pointer-events: none;
+  background: radial-gradient(54% 50% at 54% 46%, rgba(108,177,242,0.30), rgba(88,104,234,0.14) 56%, transparent 76%);
+  filter: blur(6px);
+}
+#femur-canvas {
+  position: relative; z-index: 1; display: block; width: 100%; height: 520px;
+  opacity: 0; transition: opacity 1s ease; touch-action: pan-y;
+}
+#femur-canvas.is-ready { opacity: 1; }
 
 /* ---- manifesto ---- */
 .manifesto p {
@@ -38,6 +52,14 @@
 .inv p { color: rgba(255,255,255,.85); font-size: 15.5px; line-height: 1.6; max-width: 44ch; margin-bottom: 22px; }
 @media (max-width: 700px) { .involve-grid { grid-template-columns: 1fr; } }
 
+@media (max-width: 900px) {
+  .hero-grid2 { grid-template-columns: 1fr; gap: 8px; }
+  .hero-fig { min-height: 380px; order: 2; }
+  #femur-canvas { height: 380px; }
+  .hero-title { max-width: none; }
+}
 @media (max-width: 560px) {
   .hero-title { font-size: clamp(40px, 12vw, 56px); }
+  .hero-fig { min-height: 320px; }
+  #femur-canvas { height: 320px; }
 }
