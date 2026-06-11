@@ -31,33 +31,79 @@ function boot(canvas) {
   scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
 
   /* lighting: warm key, cool periwinkle rim (brand halo), gentle fill */
-  const hemi = new THREE.HemisphereLight(0xffffff, 0x96a3bd, 0.55);
+  const hemi = new THREE.HemisphereLight(0xffffff, 0x9aa7bd, 0.4);
   scene.add(hemi);
-  const key = new THREE.DirectionalLight(0xfff4e6, 1.7);
+  const key = new THREE.DirectionalLight(0xfff4e6, 1.15);
   key.position.set(3.2, 4.5, 3.0);
   scene.add(key);
-  const rim = new THREE.DirectionalLight(0x6cb1f2, 1.5);
+  const rim = new THREE.DirectionalLight(0x6cb1f2, 1.4);     // periwinkle edge
   rim.position.set(-3.5, 1.5, -3.2);
   scene.add(rim);
-  const fill = new THREE.DirectionalLight(0xdfe7ff, 0.4);
+  const fill = new THREE.DirectionalLight(0xdfe7ff, 0.35);
   fill.position.set(-2.4, -1.5, 2.6);
   scene.add(fill);
+  const blush = new THREE.DirectionalLight(0xff9ec6, 0.7);   // warm pink from lower-right
+  blush.position.set(3.0, -1.4, -1.8);
+  scene.add(blush);
 
   const group = new THREE.Group();
   scene.add(group);
 
+  /* bake a pastel candy gradient across the mesh (vertical ramp + a faint
+     horizontal warm/cool shimmer), the way Isomorphic tints its molecules */
+  function candyColors(geo) {
+    geo.computeBoundingBox();
+    const bb = geo.boundingBox, pos = geo.attributes.position;
+    const minY = bb.min.y, hY = Math.max(1e-4, bb.max.y - bb.min.y);
+    const minX = bb.min.x, wX = Math.max(1e-4, bb.max.x - bb.min.x);
+    const stops = [
+      [0.00, new THREE.Color(0xf48ab9)],  // condyles — pink
+      [0.26, new THREE.Color(0xf9b870)],  // peach
+      [0.52, new THREE.Color(0x77ddbb)],  // mint
+      [0.76, new THREE.Color(0x6cbef0)],  // sky
+      [1.00, new THREE.Color(0x8e9bf2)]   // head — periwinkle
+    ];
+    const warm = new THREE.Color(0xf7a9c8), cool = new THREE.Color(0x9fb6ff);
+    const col = new THREE.Color(), tmp = new THREE.Color();
+    const arr = new Float32Array(pos.count * 3);
+    for (let i = 0; i < pos.count; i++) {
+      const ty = (pos.getY(i) - minY) / hY, tx = (pos.getX(i) - minX) / wX;
+      let a = stops[0][1], b = stops[stops.length - 1][1], seg = 0;
+      for (let s = 0; s < stops.length - 1; s++) {
+        if (ty >= stops[s][0] && ty <= stops[s + 1][0]) {
+          a = stops[s][1]; b = stops[s + 1][1];
+          seg = (ty - stops[s][0]) / (stops[s + 1][0] - stops[s][0]); break;
+        }
+      }
+      col.copy(a).lerp(b, seg);
+      tmp.copy(cool).lerp(warm, tx);
+      col.lerp(tmp, 0.13);
+      arr[i * 3] = col.r; arr[i * 3 + 1] = col.g; arr[i * 3 + 2] = col.b;
+    }
+    geo.setAttribute('color', new THREE.BufferAttribute(arr, 3));
+  }
+
   let model = null, ready = false;
   new GLTFLoader().load('femur.glb', (gltf) => {
     model = gltf.scene;
-    model.traverse((o) => {
-      if (!o.isMesh) return;
+    const meshes = [];
+    model.traverse((o) => { if (o.isMesh) meshes.push(o); });   // collect first — don't mutate mid-traverse
+    meshes.forEach((o) => {
+      candyColors(o.geometry);
       o.material = new THREE.MeshPhysicalMaterial({
-        color: 0xece3d2, roughness: 0.62, metalness: 0.0,
-        clearcoat: 0.25, clearcoatRoughness: 0.55,
-        sheen: 0.35, sheenColor: new THREE.Color(0xfff1dc),
-        envMapIntensity: 0.85
+        vertexColors: true, roughness: 0.34, metalness: 0.0,
+        clearcoat: 0.9, clearcoatRoughness: 0.22,
+        sheen: 0.6, sheenRoughness: 0.5, sheenColor: new THREE.Color(0xffe6f1),
+        iridescence: 0.25, iridescenceIOR: 1.3,
+        transmission: 0.06, thickness: 1.2, ior: 1.3,
+        attenuationColor: new THREE.Color(0xffd9ec), attenuationDistance: 3.0,
+        envMapIntensity: 0.8, transparent: true
       });
       o.castShadow = o.receiveShadow = false;
+      /* faint surface mesh, the Isomorphic "scientific" texture */
+      o.add(new THREE.Mesh(o.geometry, new THREE.MeshBasicMaterial({
+        color: 0x9fb0e8, wireframe: true, transparent: true, opacity: 0.05, depthWrite: false
+      })));
     });
     /* tilt slightly off-axis so the head reads as anatomy, not a club */
     group.rotation.set(0.12, -0.5, 0.06);
