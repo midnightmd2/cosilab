@@ -191,7 +191,7 @@ section { padding: clamp(60px, 8.5vw, 116px) 0; }
 
 /* ---- open problems ---- */
 .problems { background: var(--mist); }
-.problem { display: grid; grid-template-columns: 76px 1fr; gap: 28px; padding: clamp(24px, 2.6vw, 32px) 0; border-top: 1px solid var(--line-2); align-items: baseline; }
+.problem { display: grid; grid-template-columns: 1fr; gap: 28px; padding: clamp(24px, 2.6vw, 32px) 0; border-top: 1px solid var(--line-2); align-items: baseline; }
 .problem:last-child { border-bottom: 1px solid var(--line-2); }
 .problem .pno { font-family: var(--mono); font-size: 13px; color: var(--teal-ink); font-weight: 500; }
 .problem h3 { font-size: 21px; color: var(--navy); margin-bottom: 10px; }
