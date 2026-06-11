@@ -67,3 +67,15 @@
     initPubFilter();
   });
 })();
+
+/* cursor-tracking light on cards (CSS vars consumed by ::after) */
+(function () {
+  if (!matchMedia('(pointer:fine)').matches) return;
+  document.querySelectorAll('.work-card, .level').forEach(function (card) {
+    card.addEventListener('pointermove', function (e) {
+      var r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+      card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
+    });
+  });
+})();

@@ -16,7 +16,7 @@
 
   /* Hero intro — plain rise/fade on the two headline lines (no masks,
      so descenders can never be clipped) */
-  gsap.from('.hero-title .hl-line', { y: 44, autoAlpha: 0, duration: 1.0, stagger: 0.12, ease: 'power3.out', delay: 0.05 });
+  gsap.from('.hero-title .hl-line', { y: 44, autoAlpha: 0, filter: 'blur(7px)', duration: 1.05, stagger: 0.12, ease: 'power3.out', delay: 0.05, clearProps: 'filter' });
   gsap.from('.hero-ed .lede, .hero-ed .hero-ctas', { y: 22, autoAlpha: 0, duration: 0.85, stagger: 0.12, delay: 0.45, ease: 'power3.out' });
 
   /* Calm section reveals */
