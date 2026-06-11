@@ -402,3 +402,9 @@ footer nav a:hover { color: var(--teal-ink); text-decoration: none; }
   .ambient i { animation: none; }
   .page-head h1, .page-head p { animation: none; }
 }
+
+/* ---- partner logos (monochrome) ---- */
+.logo-grid { display: flex; gap: clamp(40px, 7vw, 96px); flex-wrap: wrap; align-items: flex-start; }
+.logo-cell { display: flex; flex-direction: column; gap: 14px; }
+.logo-cell .plogo { height: 30px; width: auto; color: var(--navy); opacity: 0.82; display: block; }
+.logo-cell .role { font-size: 13px; color: var(--slate); }

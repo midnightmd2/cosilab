@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>COSI Lab — Computational Orthopaedics &amp; Surgical Innovation</title>
 <meta name="description" content="The Computational Orthopaedics and Surgical Innovation (COSI) Lab is a research group led by Stefano Bini, MD, a professor at UCSF, studying hip and knee surgery with machine learning, large clinical datasets, biomechanical modeling, and surgical-robotics data.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="COSI Lab">
+<meta property="og:title" content="COSI Lab — Computational Orthopaedics &amp; Surgical Innovation">
+<meta property="og:description" content="The Computational Orthopaedics and Surgical Innovation (COSI) Lab is a research group led by Stefano Bini, MD, a professor at UCSF, studying hip and knee surgery with machine learning, large clinical datasets, biomechanical modeling, and surgical-robotics data.">
+<meta property="og:url" content="https://thecosilab.org/">
+<meta property="og:image" content="https://thecosilab.org/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="COSI Lab — Computational Orthopaedics &amp; Surgical Innovation">
+<meta name="twitter:description" content="The Computational Orthopaedics and Surgical Innovation (COSI) Lab is a research group led by Stefano Bini, MD, a professor at UCSF, studying hip and knee surgery with machine learning, large clinical datasets, biomechanical modeling, and surgical-robotics data.">
+<meta name="twitter:image" content="https://thecosilab.org/og-card.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300..700&display=swap" rel="stylesheet">
@@ -14,8 +24,20 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css?v=5">
-<link rel="stylesheet" href="home.css?v=5">
+<link rel="stylesheet" href="styles.css?v=7">
+<link rel="stylesheet" href="home.css?v=7">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  "name": "COSI Lab",
+  "alternateName": "Computational Orthopaedics & Surgical Innovation Lab",
+  "url": "https://thecosilab.org/",
+  "logo": "https://thecosilab.org/icon-512.png",
+  "founder": { "@type": "Person", "name": "Stefano A. Bini, MD" },
+  "description": "A research lab studying hip and knee surgery with machine learning, population-scale clinical data, biomechanical simulation, and surgical robotics."
+}
+</script>
 </head>
 <body class="home">
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -65,23 +87,23 @@
       <a class="more" href="research.html">Current research &rarr;</a>
     </div>
     <p class="thesis" style="margin: -8px 0 28px;">Five connected programs: clinical data raises mechanical questions, models inform new techniques, and those techniques generate new data.</p>
-    <a class="program" href="research.html"><h3>Population-scale evidence</h3>
+    <a class="program" href="research.html#population"><h3>Population-scale evidence</h3>
       <p>Screening entire classes of drugs and exposures against musculoskeletal disease in the records of tens of millions of patients.</p>
       <span class="arrow">&rarr;</span>
     </a>
-    <a class="program" href="research.html"><h3>Computational biomechanics</h3>
+    <a class="program" href="research.html#biomechanics"><h3>Computational biomechanics</h3>
       <p>Patient-specific simulations of surgical repairs: how a construct shares load, and where it fails, before the operating room.</p>
       <span class="arrow">&rarr;</span>
     </a>
-    <a class="program" href="research.html"><h3>Robotics and intraoperative data</h3>
+    <a class="program" href="research.html#robotics"><h3>Robotics and intraoperative data</h3>
       <p>Treating the robot's plan as a prediction, and testing it against what the surgeon actually finds.</p>
       <span class="arrow">&rarr;</span>
     </a>
-    <a class="program" href="research.html"><h3>AI agents in the clinical workflow</h3>
+    <a class="program" href="research.html#agents"><h3>AI agents in the clinical workflow</h3>
       <p>Agentic software for evidence synthesis, cohort building, and documentation, held to a clinical standard.</p>
       <span class="arrow">&rarr;</span>
     </a>
-    <a class="program" href="research.html"><h3>Surgical technique innovation</h3>
+    <a class="program" href="research.html#technique"><h3>Surgical technique innovation</h3>
       <p>New approaches and repair strategies, taken from anatomic insight to the operating room, then measured.</p>
       <span class="arrow">&rarr;</span>
     </a>
@@ -146,7 +168,7 @@
         <a href="research.html">Current research</a>
         <a href="industry.html">Partnerships</a>
         <a href="people.html">People</a>
-        <a href="join.html">Join</a>
+        <a href="join.html">Join the lab</a>
       </nav>
     </div>
     <div class="fineprint">&copy; 2026 COSI LAB · <a href="https://docsf.health" target="_blank" rel="noopener">DOCSF &#8599;</a></div>
@@ -156,7 +178,11 @@
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-<script src="site.js?v=5"></script>
-<script src="home.js?v=5"></script>
+<script src="site.js?v=7"></script>
+<script src="home.js?v=7"></script>
+<!-- Analytics: GoatCounter (free, no cookies). To enable: create an account
+     at goatcounter.com with code "cosilab", then uncomment the line below.
+<script data-goatcounter="https://cosilab.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+-->
 </body>
 </html>

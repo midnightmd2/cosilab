@@ -14,6 +14,15 @@
         var raf = function (t) { lenis.raf(t); requestAnimationFrame(raf); };
         requestAnimationFrame(raf);
       }
+      /* Lenis swallows the browser's native hash jump on load — land it ourselves */
+      if (location.hash) {
+        var target = document.getElementById(location.hash.slice(1));
+        if (target) {
+          requestAnimationFrame(function () {
+            lenis.scrollTo(target, { immediate: true, offset: -90 });
+          });
+        }
+      }
     } catch (e) {}
   }
   initLenis();
