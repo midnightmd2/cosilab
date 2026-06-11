@@ -53,7 +53,7 @@ function boot(canvas) {
   }
   /* deeper palette for the unlit slices so they read on the light page */
   const SA = new THREE.Color(0x3f6ec6), SB = new THREE.Color(0x4a59cf), SC = new THREE.Color(0x6a63d8);
-  const CURSOR = new THREE.Color(0x1f2db4);   // deep periwinkle scan band
+  const SCAN = new THREE.Color(0x9fc4ff);   // light glow for the active scan band
   function gradSlice(t) {
     const c = new THREE.Color();
     return t < 0.5 ? c.copy(SA).lerp(SB, t / 0.5) : c.copy(SB).lerp(SC, (t - 0.5) / 0.5);
@@ -62,10 +62,10 @@ function boot(canvas) {
 
   /* timing: sweep is snappy and visible from the first slice; the solid mesh
      rises IN UNDER the slices before they leave (no brightness dip) */
-  const SCROLL_DUR = 3.4, FADE_AT = 3.2, MESH_IN = 1.1, SLICE_OUT_AT = 3.8, SLICE_OUT = 1.2;
-  const BAND = 10, BASE_OP = 0.5;
+  const SCROLL_DUR = 3.2, FADE_AT = 3.5, MESH_IN = 1.2;
+  const BAND = 9;
   const BUILD_TILT = -0.62, REST_TILT = -0.16;   // look down onto slices, then settle
-  const TOTAL = SLICE_OUT_AT + SLICE_OUT + 0.1;
+  const TOTAL = FADE_AT + MESH_IN + 0.25;
   let ready = false, built = false, lastTs = null, buildT = 0;
   const slices = [];
   let meshMat = null;
@@ -73,13 +73,13 @@ function boot(canvas) {
   function updateBuild(T) {
     const front = Math.min(1, T / SCROLL_DUR) * slices.length;
     const meshIn = smooth((T - FADE_AT) / MESH_IN);
-    const keep = 1 - smooth((T - SLICE_OUT_AT) / SLICE_OUT);
     for (let i = 0; i < slices.length; i++) {
       const s = slices[i], d = front - i;
-      if (d < 0) { s.mat.opacity = 0; continue; }
-      const hot = d < BAND ? 1 - d / BAND : 0;            // scan-band falloff
-      s.mat.opacity = (BASE_OP + (0.95 - BASE_OP) * hot) * keep;
-      s.mat.color.copy(s.base).lerp(CURSOR, hot * 0.85);
+      s.mesh.visible = d >= 0;                            // reveal opaque slices in turn
+      if (d >= 0) {
+        const hot = d < BAND ? 1 - d / BAND : 0;          // active scan band glows lighter
+        s.mat.color.copy(s.base).lerp(SCAN, hot * 0.7);
+      }
     }
     if (meshMat) meshMat.opacity = meshIn;
     if (T > TOTAL) {
@@ -90,10 +90,12 @@ function boot(canvas) {
   }
 
   Promise.all([
-    fetch('femur_slices.json?v=18').then((r) => r.json()),
-    fetch('femur_mesh.json?v=18').then((r) => r.json())
+    fetch('femur_slices.json?v=19').then((r) => r.json()),
+    fetch('femur_mesh.json?v=19').then((r) => r.json())
   ]).then(([sliceData, meshData]) => {
-    /* slices */
+    /* slices — OPAQUE with depth write, so the stack reads as one consistent
+       front surface (no translucent accumulation: thin shaft and bulky
+       proximal both render solidly). Revealed bottom-to-top by visibility. */
     const arr = sliceData.slices.slice().sort((a, b) => a.y - b.y);
     const lo = arr[0].y, hi = arr[arr.length - 1].y, span = Math.max(1e-4, hi - lo);
     arr.forEach((sl) => {
@@ -101,12 +103,11 @@ function boot(canvas) {
       g.setAttribute('position', new THREE.Float32BufferAttribute(sl.v, 3));
       g.setIndex(sl.f);
       const base = gradSlice((sl.y - lo) / span);
-      const mat = new THREE.MeshBasicMaterial({
-        color: base.clone(), transparent: true, opacity: 0,
-        side: THREE.DoubleSide, depthWrite: false
-      });
-      sliceGroup.add(new THREE.Mesh(g, mat));
-      slices.push({ mat, base });
+      const mat = new THREE.MeshBasicMaterial({ color: base.clone(), side: THREE.DoubleSide });
+      const mesh = new THREE.Mesh(g, mat);
+      mesh.visible = false;
+      sliceGroup.add(mesh);
+      slices.push({ mesh, mat, base });
     });
 
     /* solid mesh, cool gradient vertex colours + lighting */
@@ -128,7 +129,9 @@ function boot(canvas) {
       sheen: 0.4, sheenColor: new THREE.Color(0xeef3ff),
       envMapIntensity: 0.65, transparent: true, opacity: reduced ? 1 : 0
     });
-    group.add(new THREE.Mesh(mg, meshMat));
+    const meshObj = new THREE.Mesh(mg, meshMat);
+    meshObj.scale.setScalar(1.012);   // sit just outside the slices so the fade covers them
+    group.add(meshObj);
 
     group.rotation.set(BUILD_TILT, -0.45, 0);
     ready = true;
