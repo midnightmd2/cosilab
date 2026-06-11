@@ -98,10 +98,13 @@ header {
 }
 header::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--grad); }
 .nav { display: flex; justify-content: space-between; align-items: center; height: 74px; }
-.wordmark { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 4px; color: var(--navy); line-height: 1; }
-.wordmark .mark { font-family: var(--display); font-size: 23px; font-weight: 400; letter-spacing: 0.02em; line-height: 1; }
-.wordmark .org { font-family: var(--display); font-size: 12px; font-weight: 500; color: var(--slate); letter-spacing: 0.015em; line-height: 1.25; }
-@media (max-width: 640px) { .wordmark .org { display: none; } }
+.wm-link { display: inline-block; text-decoration: none; }
+.wm-link:hover { text-decoration: none; }
+.wm-lock { display: block; width: 118px; height: auto; overflow: visible; }
+.wm-lock text { font-family: var(--display); }
+.wm-lock .l1 { fill: var(--navy); font-size: 24px; font-weight: 400; }
+.wm-lock .l2 { fill: var(--slate); font-size: 8.8px; font-weight: 500; }
+@media (max-width: 380px) { .wm-lock { width: 106px; } }
 nav.links { display: flex; gap: 30px; align-items: center; }
 nav.links a { font-size: 14.5px; color: var(--ink); font-weight: 450; transition: color .15s; }
 nav.links a:hover { color: var(--teal-ink); text-decoration: none; }
@@ -341,7 +344,6 @@ footer nav a:hover { color: var(--teal-ink); text-decoration: none; }
 }
 
 @media (max-width: 560px) {
-  .wordmark .org { display: none; }
   .proof-grid { grid-template-columns: 1fr; }
   .proof-cell, .proof-cell:nth-child(-n+2) { border-top: 1px solid rgba(255,255,255,0.12); border-left: none; }
   .proof-cell:first-child { border-top: none; }
