@@ -35,8 +35,15 @@
 #femur-canvas {
   position: relative; z-index: 1; display: block; width: 100%; height: 680px;
   opacity: 0; transition: opacity 0.45s ease; touch-action: pan-y;
+  -webkit-mask-image: linear-gradient(to bottom, #000 85%, transparent 99%);
+  mask-image: linear-gradient(to bottom, #000 85%, transparent 99%);
 }
 #femur-canvas.is-ready { opacity: 1; }
+.fig-credit {
+  position: relative; z-index: 2; text-align: center; margin: -28px auto 0;
+  max-width: 32ch; font-size: 11.5px; line-height: 1.5; color: var(--slate);
+  letter-spacing: 0.01em;
+}
 
 /* ---- manifesto ---- */
 .manifesto p {

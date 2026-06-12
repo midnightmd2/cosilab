@@ -25,7 +25,7 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css?v=25">
-<link rel="stylesheet" href="home.css?v=22">
+<link rel="stylesheet" href="home.css?v=23">
 <link rel="preload" href="femur_mesh.json?v=22" as="fetch" crossorigin>
 <link rel="preload" href="femur_slices.json?v=22" as="fetch" crossorigin>
 <script type="importmap">
@@ -74,8 +74,9 @@
       <h1 class="hero-title"><span class="hl-line">The future of orthopaedics</span> <em class="hl-line">is computational</em></h1>
       <p class="lede">COSI is a research lab led by Professor Stefano A. Bini, MD. We use machine learning, population-scale clinical data, biomechanical simulation, and surgical robotics to change how hip and knee surgery is studied, planned, and performed.</p>
     </div>
-    <figure class="hero-fig" aria-hidden="true">
-      <canvas id="femur-canvas"></canvas>
+    <figure class="hero-fig">
+      <canvas id="femur-canvas" aria-hidden="true"></canvas>
+      <figcaption class="fig-credit">Derived from a machine-learning segmentation of an MRI hip scan.</figcaption>
     </figure>
   </div>
 </section>
