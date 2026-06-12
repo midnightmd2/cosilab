@@ -25,7 +25,7 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css?v=25">
-<script defer src="cms.js?v=3"></script>
+<script defer src="cms.js?v=4"></script>
 </head>
 <body data-content="content/research.json">
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -49,7 +49,7 @@
 
 <div class="page-head">
   <div class="wrap inner">
-    
+
     <h1 data-cms="page_title">What we're working on</h1>
     <p data-cms="page_intro">The lab works in five areas. They are connected: clinical data raises mechanical questions, biomechanical models inform new techniques, those techniques generate new data, and the lab's own software accelerates all of it. Each area is described below with representative studies, followed by the open problems we are actively working on.</p>
   </div>
@@ -62,11 +62,12 @@
     <div class="rd" id="population">
       <div class="rd-side">
         <h2 data-cms="a1_title">Population-scale evidence</h2>
-        <span class="needs">METHODS<br>Federated EHR analysis<br>Pharmacoepidemiology<br>Causal inference<br>Survival modeling</span>
+        <span class="needs" data-cms="a1_methods">METHODS<br>Federated EHR analysis<br>Pharmacoepidemiology<br>Causal inference<br>Survival modeling</span>
       </div>
       <div class="rd-body">
         <p data-cms="a1_p1">Randomized trials answer one question at a time and take years. Modern electronic health record networks hold the records of tens of millions of patients, enough to screen entire classes of exposure against a disease in a single, carefully controlled analysis. We build those analyses for musculoskeletal disease.</p>
         <p data-cms="a1_p2">The work is methodological as much as clinical: controlling confounding by indication, handling immortal-time and selection bias, and making federated estimates that hold up across institutions. Done well, it turns routine care data into hypotheses worth testing.</p>
+        <div class="examples" data-cms-list="a1_studies" data-cms-tpl="study">
         <div class="example">
           <span class="tag">REPRESENTATIVE STUDY</span>
           <span class="t">A medication-wide screen of 50 drugs for association with hip and knee osteoarthritis, using a federated network of routinely collected clinical data.</span>
@@ -75,6 +76,7 @@
           <span class="tag">REPRESENTATIVE STUDY</span>
           <span class="t">Post-menopausal hormone therapy and greater trochanteric pain syndrome: a retrospective cohort of 385,868 women, including the effect of initiation timing.</span>
         </div>
+        </div>
       </div>
     </div>
 
@@ -82,18 +84,20 @@
     <div class="rd" id="biomechanics">
       <div class="rd-side">
         <h2 data-cms="a2_title">Computational biomechanics</h2>
-        <span class="needs">METHODS<br>Finite element analysis<br>Patient-specific modeling<br>Image-based meshing<br>Constitutive modeling</span>
+        <span class="needs" data-cms="a2_methods">METHODS<br>Finite element analysis<br>Patient-specific modeling<br>Image-based meshing<br>Constitutive modeling</span>
       </div>
       <div class="rd-body">
         <p data-cms="a2_p1">Some questions are mechanical and cannot be answered by any trial: how a surgical construct shares load, where it concentrates stress, and where it will fail first. We build patient-specific finite element models from clinical imaging to answer them, then tie the predictions back to real outcomes.</p>
         <p data-cms="a2_p2">Our current focus is the hip abductors. Tendon repairs fail often, and augmentation with a scaffold is increasingly common without a clear mechanical rationale. We model exactly how a scaffold redistributes load across the repair, patient by patient, to understand who benefits and why.</p>
         <figure class="figure-card" style="max-width: 360px; margin-top: 8px;">
           <svg data-figure="loadCurve" viewBox="0 0 300 250" role="img" aria-label="Load-displacement curves comparing native and scaffold-augmented tendon repair constructs" style="width:100%;display:block"></svg>
-          <figcaption>Load to failure: native repair versus scaffold-augmented construct (schematic).</figcaption>
+          <figcaption data-cms="a2_fig_caption">Load to failure: native repair versus scaffold-augmented construct (schematic).</figcaption>
         </figure>
+        <div class="examples" data-cms-list="a2_studies" data-cms-tpl="study">
         <div class="example">
           <span class="tag">REPRESENTATIVE STUDY</span>
           <span class="t">Load-sharing mechanics of scaffold augmentation in gluteus medius tendon repairs: a patient-specific finite element analysis.</span>
+        </div>
         </div>
       </div>
     </div>
@@ -102,7 +106,7 @@
     <div class="rd" id="robotics">
       <div class="rd-side">
         <h2 data-cms="a3_title">Robotics and intraoperative data</h2>
-        <span class="needs">METHODS<br>Robotic arthroplasty data<br>Prediction vs ground truth<br>Computer vision<br>Registry linkage</span>
+        <span class="needs" data-cms="a3_methods">METHODS<br>Robotic arthroplasty data<br>Prediction vs ground truth<br>Computer vision<br>Registry linkage</span>
       </div>
       <div class="rd-body">
         <p data-cms="a3_p1">Robotic platforms for joint replacement record every cut, gap, and alignment angle, an unusually rich, structured stream of intraoperative data. Most of it is never analyzed. We treat the robot's plan as a prediction and test it against what the surgeon actually finds and does.</p>
@@ -115,11 +119,13 @@
             <span class="val" id="igap-val">6°</span>
           </div>
           <div class="ireadout" id="igap-readout"></div>
-          <figcaption style="margin-top:12px;">Interactive and schematic. Drag the slider to see the measured gap diverge from the robot's plan as native deformity grows.</figcaption>
+          <figcaption style="margin-top:12px;" data-cms="a3_fig_caption">Interactive and schematic. Drag the slider to see the measured gap diverge from the robot's plan as native deformity grows.</figcaption>
         </figure>
+        <div class="examples" data-cms-list="a3_studies" data-cms-tpl="study">
         <div class="example">
           <span class="tag">REPRESENTATIVE STUDY</span>
           <span class="t">Increasing native coronal deformity is associated with medial gap underprediction in robotic-assisted total knee arthroplasty.</span>
+        </div>
         </div>
       </div>
     </div>
@@ -128,14 +134,16 @@
     <div class="rd" id="agents">
       <div class="rd-side">
         <h2 data-cms="a4_title">AI agents in the clinical workflow</h2>
-        <span class="needs">METHODS<br>LLM &amp; agent engineering<br>Retrieval &amp; evidence synthesis<br>FHIR / clinical data<br>Evaluation &amp; safety</span>
+        <span class="needs" data-cms="a4_methods">METHODS<br>LLM &amp; agent engineering<br>Retrieval &amp; evidence synthesis<br>FHIR / clinical data<br>Evaluation &amp; safety</span>
       </div>
       <div class="rd-body">
         <p data-cms="a4_p1">The lab runs on software it builds. We design agentic systems to do real work in a surgical department: synthesizing evidence, assembling cohorts from messy clinical data, and drafting structured documentation. Because they operate where care happens, we hold them to a clinical standard, evaluated, audited, and measured against the task they claim to do.</p>
         <p data-cms="a4_p2">This is the through-line of the whole lab. The same agents that accelerate a literature review or a database build are prototypes for tools that could one day sit inside the clinical workflow itself. We are interested in both: the research accelerant and the eventual product.</p>
+        <div class="examples" data-cms-list="a4_studies" data-cms-tpl="study">
         <div class="example">
           <span class="tag">DIRECTION</span>
           <span class="t">Agents that turn intraoperative and EHR data into registry-ready, auditable surgical documentation, evaluated like any other clinical intervention.</span>
+        </div>
         </div>
       </div>
     </div>
@@ -144,11 +152,12 @@
     <div class="rd" id="technique">
       <div class="rd-side">
         <h2 data-cms="a5_title">Surgical technique innovation</h2>
-        <span class="needs">METHODS<br>Surgical anatomy<br>Approach &amp; construct design<br>Cadaveric &amp; clinical validation<br>Outcome measurement</span>
+        <span class="needs" data-cms="a5_methods">METHODS<br>Surgical anatomy<br>Approach &amp; construct design<br>Cadaveric &amp; clinical validation<br>Outcome measurement</span>
       </div>
       <div class="rd-body">
         <p data-cms="a5_p1">This program takes anatomic and biomechanical insight all the way to technique: new approaches, instruments, and repair strategies, then measures whether they actually help.</p>
         <p data-cms="a5_p2">Recent work includes a novel superior approach to total hip arthroplasty and a re-examination of how partial, concealed abductor tears are classified, an under-recognized lesion that standard descriptions miss. The aim is a technique that changes practice, supported by data.</p>
+        <div class="examples" data-cms-list="a5_studies" data-cms-tpl="study">
         <div class="example">
           <span class="tag">REPRESENTATIVE WORK</span>
           <span class="t">The Superior Transverse Anatomic Reconstruction (STAR) approach in total hip arthroplasty.</span>
@@ -156,6 +165,7 @@
         <div class="example">
           <span class="tag">REPRESENTATIVE WORK</span>
           <span class="t">Partial subsurface detachment of the hip abductors: a concealed lesion described across nine studies under competing names.</span>
+        </div>
         </div>
       </div>
     </div>
@@ -168,6 +178,7 @@
   <div class="wrap">
     <div class="section-head"><div><h2 data-cms="open_heading">Where the work is headed</h2></div></div>
 
+    <div data-cms-list="open_problems" data-cms-tpl="problem">
     <div class="problem">
       <div>
         <h3>Predicting which abductor tendon repairs fail</h3>
@@ -214,6 +225,7 @@
         <p>Partial, subsurface abductor tears sit under intact superficial fibers and are described in the literature under competing names. The work is an imaging-based, reproducible classification, ideally with automated segmentation, that the field can use consistently.</p>
         <span class="needs">DATA: MRI &nbsp;·&nbsp; METHODS: SEGMENTATION, CLINICAL RESEARCH</span>
       </div>
+    </div>
     </div>
 
   </div>

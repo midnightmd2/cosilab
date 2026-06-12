@@ -25,10 +25,13 @@ content:
       - { name: prog5_title, label: "Program 5 — title", type: string }
       - { name: prog5_desc, label: "Program 5 — description", type: text }
       - { name: work_heading, label: "Selected work — heading", type: string }
+      - { name: work1_tag, label: "Work 1 — category tag", type: string }
       - { name: work1_title, label: "Work 1 — title", type: text }
       - { name: work1_desc, label: "Work 1 — description", type: text }
+      - { name: work2_tag, label: "Work 2 — category tag", type: string }
       - { name: work2_title, label: "Work 2 — title", type: text }
       - { name: work2_desc, label: "Work 2 — description", type: text }
+      - { name: work3_tag, label: "Work 3 — category tag", type: string }
       - { name: work3_title, label: "Work 3 — title", type: text }
       - { name: work3_desc, label: "Work 3 — description", type: text }
       - { name: involve_heading, label: "Get involved — heading", type: string }
@@ -45,21 +48,71 @@ content:
       - { name: page_title, label: Page title, type: string }
       - { name: page_intro, label: Page intro, type: text }
       - { name: a1_title, label: "Area 1 — title", type: string }
+      - { name: a1_methods, label: "Area 1 — methods list (one per line)", type: text }
       - { name: a1_p1, label: "Area 1 — paragraph 1", type: text }
       - { name: a1_p2, label: "Area 1 — paragraph 2", type: text }
+      - name: a1_studies
+        label: "Area 1 — representative studies"
+        type: object
+        list: true
+        fields:
+          - { name: tag, label: Tag, type: string }
+          - { name: text, label: Study, type: text }
       - { name: a2_title, label: "Area 2 — title", type: string }
+      - { name: a2_methods, label: "Area 2 — methods list (one per line)", type: text }
       - { name: a2_p1, label: "Area 2 — paragraph 1", type: text }
       - { name: a2_p2, label: "Area 2 — paragraph 2", type: text }
+      - { name: a2_fig_caption, label: "Area 2 — figure caption", type: text }
+      - name: a2_studies
+        label: "Area 2 — representative studies"
+        type: object
+        list: true
+        fields:
+          - { name: tag, label: Tag, type: string }
+          - { name: text, label: Study, type: text }
       - { name: a3_title, label: "Area 3 — title", type: string }
+      - { name: a3_methods, label: "Area 3 — methods list (one per line)", type: text }
       - { name: a3_p1, label: "Area 3 — paragraph 1", type: text }
       - { name: a3_p2, label: "Area 3 — paragraph 2", type: text }
+      - { name: a3_fig_caption, label: "Area 3 — figure caption", type: text }
+      - name: a3_studies
+        label: "Area 3 — representative studies"
+        type: object
+        list: true
+        fields:
+          - { name: tag, label: Tag, type: string }
+          - { name: text, label: Study, type: text }
       - { name: a4_title, label: "Area 4 — title", type: string }
+      - { name: a4_methods, label: "Area 4 — methods list (one per line)", type: text }
       - { name: a4_p1, label: "Area 4 — paragraph 1", type: text }
       - { name: a4_p2, label: "Area 4 — paragraph 2", type: text }
+      - name: a4_studies
+        label: "Area 4 — representative studies"
+        type: object
+        list: true
+        fields:
+          - { name: tag, label: Tag, type: string }
+          - { name: text, label: Study, type: text }
       - { name: a5_title, label: "Area 5 — title", type: string }
+      - { name: a5_methods, label: "Area 5 — methods list (one per line)", type: text }
       - { name: a5_p1, label: "Area 5 — paragraph 1", type: text }
       - { name: a5_p2, label: "Area 5 — paragraph 2", type: text }
+      - name: a5_studies
+        label: "Area 5 — representative studies"
+        type: object
+        list: true
+        fields:
+          - { name: tag, label: Tag, type: string }
+          - { name: text, label: Study, type: text }
       - { name: open_heading, label: "Open problems — heading", type: string }
+      - name: open_problems
+        label: "Open problems"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: desc, label: Description, type: text }
+          - { name: needs, label: "Data / methods line", type: string }
 
   - name: people
     label: People
@@ -69,6 +122,7 @@ content:
       - { name: page_title, label: Page title, type: string }
       - { name: page_intro, label: Page intro, type: text }
       - { name: pi_name, label: "PI — name", type: string }
+      - { name: pi_role, label: "PI — title block (one per line)", type: text }
       - { name: pi_bio1, label: "PI — bio paragraph 1", type: text }
       - { name: pi_bio2, label: "PI — bio paragraph 2", type: text }
       - { name: leadership_heading, label: "Leadership — heading", type: string }

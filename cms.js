@@ -30,6 +30,8 @@
       box.innerHTML = arr.map(function (it) {
         if (tpl === 'member') return '<div class="member"><div class="avatar">' + esc(initials(it.name || '')) + '</div><div class="name">' + esc(it.name || '') + '</div><div class="role">' + rich(it.role || '') + '</div></div>';
         if (tpl === 'collab') return '<div class="collab"><div class="name">' + esc(it.name || '') + '</div><div class="role">' + rich(it.role || '') + '</div></div>';
+        if (tpl === 'study') return '<div class="example"><span class="tag">' + esc(it.tag || '') + '</span><span class="t">' + rich(it.text || '') + '</span></div>';
+        if (tpl === 'problem') return '<div class="problem"><div><h3>' + esc(it.title || '') + '</h3><p>' + rich(it.desc || '') + '</p>' + (it.needs ? '<span class="needs">' + rich(it.needs) + '</span>' : '') + '</div></div>';
         return '';
       }).join('');
     });

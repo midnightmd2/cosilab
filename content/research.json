@@ -2,19 +2,96 @@
   "page_title": "What we're working on",
   "page_intro": "The lab works in five areas. They are connected: clinical data raises mechanical questions, biomechanical models inform new techniques, those techniques generate new data, and the lab's own software accelerates all of it. Each area is described below with representative studies, followed by the open problems we are actively working on.",
   "a1_title": "Population-scale evidence",
+  "a1_methods": "METHODS\nFederated EHR analysis\nPharmacoepidemiology\nCausal inference\nSurvival modeling",
   "a1_p1": "Randomized trials answer one question at a time and take years. Modern electronic health record networks hold the records of hundreds of millions of patients, enough to conduct otherwise impossible carefully controlled analyses. We build those analyses for musculoskeletal disease.",
   "a1_p2": "The work is methodological as much as clinical: controlling confounding by indication, handling immortal-time and selection bias, and making federated estimates that hold up across institutions. Done well, it turns routine care data into hypotheses worth testing.",
+  "a1_studies": [
+    {
+      "tag": "REPRESENTATIVE STUDY",
+      "text": "A medication-wide screen of 50 drugs for association with hip and knee osteoarthritis, using a federated network of routinely collected clinical data."
+    },
+    {
+      "tag": "REPRESENTATIVE STUDY",
+      "text": "Post-menopausal hormone therapy and greater trochanteric pain syndrome: a retrospective cohort of 385,868 women, including the effect of initiation timing."
+    }
+  ],
   "a2_title": "Computational biomechanics",
+  "a2_methods": "METHODS\nFinite element analysis\nPatient-specific modeling\nImage-based meshing\nConstitutive modeling",
   "a2_p1": "Some questions are mechanical and cannot be answered by any trial: how a surgical construct shares load, where it concentrates stress, and where it will fail first. We build patient-specific finite element models from clinical imaging to answer them, then tie the predictions back to real outcomes.",
   "a2_p2": "Our current focus is the hip abductors. Tendon repairs fail often, and augmentation with a scaffold is increasingly common without a clear mechanical rationale. We model exactly how a scaffold redistributes load across the repair, patient by patient, to understand who benefits and why.",
+  "a2_fig_caption": "Load to failure: native repair versus scaffold-augmented construct (schematic).",
+  "a2_studies": [
+    {
+      "tag": "REPRESENTATIVE STUDY",
+      "text": "Load-sharing mechanics of scaffold augmentation in gluteus medius tendon repairs: a patient-specific finite element analysis."
+    }
+  ],
   "a3_title": "Robotics and intraoperative data",
+  "a3_methods": "METHODS\nRobotic arthroplasty data\nPrediction vs ground truth\nComputer vision\nRegistry linkage",
   "a3_p1": "Robotic platforms for joint replacement record every cut, gap, and alignment angle, an unusually rich, structured stream of intraoperative data. Most of it is never analyzed. We treat the robot's plan as a prediction and test it against what the surgeon actually finds and does.",
   "a3_p2": "The first results are already pointing somewhere useful: as a patient's native coronal deformity increases, the platform systematically underpredicts the medial gap, with direct implications for how the knee is balanced. Measuring and correcting that gap is what this program works on.",
+  "a3_fig_caption": "Interactive and schematic. Drag the slider to see the measured gap diverge from the robot's plan as native deformity grows.",
+  "a3_studies": [
+    {
+      "tag": "REPRESENTATIVE STUDY",
+      "text": "Increasing native coronal deformity is associated with medial gap underprediction in robotic-assisted total knee arthroplasty."
+    }
+  ],
   "a4_title": "AI agents in the clinical workflow",
+  "a4_methods": "METHODS\nLLM & agent engineering\nRetrieval & evidence synthesis\nFHIR / clinical data\nEvaluation & safety",
   "a4_p1": "The lab runs on software it builds. We design agentic systems to do real work in a surgical department: synthesizing evidence, assembling cohorts from messy clinical data, and drafting structured documentation. Because they operate where care happens, we hold them to a clinical standard, evaluated, audited, and measured against the task they claim to do.",
   "a4_p2": "This is the through-line of the whole lab. The same agents that accelerate a literature review or a database build are prototypes for tools that could one day sit inside the clinical workflow itself. We are interested in both: the research accelerant and the eventual product.",
+  "a4_studies": [
+    {
+      "tag": "DIRECTION",
+      "text": "Agents that turn intraoperative and EHR data into registry-ready, auditable surgical documentation, evaluated like any other clinical intervention."
+    }
+  ],
   "a5_title": "Surgical technique innovation",
+  "a5_methods": "METHODS\nSurgical anatomy\nApproach & construct design\nCadaveric & clinical validation\nOutcome measurement",
   "a5_p1": "This program takes anatomic and biomechanical insight all the way to technique: new approaches, instruments, and repair strategies, then measures whether they actually help.",
   "a5_p2": "Recent work includes a novel superior approach to total hip arthroplasty and a re-examination of how partial, concealed abductor tears are classified, an under-recognized lesion that standard descriptions miss. The aim is a technique that changes practice, supported by data.",
-  "open_heading": "Where the work is headed"
+  "a5_studies": [
+    {
+      "tag": "REPRESENTATIVE WORK",
+      "text": "The Superior Transverse Anatomic Reconstruction (STAR) approach in total hip arthroplasty."
+    },
+    {
+      "tag": "REPRESENTATIVE WORK",
+      "text": "Partial subsurface detachment of the hip abductors: a concealed lesion described across nine studies under competing names."
+    }
+  ],
+  "open_heading": "Where the work is headed",
+  "open_problems": [
+    {
+      "title": "Predicting which abductor tendon repairs fail",
+      "desc": "Gluteus medius repairs fail at meaningful rates, and outcomes vary widely. Using imaging, intraoperative findings, and longitudinal outcomes from our repair cohort, the goal is a model that identifies repairs at high risk of failure and the factors that drive it.",
+      "needs": "DATA: IMAGING, OPERATIVE, OUTCOMES · METHODS: ML, SURVIVAL ANALYSIS"
+    },
+    {
+      "title": "From intraoperative data to a structured operative record",
+      "desc": "Robotic platforms log detailed data for every case, but little of it reaches surgical registries because the translation is manual. The problem is an agentic pipeline that converts intraoperative and EHR data into structured, auditable documentation a surgeon would sign.",
+      "needs": "DATA: ROBOTIC LOGS, EHR · METHODS: LLM AGENTS, FHIR"
+    },
+    {
+      "title": "Separating cause from association in drug-osteoarthritis screens",
+      "desc": "A medication-wide screen surfaces many drugs associated with osteoarthritis. Association is not cause. The work is to take the strongest signals and test them with negative controls, target-trial emulation, and sensitivity analysis to see what holds.",
+      "needs": "DATA: FEDERATED EHR · METHODS: CAUSAL INFERENCE, PHARMACOEPIDEMIOLOGY"
+    },
+    {
+      "title": "A fast surrogate for patient-specific finite element analysis",
+      "desc": "A full finite element model of a repair construct takes hours to build and solve. A learned surrogate that predicts the stress field from imaging in seconds, accurately enough to inform a decision, would make this usable in clinic.",
+      "needs": "DATA: IMAGING, FE MODELS · METHODS: SURROGATE MODELING, GEOMETRY PROCESSING"
+    },
+    {
+      "title": "Correcting the robot's gap prediction across deformity",
+      "desc": "Robotic knee replacement underpredicts the medial gap as native coronal deformity increases. The problem is to characterize that error across the full deformity range and build a correction a surgeon can use intraoperatively.",
+      "needs": "DATA: ROBOTIC ARTHROPLASTY · METHODS: MODELING, DATA SCIENCE"
+    },
+    {
+      "title": "A reproducible classification for concealed abductor tears",
+      "desc": "Partial, subsurface abductor tears sit under intact superficial fibers and are described in the literature under competing names. The work is an imaging-based, reproducible classification, ideally with automated segmentation, that the field can use consistently.",
+      "needs": "DATA: MRI · METHODS: SEGMENTATION, CLINICAL RESEARCH"
+    }
+  ]
 }
