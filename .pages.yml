@@ -1,0 +1,17 @@
+# Pages CMS configuration — https://pagescms.org
+# Connect this repo at https://app.pagescms.org and edit text in a form.
+content:
+  - name: home
+    label: Homepage text
+    type: file
+    path: content.json
+    fields:
+      - name: home
+        label: Homepage
+        type: object
+        fields:
+          - { name: hero_line1, label: Hero headline — line 1, type: string }
+          - { name: hero_line2, label: Hero headline — line 2 (italic), type: string }
+          - { name: lede, label: Intro paragraph, type: text }
+          - { name: bone_caption, label: Caption under the 3D bone, type: string }
+          - { name: manifesto1, label: "Manifesto — first line", type: text }

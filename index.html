@@ -26,6 +26,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css?v=25">
 <link rel="stylesheet" href="home.css?v=23">
+<script defer src="cms.js?v=1"></script>
 <link rel="preload" href="femur_mesh.json?v=22" as="fetch" crossorigin>
 <link rel="preload" href="femur_slices.json?v=22" as="fetch" crossorigin>
 <script type="importmap">
@@ -71,12 +72,12 @@
 <section class="hero-ed">
   <div class="wrap hero-grid2">
     <div class="hero-copy">
-      <h1 class="hero-title"><span class="hl-line">The future of orthopaedics</span> <em class="hl-line">is computational</em></h1>
-      <p class="lede">COSI is a research lab led by Professor Stefano A. Bini, MD. We use machine learning, population-scale clinical data, biomechanical simulation, and surgical robotics to change how hip and knee surgery is studied, planned, and performed.</p>
+      <h1 class="hero-title"><span class="hl-line" data-cms="home.hero_line1">The future of orthopaedics</span> <em class="hl-line" data-cms="home.hero_line2">is computational</em></h1>
+      <p class="lede" data-cms="home.lede">COSI is a research lab led by Professor Stefano A. Bini, MD. We use machine learning, population-scale clinical data, biomechanical simulation, and surgical robotics to change how hip and knee surgery is studied, planned, and performed.</p>
     </div>
     <figure class="hero-fig">
       <canvas id="femur-canvas" aria-hidden="true"></canvas>
-      <figcaption class="fig-credit">Derived from a machine-learning segmentation of an MRI hip scan.</figcaption>
+      <figcaption class="fig-credit" data-cms="home.bone_caption">Derived from a machine-learning segmentation of an MRI hip scan.</figcaption>
     </figure>
   </div>
 </section>
@@ -84,7 +85,7 @@
 <!-- ============ Why now ============ -->
 <section class="manifesto" style="padding-top: clamp(16px, 3vw, 48px); padding-bottom: 0;">
   <div class="wrap">
-    <p class="m1">Surgical robots log every cut and every gap. Record networks hold the histories of tens of millions of patients. A tendon repair can be simulated before the incision is made.</p>
+    <p class="m1" data-cms="home.manifesto1">Surgical robots log every cut and every gap. Record networks hold the histories of tens of millions of patients. A tendon repair can be simulated before the incision is made.</p>
     <p class="m2">The raw material for a new kind of surgery <em>already exists</em>. Our work turns it into evidence, tools, and technique.</p>
   </div>
 </section>
