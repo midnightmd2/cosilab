@@ -154,7 +154,7 @@ section { padding: clamp(60px, 8.5vw, 116px) 0; }
 
 /* ---- research programs (list) ---- */
 .program {
-  display: grid; grid-template-columns: 1fr 1.5fr 36px; gap: 28px;
+  display: grid; grid-template-columns: 1fr 1.5fr; gap: 28px;
   padding: clamp(24px, 2.6vw, 34px) 16px; border-top: 1px solid var(--line); align-items: center;
   color: inherit; border-radius: var(--r-sm);
   transition: background .18s ease, padding-left .18s ease, padding-right .18s ease;
