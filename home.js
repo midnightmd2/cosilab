@@ -7,12 +7,7 @@
 
   gsap.registerPlugin(ScrollTrigger);
 
-  /* Lenis <-> ScrollTrigger */
-  if (window.__lenis) {
-    window.__lenis.on('scroll', ScrollTrigger.update);
-    gsap.ticker.add(function (t) { window.__lenis.raf(t * 1000); });
-    gsap.ticker.lagSmoothing(0);
-  }
+  /* Native scroll — ScrollTrigger reads the browser's own scroll position. */
 
   /* Hero intro — plain rise/fade on the two headline lines (no masks,
      so descenders can never be clipped) */

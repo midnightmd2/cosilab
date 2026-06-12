@@ -3,29 +3,9 @@
 (function () {
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* Smooth scrolling (Lenis). On the homepage GSAP's ticker drives it
-     (see home.js); on other pages we run our own rAF loop. */
-  function initLenis() {
-    if (reduce || !window.Lenis) return;
-    try {
-      var lenis = new Lenis({ duration: 1.05 });
-      window.__lenis = lenis;
-      if (!window.gsap) {
-        var raf = function (t) { lenis.raf(t); requestAnimationFrame(raf); };
-        requestAnimationFrame(raf);
-      }
-      /* Lenis swallows the browser's native hash jump on load — land it ourselves */
-      if (location.hash) {
-        var target = document.getElementById(location.hash.slice(1));
-        if (target) {
-          requestAnimationFrame(function () {
-            lenis.scrollTo(target, { immediate: true, offset: -90 });
-          });
-        }
-      }
-    } catch (e) {}
-  }
-  initLenis();
+  /* Native scroll — the Lenis smooth-scroll library was removed so the page
+     tracks the wheel/trackpad 1:1. Anchor offset is handled in CSS
+     (html { scroll-padding-top }). */
 
   function initReveal() {
     if (reduce || !('IntersectionObserver' in window)) return;
