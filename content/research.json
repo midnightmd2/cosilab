@@ -1,0 +1,26 @@
+{
+  "page_title": "What we're working on",
+  "page_intro": "The lab works in five areas. They are connected: clinical data raises mechanical questions, biomechanical models inform new techniques, those techniques generate new data, and the lab's own software accelerates all of it. Each area is described below with representative studies, followed by the open problems we are actively working on.",
+
+  "a1_title": "Population-scale evidence",
+  "a1_p1": "Randomized trials answer one question at a time and take years. Modern electronic health record networks hold the records of tens of millions of patients, enough to screen entire classes of exposure against a disease in a single, carefully controlled analysis. We build those analyses for musculoskeletal disease.",
+  "a1_p2": "The work is methodological as much as clinical: controlling confounding by indication, handling immortal-time and selection bias, and making federated estimates that hold up across institutions. Done well, it turns routine care data into hypotheses worth testing.",
+
+  "a2_title": "Computational biomechanics",
+  "a2_p1": "Some questions are mechanical and cannot be answered by any trial: how a surgical construct shares load, where it concentrates stress, and where it will fail first. We build patient-specific finite element models from clinical imaging to answer them, then tie the predictions back to real outcomes.",
+  "a2_p2": "Our current focus is the hip abductors. Tendon repairs fail often, and augmentation with a scaffold is increasingly common without a clear mechanical rationale. We model exactly how a scaffold redistributes load across the repair, patient by patient, to understand who benefits and why.",
+
+  "a3_title": "Robotics and intraoperative data",
+  "a3_p1": "Robotic platforms for joint replacement record every cut, gap, and alignment angle, an unusually rich, structured stream of intraoperative data. Most of it is never analyzed. We treat the robot's plan as a prediction and test it against what the surgeon actually finds and does.",
+  "a3_p2": "The first results are already pointing somewhere useful: as a patient's native coronal deformity increases, the platform systematically underpredicts the medial gap, with direct implications for how the knee is balanced. Measuring and correcting that gap is what this program works on.",
+
+  "a4_title": "AI agents in the clinical workflow",
+  "a4_p1": "The lab runs on software it builds. We design agentic systems to do real work in a surgical department: synthesizing evidence, assembling cohorts from messy clinical data, and drafting structured documentation. Because they operate where care happens, we hold them to a clinical standard, evaluated, audited, and measured against the task they claim to do.",
+  "a4_p2": "This is the through-line of the whole lab. The same agents that accelerate a literature review or a database build are prototypes for tools that could one day sit inside the clinical workflow itself. We are interested in both: the research accelerant and the eventual product.",
+
+  "a5_title": "Surgical technique innovation",
+  "a5_p1": "This program takes anatomic and biomechanical insight all the way to technique: new approaches, instruments, and repair strategies, then measures whether they actually help.",
+  "a5_p2": "Recent work includes a novel superior approach to total hip arthroplasty and a re-examination of how partial, concealed abductor tears are classified, an under-recognized lesion that standard descriptions miss. The aim is a technique that changes practice, supported by data.",
+
+  "open_heading": "Where the work is headed"
+}

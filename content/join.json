@@ -1,0 +1,26 @@
+{
+  "page_title": "Join the lab",
+  "page_intro": "We recruit undergraduates, medical students, orthopaedic residents and fellows, and postdoctoral collaborators on a rolling basis. You will publish clinically meaningful work, present it at national meetings, and collaborate with talented people across surgery, engineering, and data science.",
+  "apply_button": "Apply to join",
+
+  "recruit_heading": "Who we recruit",
+  "level1_title": "Undergraduates",
+  "level1_desc": "You take on a defined part of a study with close mentorship, and learn data handling, the literature, and how a question becomes a result. Sustained contributors earn authorship.",
+  "level1_meta": "ROLLING · PART-TIME",
+  "level2_title": "Medical students",
+  "level2_desc": "You run your own clinical or computational project from question to submission, and present at AAOS and allied meetings, building a focused body of published work during medical school.",
+  "level2_meta": "ROLLING · PROJECT-BASED",
+  "level3_title": "Orthopaedic residents and fellows",
+  "level3_desc": "Bring a clinical question and use the lab's existing data, tooling, and mentorship to pursue it without building infrastructure from scratch. Work spans biomechanics, robotics, and large-database studies.",
+  "level3_meta": "BY ARRANGEMENT",
+  "level4_title": "Postdocs and collaborators",
+  "level4_desc": "If you work in machine learning, biomechanics, causal inference, or related fields, we have clinical problems and the data to pursue them. We host visiting scholars and maintain collaborations across institutions.",
+  "level4_meta": "BY ARRANGEMENT",
+
+  "values_heading": "What we value",
+  "values_text": "Creativity, ingenuity, and ownership. People do well here when they bring their own ideas and see them through, from first question to publication. Programming, statistics, imaging, and mechanics can all be learned in the lab.",
+
+  "apply_heading": "How to apply",
+  "apply_text": "Read through the research and find what you would want to work on, then send the short application form. If there is a fit, we will talk it through and settle on the right project.",
+  "apply_form_button": "Open the application form"
+}

@@ -25,8 +25,9 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css?v=25">
+<script defer src="cms.js?v=2"></script>
 </head>
-<body>
+<body data-content="content/join.json">
 <a class="skip-link" href="#main">Skip to main content</a>
 
 <div class="ambient" aria-hidden="true"><i></i><i></i></div>
@@ -49,36 +50,36 @@
 <div class="page-head">
   <div class="wrap inner">
     
-    <h1>Join the lab</h1>
-    <p>We recruit undergraduates, medical students, orthopaedic residents and fellows, and postdoctoral collaborators on a rolling basis. You will publish clinically meaningful work, present it at national meetings, and collaborate with talented people across surgery, engineering, and data science.</p>
-    <p style="margin-top:22px;"><a href="https://forms.gle/bK2tjyAQ835LVkv39" target="_blank" rel="noopener" class="btn btn-teal">Apply to join</a></p>
+    <h1 data-cms="page_title">Join the lab</h1>
+    <p data-cms="page_intro">We recruit undergraduates, medical students, orthopaedic residents and fellows, and postdoctoral collaborators on a rolling basis. You will publish clinically meaningful work, present it at national meetings, and collaborate with talented people across surgery, engineering, and data science.</p>
+    <p style="margin-top:22px;"><a href="https://forms.gle/bK2tjyAQ835LVkv39" target="_blank" rel="noopener" class="btn btn-teal" data-cms="apply_button">Apply to join</a></p>
   </div>
 </div>
 
 <!-- Levels -->
 <section style="padding-top: 48px;">
   <div class="wrap">
-    <div class="section-head"><div><h2>Who we recruit</h2></div></div>
+    <div class="section-head"><div><h2 data-cms="recruit_heading">Who we recruit</h2></div></div>
     <div class="levels">
       <div class="level">
-        <h3>Undergraduates</h3>
-        <p>You take on a defined part of a study with close mentorship, and learn data handling, the literature, and how a question becomes a result. Sustained contributors earn authorship.</p>
-        <span class="llab">ROLLING · PART-TIME</span>
+        <h3 data-cms="level1_title">Undergraduates</h3>
+        <p data-cms="level1_desc">You take on a defined part of a study with close mentorship, and learn data handling, the literature, and how a question becomes a result. Sustained contributors earn authorship.</p>
+        <span class="llab" data-cms="level1_meta">ROLLING · PART-TIME</span>
       </div>
       <div class="level">
-        <h3>Medical students</h3>
-        <p>You run your own clinical or computational project from question to submission, and present at AAOS and allied meetings, building a focused body of published work during medical school.</p>
-        <span class="llab">ROLLING · PROJECT-BASED</span>
+        <h3 data-cms="level2_title">Medical students</h3>
+        <p data-cms="level2_desc">You run your own clinical or computational project from question to submission, and present at AAOS and allied meetings, building a focused body of published work during medical school.</p>
+        <span class="llab" data-cms="level2_meta">ROLLING · PROJECT-BASED</span>
       </div>
       <div class="level">
-        <h3>Orthopaedic residents and fellows</h3>
-        <p>Bring a clinical question and use the lab's existing data, tooling, and mentorship to pursue it without building infrastructure from scratch. Work spans biomechanics, robotics, and large-database studies.</p>
-        <span class="llab">BY ARRANGEMENT</span>
+        <h3 data-cms="level3_title">Orthopaedic residents and fellows</h3>
+        <p data-cms="level3_desc">Bring a clinical question and use the lab's existing data, tooling, and mentorship to pursue it without building infrastructure from scratch. Work spans biomechanics, robotics, and large-database studies.</p>
+        <span class="llab" data-cms="level3_meta">BY ARRANGEMENT</span>
       </div>
       <div class="level">
-        <h3>Postdocs and collaborators</h3>
-        <p>If you work in machine learning, biomechanics, causal inference, or related fields, we have clinical problems and the data to pursue them. We host visiting scholars and maintain collaborations across institutions.</p>
-        <span class="llab">BY ARRANGEMENT</span>
+        <h3 data-cms="level4_title">Postdocs and collaborators</h3>
+        <p data-cms="level4_desc">If you work in machine learning, biomechanics, causal inference, or related fields, we have clinical problems and the data to pursue them. We host visiting scholars and maintain collaborations across institutions.</p>
+        <span class="llab" data-cms="level4_meta">BY ARRANGEMENT</span>
       </div>
     </div>
   </div>
@@ -87,8 +88,8 @@
 <!-- What we look for -->
 <section style="padding-top: 0;">
   <div class="wrap">
-    <div class="section-head"><div><h2>What we value</h2></div></div>
-    <p class="thesis">Creativity, ingenuity, and ownership. People do well here when they bring their own ideas and see them through, from first question to publication. Programming, statistics, imaging, and mechanics can all be learned in the lab.</p>
+    <div class="section-head"><div><h2 data-cms="values_heading">What we value</h2></div></div>
+    <p class="thesis" data-cms="values_text">Creativity, ingenuity, and ownership. People do well here when they bring their own ideas and see them through, from first question to publication. Programming, statistics, imaging, and mechanics can all be learned in the lab.</p>
   </div>
 </section>
 
@@ -96,9 +97,9 @@
 <section class="join">
   <div class="wrap" style="text-align:center;">
     
-    <h2 style="margin: 12px 0 16px;">How to apply</h2>
-    <p class="jl" style="margin: 0 auto 28px;">Read through the research and find what you would want to work on, then send the short application form. If there is a fit, we will talk it through and settle on the right project.</p>
-    <a href="https://forms.gle/bK2tjyAQ835LVkv39" target="_blank" rel="noopener" class="btn btn-light">Open the application form</a>
+    <h2 style="margin: 12px 0 16px;" data-cms="apply_heading">How to apply</h2>
+    <p class="jl" style="margin: 0 auto 28px;" data-cms="apply_text">Read through the research and find what you would want to work on, then send the short application form. If there is a fit, we will talk it through and settle on the right project.</p>
+    <a href="https://forms.gle/bK2tjyAQ835LVkv39" target="_blank" rel="noopener" class="btn btn-light" data-cms="apply_form_button">Open the application form</a>
   </div>
 </section>
 

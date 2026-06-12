@@ -1,0 +1,42 @@
+{
+  "page_title": "The lab",
+  "page_intro": "Surgeons, medical students, engineers, data scientists, and visiting scholars work here as collaborators, not assistants. Members publish their own work, present it at national meetings, and mentor the people who follow.",
+
+  "pi_name": "Professor Stefano A. Bini, MD",
+  "pi_bio1": "Dr. Bini is an orthopaedic surgeon specializing in hip and knee replacement, and a leading figure in surgical technology. His career has centered on bringing operating-room robotics, machine learning, and sensor data into clinical practice, through collaborations spanning Google to Milan. He founded DOCSF, the annual San Francisco conference where surgeons, engineers, and founders shape the digital future of musculoskeletal care.",
+  "pi_bio2": "He oversees the lab on the same principle, encouraging surgeons, students, and engineers to work as equals and giving trainees the responsibility to lead their own projects.",
+
+  "leadership_heading": "Leadership",
+  "leadership": [
+    { "name": "Matt Allen", "role": "Lab co-lead · MS3, UCSF School of Medicine" },
+    { "name": "Richard Liu", "role": "Lab co-lead · MS3, Touro School of Medicine" },
+    { "name": "Lorenzo Lucchetta", "role": "Lab director · Attending orthopaedic surgeon, Università di Perugia" }
+  ],
+
+  "projects_heading": "Project leadership",
+  "project_team": [
+    { "name": "Nathan Robbins", "role": "MS1, UCSF School of Medicine · Hormone therapy & greater trochanteric pain" },
+    { "name": "Izzy LeKander", "role": "MS1, UCSF School of Medicine · Hormone therapy timing & trochanteric pain" },
+    { "name": "Izzy Chris", "role": "MS1, Rush Medical College" },
+    { "name": "Jack Pearce", "role": "MS1, University of Vermont · Losartan & recurrent gluteus medius tears" },
+    { "name": "Andy Fabian", "role": "MS1, UCSF School of Medicine · Gluteus medius outcome measures review" },
+    { "name": "Aislin Suzuki", "role": "Undergraduate, UC Berkeley · Subsurface abductor tears" },
+    { "name": "Lorenzo Bazzani", "role": "MS1, University of Central Florida · Weight-bearing protocols after hip replacement" },
+    { "name": "Olivia Freedhand", "role": "Undergraduate, Lehigh University · Postoperative urinary retention" },
+    { "name": "Matteo Pilotti", "role": "Visiting scholar, Politecnico di Milano · Robotic knee replacement" }
+  ],
+
+  "alumni_heading": "Where people go next",
+  "alumni_text": "As members move on to residency, graduate programs, and industry, we'll list them here with where they landed.",
+
+  "collab_heading": "Who we work with",
+  "collaborators": [
+    { "name": "UCSF Department of Orthopaedic Surgery", "role": "Clinical site" },
+    { "name": "Politecnico di Milano", "role": "Visiting scholars in robotics and biomechanics" },
+    { "name": "Touro University California", "role": "Clinical research collaboration" },
+    { "name": "Università di Perugia", "role": "Orthopaedics and traumatology" },
+    { "name": "DOCSF", "role": "Digital Orthopaedics Conference San Francisco network" }
+  ],
+
+  "join_cta": "The lab takes new members on a rolling basis. See how to join."
+}

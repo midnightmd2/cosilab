@@ -1,17 +1,150 @@
 # Pages CMS configuration — https://pagescms.org
-# Connect this repo at https://app.pagescms.org and edit text in a form.
+# Connect this repo at https://app.pagescms.org to edit all site text in a form.
 content:
   - name: home
-    label: Homepage text
+    label: Homepage
     type: file
-    path: content.json
+    path: content/home.json
     fields:
-      - name: home
-        label: Homepage
+      - { name: hero_line1, label: Hero headline — line 1, type: string }
+      - { name: hero_line2, label: Hero headline — line 2 (italic), type: string }
+      - { name: lede, label: Intro paragraph, type: text }
+      - { name: bone_caption, label: Caption under the 3D bone, type: string }
+      - { name: manifesto1, label: "Manifesto — line 1", type: text }
+      - { name: manifesto2, label: "Manifesto — line 2 (use *stars* to italicise)", type: text }
+      - { name: research_heading, label: "Research section — heading", type: string }
+      - { name: research_intro, label: "Research section — intro", type: text }
+      - { name: prog1_title, label: "Program 1 — title", type: string }
+      - { name: prog1_desc, label: "Program 1 — description", type: text }
+      - { name: prog2_title, label: "Program 2 — title", type: string }
+      - { name: prog2_desc, label: "Program 2 — description", type: text }
+      - { name: prog3_title, label: "Program 3 — title", type: string }
+      - { name: prog3_desc, label: "Program 3 — description", type: text }
+      - { name: prog4_title, label: "Program 4 — title", type: string }
+      - { name: prog4_desc, label: "Program 4 — description", type: text }
+      - { name: prog5_title, label: "Program 5 — title", type: string }
+      - { name: prog5_desc, label: "Program 5 — description", type: text }
+      - { name: work_heading, label: "Selected work — heading", type: string }
+      - { name: work1_title, label: "Work 1 — title", type: text }
+      - { name: work1_desc, label: "Work 1 — description", type: text }
+      - { name: work2_title, label: "Work 2 — title", type: text }
+      - { name: work2_desc, label: "Work 2 — description", type: text }
+      - { name: work3_title, label: "Work 3 — title", type: text }
+      - { name: work3_desc, label: "Work 3 — description", type: text }
+      - { name: involve_heading, label: "Get involved — heading", type: string }
+      - { name: involve1_title, label: "Get involved — card 1 title", type: string }
+      - { name: involve1_desc, label: "Get involved — card 1 text", type: text }
+      - { name: involve2_title, label: "Get involved — card 2 title", type: string }
+      - { name: involve2_desc, label: "Get involved — card 2 text", type: text }
+
+  - name: research
+    label: Research
+    type: file
+    path: content/research.json
+    fields:
+      - { name: page_title, label: Page title, type: string }
+      - { name: page_intro, label: Page intro, type: text }
+      - { name: a1_title, label: "Area 1 — title", type: string }
+      - { name: a1_p1, label: "Area 1 — paragraph 1", type: text }
+      - { name: a1_p2, label: "Area 1 — paragraph 2", type: text }
+      - { name: a2_title, label: "Area 2 — title", type: string }
+      - { name: a2_p1, label: "Area 2 — paragraph 1", type: text }
+      - { name: a2_p2, label: "Area 2 — paragraph 2", type: text }
+      - { name: a3_title, label: "Area 3 — title", type: string }
+      - { name: a3_p1, label: "Area 3 — paragraph 1", type: text }
+      - { name: a3_p2, label: "Area 3 — paragraph 2", type: text }
+      - { name: a4_title, label: "Area 4 — title", type: string }
+      - { name: a4_p1, label: "Area 4 — paragraph 1", type: text }
+      - { name: a4_p2, label: "Area 4 — paragraph 2", type: text }
+      - { name: a5_title, label: "Area 5 — title", type: string }
+      - { name: a5_p1, label: "Area 5 — paragraph 1", type: text }
+      - { name: a5_p2, label: "Area 5 — paragraph 2", type: text }
+      - { name: open_heading, label: "Open problems — heading", type: string }
+
+  - name: people
+    label: People
+    type: file
+    path: content/people.json
+    fields:
+      - { name: page_title, label: Page title, type: string }
+      - { name: page_intro, label: Page intro, type: text }
+      - { name: pi_name, label: "PI — name", type: string }
+      - { name: pi_bio1, label: "PI — bio paragraph 1", type: text }
+      - { name: pi_bio2, label: "PI — bio paragraph 2", type: text }
+      - { name: leadership_heading, label: "Leadership — heading", type: string }
+      - name: leadership
+        label: Leadership
         type: object
+        list: true
         fields:
-          - { name: hero_line1, label: Hero headline — line 1, type: string }
-          - { name: hero_line2, label: Hero headline — line 2 (italic), type: string }
-          - { name: lede, label: Intro paragraph, type: text }
-          - { name: bone_caption, label: Caption under the 3D bone, type: string }
-          - { name: manifesto1, label: "Manifesto — first line", type: text }
+          - { name: name, label: Name, type: string }
+          - { name: role, label: Role, type: string }
+      - { name: projects_heading, label: "Project leadership — heading", type: string }
+      - name: project_team
+        label: Project leadership
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: role, label: Role, type: string }
+      - { name: alumni_heading, label: "Alumni — heading", type: string }
+      - { name: alumni_text, label: "Alumni — text", type: text }
+      - { name: collab_heading, label: "Collaborators — heading", type: string }
+      - name: collaborators
+        label: Collaborators
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: role, label: Role, type: string }
+
+  - name: partnerships
+    label: Partnerships
+    type: file
+    path: content/partnerships.json
+    fields:
+      - { name: page_title, label: Page title, type: string }
+      - { name: page_intro, label: Page intro, type: text }
+      - { name: worked_heading, label: "Who we've worked with — heading", type: string }
+      - { name: google_role, label: "Google — role", type: string }
+      - { name: conmed_role, label: "ConMed — role", type: string }
+      - { name: models_heading, label: "Partnership models — heading", type: string }
+      - { name: model1_tag, label: "Model 1 — tag", type: string }
+      - { name: model1_title, label: "Model 1 — title", type: string }
+      - { name: model1_desc, label: "Model 1 — description", type: text }
+      - { name: model2_tag, label: "Model 2 — tag", type: string }
+      - { name: model2_title, label: "Model 2 — title", type: string }
+      - { name: model2_desc, label: "Model 2 — description", type: text }
+      - { name: model3_tag, label: "Model 3 — tag", type: string }
+      - { name: model3_title, label: "Model 3 — title", type: string }
+      - { name: model3_desc, label: "Model 3 — description", type: text }
+      - { name: cta_heading, label: "Contact — heading", type: string }
+      - { name: cta_text, label: "Contact — text", type: text }
+      - { name: cta_button, label: "Contact — button label", type: string }
+
+  - name: join
+    label: Join
+    type: file
+    path: content/join.json
+    fields:
+      - { name: page_title, label: Page title, type: string }
+      - { name: page_intro, label: Page intro, type: text }
+      - { name: apply_button, label: "Apply button label (top)", type: string }
+      - { name: recruit_heading, label: "Who we recruit — heading", type: string }
+      - { name: level1_title, label: "Level 1 — title", type: string }
+      - { name: level1_desc, label: "Level 1 — description", type: text }
+      - { name: level1_meta, label: "Level 1 — meta", type: string }
+      - { name: level2_title, label: "Level 2 — title", type: string }
+      - { name: level2_desc, label: "Level 2 — description", type: text }
+      - { name: level2_meta, label: "Level 2 — meta", type: string }
+      - { name: level3_title, label: "Level 3 — title", type: string }
+      - { name: level3_desc, label: "Level 3 — description", type: text }
+      - { name: level3_meta, label: "Level 3 — meta", type: string }
+      - { name: level4_title, label: "Level 4 — title", type: string }
+      - { name: level4_desc, label: "Level 4 — description", type: text }
+      - { name: level4_meta, label: "Level 4 — meta", type: string }
+      - { name: values_heading, label: "What we value — heading", type: string }
+      - { name: values_text, label: "What we value — text", type: text }
+      - { name: apply_heading, label: "How to apply — heading", type: string }
+      - { name: apply_text, label: "How to apply — text", type: text }
+      - { name: apply_form_button, label: "Application button label", type: string }
