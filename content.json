@@ -3,7 +3,6 @@
     "hero_line1": "The future of orthopaedics",
     "hero_line2": "is computational",
     "lede": "COSI is a research lab led by Professor Stefano A. Bini, MD. We use machine learning, population-scale clinical data, biomechanical simulation, and surgical robotics to change how hip and knee surgery is studied, planned, and performed.",
-    "bone_caption": "Derived from a machine-learning segmentation of an MRI hip scan.",
-    "manifesto1": "Surgical robots log every cut and every gap. Record networks hold the histories of tens of millions of patients. A tendon repair can be simulated before the incision is made."
+    "bone_caption": "Derived from a machine-learning segmentation of an MRI hip scan."
   }
 }
