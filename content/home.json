@@ -31,5 +31,26 @@
   "involve1_title": "Students & researchers",
   "involve1_desc": "Take on research with real clinical impact, publish it, and work alongside talented engineers and clinicians.",
   "involve2_title": "Industry",
-  "involve2_desc": "Pilot technology with the surgeons who will use it and a lab that will measure whether it works."
+  "involve2_desc": "Pilot technology with the surgeons who will use it and a lab that will measure whether it works.",
+  "news_heading": "Lab news",
+  "news": [
+    {
+      "date": "2026",
+      "cat": "Conference",
+      "text": "DOCSF, the Digital Orthopaedics Conference founded by our principal investigator, returns to San Francisco.",
+      "link": "https://docsf.health"
+    },
+    {
+      "date": "Sep 2025",
+      "cat": "Publication",
+      "text": "Our first peer-reviewed paper, a systematic review of biologic augmentation in gluteus medius tendon repair, appears in Orthopaedic Reviews.",
+      "link": "https://doi.org/10.52965/001c.143293"
+    },
+    {
+      "date": "Ongoing",
+      "cat": "Recruiting",
+      "text": "We are taking on students, residents, and collaborators on a rolling basis.",
+      "link": "join.html"
+    }
+  ]
 }

@@ -41,6 +41,11 @@
           return '<div class="member"><div class="avatar">' + face + '</div><div class="name">' + esc(it.name || '') + '</div><div class="role">' + rich(it.role || '') + '</div></div>';
         }
         if (tpl === 'collab') return '<div class="collab"><div class="name">' + esc(it.name || '') + '</div><div class="role">' + rich(it.role || '') + '</div></div>';
+        if (tpl === 'news') {
+          var ntext = rich(it.text || '');
+          if (it.link && String(it.link).trim()) ntext = '<a href="' + esc(String(it.link).trim()) + '"' + (/^https?:/.test(it.link) ? ' target="_blank" rel="noopener"' : '') + '>' + ntext + '</a>';
+          return '<div class="news-item"><div class="date">' + esc(it.date || '') + '</div><div class="body">' + (it.cat ? '<span class="cat">' + esc(it.cat) + '</span>' : '') + ntext + '</div></div>';
+        }
         if (tpl === 'pub') {
           var link = it.link && String(it.link).trim();
           var title = link ? '<a href="' + esc(link) + '" target="_blank" rel="noopener">' + rich(it.title || '') + '</a>' : rich(it.title || '');

@@ -27,9 +27,9 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css?v=27">
+<link rel="stylesheet" href="styles.css?v=28">
 <link rel="stylesheet" href="home.css?v=23">
-<script defer src="cms.js?v=5"></script>
+<script defer src="cms.js?v=6"></script>
 <link rel="preload" href="femur_mesh.json?v=22" as="fetch" crossorigin>
 <link rel="preload" href="femur_slices.json?v=22" as="fetch" crossorigin>
 <script type="importmap">
@@ -167,6 +167,18 @@
   </div>
 </section>
 
+<!-- ============ Lab news ============ -->
+<section id="news" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head"><div><h2 data-cms="news_heading">Lab news</h2></div></div>
+    <div data-cms-list="news" data-cms-tpl="news">
+      <div class="news-item"><div class="date">2026</div><div class="body"><span class="cat">Conference</span><a href="https://docsf.health" target="_blank" rel="noopener">DOCSF, the Digital Orthopaedics Conference founded by our principal investigator, returns to San Francisco.</a></div></div>
+      <div class="news-item"><div class="date">Sep 2025</div><div class="body"><span class="cat">Publication</span><a href="https://doi.org/10.52965/001c.143293" target="_blank" rel="noopener">Our first peer-reviewed paper, a systematic review of biologic augmentation in gluteus medius tendon repair, appears in Orthopaedic Reviews.</a></div></div>
+      <div class="news-item"><div class="date">Ongoing</div><div class="body"><span class="cat">Recruiting</span><a href="join.html">We are taking on students, residents, and collaborators on a rolling basis.</a></div></div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ Get involved ============ -->
 <section class="band home-cta">
   <div class="wrap">
@@ -191,13 +203,18 @@
 <footer>
   <div class="wrap">
     <div class="foot-grid">
-      <div class="aff"><strong>COSI Lab</strong>Computational Orthopaedics &amp; Surgical Innovation. A research laboratory based in San Francisco.</div>
+      <div class="aff"><strong>COSI Lab</strong>Computational Orthopaedics &amp; Surgical Innovation. A research laboratory in the UCSF Department of Orthopaedic Surgery, San Francisco.</div>
       <nav>
         <a href="research.html">Current research</a>
         <a href="publications.html">Publications</a>
         <a href="industry.html">Partnerships</a>
         <a href="people.html">People</a>
         <a href="join.html">Join the lab</a>
+      </nav>
+      <nav aria-label="Connect" class="foot-connect">
+        <a href="https://orthosurgery.ucsf.edu" target="_blank" rel="noopener">UCSF Orthopaedic Surgery</a>
+        <a href="https://docsf.health" target="_blank" rel="noopener">DOCSF</a>
+        <a href="https://forms.gle/bK2tjyAQ835LVkv39" target="_blank" rel="noopener">Work with us</a>
       </nav>
     </div>
     <div class="fineprint">&copy; 2026 COSI LAB · <a href="https://docsf.health" target="_blank" rel="noopener">DOCSF</a></div>

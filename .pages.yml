@@ -39,6 +39,16 @@ content:
       - { name: involve1_desc, label: "Get involved — card 1 text", type: text }
       - { name: involve2_title, label: "Get involved — card 2 title", type: string }
       - { name: involve2_desc, label: "Get involved — card 2 text", type: text }
+      - { name: news_heading, label: "Lab news — heading", type: string }
+      - name: news
+        label: "Lab news (newest first)"
+        type: object
+        list: true
+        fields:
+          - { name: date, label: "Date (e.g. Sep 2025)", type: string }
+          - { name: cat, label: "Category tag", type: string }
+          - { name: text, label: "Item text", type: text }
+          - { name: link, label: "Link (URL or page, optional)", type: string }
 
   - name: research
     label: Research
@@ -157,6 +167,7 @@ content:
       - { name: pi_bio1, label: "PI — bio paragraph 1", type: text }
       - { name: pi_bio2, label: "PI — bio paragraph 2", type: text }
       - { name: pi_bio3, label: "PI — bio paragraph 3", type: text }
+      - { name: pi_honors, label: "PI — selected honors (one per line)", type: text }
       - { name: leadership_heading, label: "Leadership — heading", type: string }
       - name: leadership
         label: Leadership
