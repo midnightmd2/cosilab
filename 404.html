@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#052049">
 <title>Page not found — COSI Lab</title>
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,15 @@
 
 <header>
   <div class="wrap nav">
-    <a href="/" class="wm-link" aria-label="COSI Lab home"><svg class="wm-lock" viewBox="0 0 110 40" aria-hidden="true" focusable="false"><text class="l1" x="0" y="17" textLength="110" lengthAdjust="spacing">COSI LAB</text><text class="l2" x="0" y="29.5" textLength="110" lengthAdjust="spacing">Computational Orthopaedics</text><text class="l2" x="0" y="39.5" textLength="110" lengthAdjust="spacing">and Surgical Innovation</text></svg></a>
+    <a href="index.html" class="wm-link" aria-label="COSI Lab home"><svg class="wm-lock" viewBox="0 0 110 40" aria-hidden="true" focusable="false"><text class="l1" x="0" y="17" textLength="110" lengthAdjust="spacing">COSI LAB</text><text class="l2" x="0" y="29.5" textLength="110" lengthAdjust="spacing">Computational Orthopaedics</text><text class="l2" x="0" y="39.5" textLength="110" lengthAdjust="spacing">and Surgical Innovation</text></svg></a>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
+    <nav class="links" id="primary-nav">
+      <a href="research.html">Current research</a>
+      <a href="publications.html">Publications</a>
+      <a href="industry.html">Partnerships</a>
+      <a href="people.html">People</a>
+      <a href="join.html" class="btn btn-solid">Join the lab</a>
+    </nav>
   </div>
 </header>
 
@@ -24,10 +33,28 @@
 <section style="padding: clamp(96px, 18vh, 200px) 0;">
   <div class="wrap" style="text-align: center;">
     <h1 style="margin-bottom: 18px;">Page not found</h1>
-    <p class="thesis" style="margin: 0 auto 32px; max-width: 44ch;">The page you're looking for doesn't exist or has moved.</p>
-    <a href="/" class="btn btn-solid">Back to the homepage</a>
+    <p class="thesis" style="margin: 0 auto 32px; max-width: 44ch;">The page you're looking for doesn't exist or has moved. Try one of the links below.</p>
+    <a href="index.html" class="btn btn-solid">Back to the homepage</a>
   </div>
 </section>
 </main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="aff"><strong>COSI Lab</strong>Computational Orthopaedics &amp; Surgical Innovation. A research laboratory based in San Francisco.</div>
+      <nav>
+        <a href="research.html">Current research</a>
+        <a href="publications.html">Publications</a>
+        <a href="industry.html">Partnerships</a>
+        <a href="people.html">People</a>
+        <a href="join.html">Join the lab</a>
+      </nav>
+    </div>
+    <div class="fineprint">&copy; 2026 COSI LAB · <a href="https://docsf.health" target="_blank" rel="noopener">DOCSF</a></div>
+  </div>
+</footer>
+
+<script src="site.js?v=22"></script>
 </body>
 </html>
