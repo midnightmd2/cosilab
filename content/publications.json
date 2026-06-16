@@ -1,0 +1,59 @@
+{
+  "page_title": "Publications",
+  "page_intro": "The lab is young and much of its work is still in progress. Below are its first peer-reviewed publications, followed by selected work from the principal investigator that shapes the lab's direction. Each entry links to the published article.",
+  "lab_heading": "From the lab",
+  "lab_pubs": [
+    {
+      "title": "Comparative efficacy of biologic augmentations in gluteus medius tendon repair is lacking: a systematic review",
+      "authors": "Liu Y, Allen M, Kumar R, Bini SA",
+      "meta": "Hip & abductor tendon · Orthopaedic Reviews (Pavia) · 2025",
+      "area": "hip",
+      "link": "https://doi.org/10.52965/001c.143293"
+    }
+  ],
+  "pi_heading": "Selected work by the principal investigator",
+  "pi_pubs": [
+    {
+      "title": "Artificial intelligence, machine learning, deep learning, and cognitive computing: what do these terms mean and how will they impact health care?",
+      "authors": "Bini SA",
+      "meta": "AI & digital health · The Journal of Arthroplasty · 2018",
+      "area": "ai",
+      "link": "https://doi.org/10.1016/j.arth.2018.02.067"
+    },
+    {
+      "title": "Digital orthopaedics: a glimpse into the future in the midst of a pandemic",
+      "authors": "Bini SA, Schilling PL, Patel SP, et al.",
+      "meta": "AI & digital health · The Journal of Arthroplasty · 2020",
+      "area": "ai",
+      "link": "https://doi.org/10.1016/j.arth.2020.04.048"
+    },
+    {
+      "title": "Unlocking gait analysis beyond the gait lab: high-fidelity replication of knee kinematics using inertial motion units and a convolutional neural network",
+      "authors": "Bini SA, Gillian N, Peterson TA, Souza RB, et al.",
+      "meta": "Sensors & machine learning · Arthroplasty Today · 2025",
+      "area": "ai",
+      "link": "https://doi.org/10.1016/j.artd.2025.101656"
+    },
+    {
+      "title": "Clinical outcomes of hip abductor repair using transosseous sutures versus suture anchors: a systematic review and meta-analysis",
+      "authors": "Portela-Parra E, Sappey-Marinier E, Julian K, Bini SA",
+      "meta": "Hip & abductor tendon · Orthopaedic Journal of Sports Medicine · 2025",
+      "area": "hip",
+      "link": "https://doi.org/10.1177/23259671241290320"
+    },
+    {
+      "title": "The microbiome of osteoarthritic hip and knee joints: a prospective multicenter investigation",
+      "authors": "Goswami K, Clarkson S, … Bini SA, … Parvizi J",
+      "meta": "Arthroplasty & outcomes · Journal of Bone and Joint Surgery (Am) · 2023",
+      "area": "arthro",
+      "link": "https://doi.org/10.2106/JBJS.22.00594"
+    },
+    {
+      "title": "Management of periprosthetic fractures around cemented femoral stems: osteosynthesis and revision strategies",
+      "authors": "Kwong JW, Politzer CS, Bini SA, Toogood P, Diaz-Ledezma C",
+      "meta": "Arthroplasty & outcomes · EFORT Open Reviews · 2026",
+      "area": "arthro",
+      "link": "https://doi.org/10.1530/EOR-2024-0205"
+    }
+  ]
+}

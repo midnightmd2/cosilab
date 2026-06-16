@@ -23,13 +23,33 @@
       if (v.trim()) { el.innerHTML = rich(v); el.hidden = false; }
       else { el.textContent = ''; el.hidden = true; }
     });
+    document.querySelectorAll('[data-cms-img]').forEach(function (el) {
+      var v = d[el.getAttribute('data-cms-img')];
+      if (typeof v === 'string' && v.trim()) {
+        el.innerHTML = '<img src="' + esc(v.trim()) + '" alt="' + esc(el.getAttribute('data-alt') || '') + '">';
+      } /* else keep the baked-in initials */
+    });
     document.querySelectorAll('[data-cms-list]').forEach(function (box) {
       var arr = d[box.getAttribute('data-cms-list')];
       if (!Array.isArray(arr)) return;
       var tpl = box.getAttribute('data-cms-tpl');
       box.innerHTML = arr.map(function (it) {
-        if (tpl === 'member') return '<div class="member"><div class="avatar">' + esc(initials(it.name || '')) + '</div><div class="name">' + esc(it.name || '') + '</div><div class="role">' + rich(it.role || '') + '</div></div>';
+        if (tpl === 'member') {
+          var face = (it.photo && String(it.photo).trim())
+            ? '<img src="' + esc(String(it.photo).trim()) + '" alt="' + esc(it.name || '') + '" loading="lazy">'
+            : esc(initials(it.name || ''));
+          return '<div class="member"><div class="avatar">' + face + '</div><div class="name">' + esc(it.name || '') + '</div><div class="role">' + rich(it.role || '') + '</div></div>';
+        }
         if (tpl === 'collab') return '<div class="collab"><div class="name">' + esc(it.name || '') + '</div><div class="role">' + rich(it.role || '') + '</div></div>';
+        if (tpl === 'pub') {
+          var link = it.link && String(it.link).trim();
+          var title = link ? '<a href="' + esc(link) + '" target="_blank" rel="noopener">' + rich(it.title || '') + '</a>' : rich(it.title || '');
+          return '<div class="pub" data-area="' + esc(it.area || '') + '">' +
+            '<div class="pt">' + title + '</div>' +
+            (it.authors ? '<div class="pa">' + rich(it.authors) + '</div>' : '') +
+            (it.meta ? '<div class="pm">' + rich(it.meta) + '</div>' : '') +
+            '</div>';
+        }
         if (tpl === 'study') return '<div class="example"><span class="tag">' + esc(it.tag || '') + '</span><span class="t">' + rich(it.text || '') + '</span></div>';
         if (tpl === 'problem') return '<div class="problem"><div><h3>' + esc(it.title || '') + '</h3><p>' + rich(it.desc || '') + '</p>' + (it.needs ? '<span class="needs">' + rich(it.needs) + '</span>' : '') + '</div></div>';
         return '';

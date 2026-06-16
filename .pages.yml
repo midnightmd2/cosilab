@@ -114,6 +114,36 @@ content:
           - { name: desc, label: Description, type: text }
           - { name: needs, label: "Data / methods line", type: string }
 
+  - name: publications
+    label: Publications
+    type: file
+    path: content/publications.json
+    fields:
+      - { name: page_title, label: Page title, type: string }
+      - { name: page_intro, label: Page intro, type: text }
+      - { name: lab_heading, label: "Lab publications — heading", type: string }
+      - name: lab_pubs
+        label: "Lab publications"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: text }
+          - { name: authors, label: Authors, type: string }
+          - { name: meta, label: "Venue line (topic · journal · year)", type: string }
+          - { name: area, label: "Area key (hip / ai / arthro)", type: string }
+          - { name: link, label: "Link (DOI or URL)", type: string }
+      - { name: pi_heading, label: "PI publications — heading", type: string }
+      - name: pi_pubs
+        label: "Principal investigator — selected work"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: text }
+          - { name: authors, label: Authors, type: string }
+          - { name: meta, label: "Venue line (topic · journal · year)", type: string }
+          - { name: area, label: "Area key (hip / ai / arthro)", type: string }
+          - { name: link, label: "Link (DOI or URL)", type: string }
+
   - name: people
     label: People
     type: file
@@ -123,8 +153,10 @@ content:
       - { name: page_intro, label: Page intro, type: text }
       - { name: pi_name, label: "PI — name", type: string }
       - { name: pi_role, label: "PI — title block (one per line)", type: text }
+      - { name: pi_photo, label: "PI — photo (square; leave empty for initials)", type: image, media: images }
       - { name: pi_bio1, label: "PI — bio paragraph 1", type: text }
       - { name: pi_bio2, label: "PI — bio paragraph 2", type: text }
+      - { name: pi_bio3, label: "PI — bio paragraph 3", type: text }
       - { name: leadership_heading, label: "Leadership — heading", type: string }
       - name: leadership
         label: Leadership
@@ -133,6 +165,7 @@ content:
         fields:
           - { name: name, label: Name, type: string }
           - { name: role, label: Role, type: string }
+          - { name: photo, label: "Photo (square; leave empty for initials)", type: image, media: images }
       - { name: projects_heading, label: "Project leadership — heading", type: string }
       - name: project_team
         label: Project leadership
@@ -141,6 +174,7 @@ content:
         fields:
           - { name: name, label: Name, type: string }
           - { name: role, label: Role, type: string }
+          - { name: photo, label: "Photo (square; leave empty for initials)", type: image, media: images }
       - { name: alumni_heading, label: "Alumni — heading", type: string }
       - { name: alumni_text, label: "Alumni — text", type: text }
       - { name: collab_heading, label: "Collaborators — heading", type: string }
@@ -198,3 +232,13 @@ content:
       - { name: apply_heading, label: "How to apply — heading", type: string }
       - { name: apply_text, label: "How to apply — text", type: text }
       - { name: apply_form_button, label: "Application button label", type: string }
+
+# Image uploads (member and PI photos). The CMS saves uploads into /images and
+# stores their path in the photo fields above.
+media:
+  name: images
+  label: Images
+  input: images
+  output: /images
+  extensions: [png, jpg, jpeg, webp, gif, svg]
+  categories: [image]
