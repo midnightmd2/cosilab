@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://thecosilab.org/</loc></url>
-  <url><loc>https://thecosilab.org/research.html</loc></url>
-  <url><loc>https://thecosilab.org/publications.html</loc></url>
-  <url><loc>https://thecosilab.org/industry.html</loc></url>
-  <url><loc>https://thecosilab.org/people.html</loc></url>
-  <url><loc>https://thecosilab.org/join.html</loc></url>
+  <url><loc>https://cosilab.ucsf.edu/</loc></url>
+  <url><loc>https://cosilab.ucsf.edu/research.html</loc></url>
+  <url><loc>https://cosilab.ucsf.edu/publications.html</loc></url>
+  <url><loc>https://cosilab.ucsf.edu/industry.html</loc></url>
+  <url><loc>https://cosilab.ucsf.edu/people.html</loc></url>
+  <url><loc>https://cosilab.ucsf.edu/join.html</loc></url>
 </urlset>
