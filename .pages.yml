@@ -229,6 +229,17 @@ content:
       - { name: page_title, label: Page title, type: string }
       - { name: page_intro, label: Page intro, type: text }
       - { name: apply_button, label: "Apply button label (top)", type: string }
+      - { name: openings_heading, label: "Open positions — heading", type: string }
+      - name: openings
+        label: "Open positions (clear when filled)"
+        type: object
+        list: true
+        fields:
+          - { name: tag, label: "Tag (e.g. UCSF · Paid)", type: string }
+          - { name: title, label: "Position title", type: string }
+          - { name: detail, label: "Description", type: text }
+          - { name: cta, label: "Button label", type: string }
+          - { name: link, label: "Link to posting", type: string }
       - { name: recruit_heading, label: "Who we recruit — heading", type: string }
       - { name: level1_title, label: "Level 1 — title", type: string }
       - { name: level1_desc, label: "Level 1 — description", type: text }

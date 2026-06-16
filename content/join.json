@@ -2,6 +2,16 @@
   "page_title": "Join the lab",
   "page_intro": "We recruit undergraduates, medical students, orthopaedic residents and fellows, and postdoctoral collaborators on a rolling basis. You will own real projects and see them through to publication, working alongside skilled clinicians and engineers.",
   "apply_button": "Apply to join",
+  "openings_heading": "Open positions",
+  "openings": [
+    {
+      "tag": "UCSF · Paid · 12-month appointment",
+      "title": "Junior Specialist, Clinical Research",
+      "detail": "Support clinical and computational research in the COSI Lab: study coordination, data analysis, and manuscript development, in the UCSF Department of Orthopaedic Surgery. Suited to someone planning a path into orthopaedics, digital health, or surgical innovation.",
+      "cta": "View the UCSF posting",
+      "link": "https://aprecruit.ucsf.edu/JPF06090"
+    }
+  ],
   "recruit_heading": "Who we recruit",
   "level1_title": "Undergraduates",
   "level1_desc": "You take on a defined part of a study with close mentorship, and learn data handling, the literature, and how a question becomes a result. Sustained contributors earn authorship.",
