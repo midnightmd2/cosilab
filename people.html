@@ -25,7 +25,7 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css?v=26">
-<script defer src="cms.js?v=4"></script>
+<script defer src="cms.js?v=5"></script>
 </head>
 <body data-content="content/people.json">
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -38,6 +38,7 @@
     <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav"><span></span></button>
     <nav class="links" id="primary-nav">
       <a href="research.html">Current research</a>
+      <a href="publications.html">Publications</a>
       <a href="industry.html">Partnerships</a>
       <a href="people.html" class="active">People</a>
       <a href="join.html" class="btn btn-solid">Join the lab</a>
@@ -59,13 +60,14 @@
 <section style="padding-top: 56px; padding-bottom: 24px;">
   <div class="wrap">
     <div class="pi-feature">
-      <div class="headshot">SB</div>
+      <div class="headshot" data-cms-img="pi_photo" data-alt="Stefano A. Bini, MD">SB</div>
       <div>
         <h3 data-cms="pi_name">Professor Stefano A. Bini, MD</h3>
-        <div class="role" data-cms="pi_role">PRINCIPAL INVESTIGATOR<br>MARIA MANETTI SHREM ENDOWED PROFESSOR<br>CHIEF TECHNOLOGY OFFICER, UCSF ORTHOPAEDIC SURGERY</div>
-        <p data-cms="pi_bio1">Dr. Bini is an orthopaedic surgeon specializing in hip and knee replacement, and a leading figure in surgical technology. His career has centered on bringing operating-room robotics, machine learning, and sensor data into clinical practice, through collaborations spanning Google to Milan. He founded DOCSF, the annual San Francisco conference where surgeons, engineers, and founders shape the digital future of musculoskeletal care.</p>
-        <p data-cms="pi_bio2">He oversees the lab on the same principle, encouraging surgeons, students, and engineers to work as equals and giving trainees the responsibility to lead their own projects.</p>
-        <p style="font-size:13.5px;"><a href="https://orthosurgery.ucsf.edu/patient-care/faculty/stefano-bini" target="_blank" rel="noopener">UCSF faculty profile</a> &nbsp;·&nbsp; <a href="https://docsf.health" target="_blank" rel="noopener">DOCSF</a></p>
+        <div class="role" data-cms="pi_role">PRINCIPAL INVESTIGATOR, COSI LAB<br>MARIA MANETTI SHREM ENDOWED PROFESSOR<br>PROFESSOR OF ORTHOPAEDIC SURGERY, UCSF<br>CHIEF TECHNOLOGY OFFICER, UCSF ORTHOPAEDIC SURGERY</div>
+        <p data-cms="pi_bio1">Dr. Bini is an orthopaedic surgeon specializing in hip and knee replacement and a leading voice in surgical technology. As Chief Technology Officer of the UCSF Department of Orthopaedic Surgery, he works to bring operating-room robotics, machine learning, and sensor data into everyday clinical practice. His research spans artificial intelligence in orthopaedics, wearable-sensor gait analysis, and the prediction of patient outcomes from routine data, through collaborations that range from Google to surgical-device makers in Milan.</p>
+        <p data-cms="pi_bio2">He trained in orthopaedic surgery at UCSF and completed fellowships at the Rizzoli Institute in Bologna and the University of Florence. Before returning to UCSF in 2014, he led orthopaedic surgery across several Kaiser Permanente medical centers. He founded DOCSF, the annual San Francisco conference where surgeons, engineers, and founders shape the digital future of musculoskeletal care, as well as the Personalized Arthroplasty Society, and serves as Associate Editor for Artificial Intelligence at the Journal of Bone and Joint Surgery.</p>
+        <p data-cms="pi_bio3">He runs the lab on the same principle that has guided his clinical and technical work: surgeons, students, and engineers contribute as equals, and trainees are given the responsibility to lead their own projects from first question to publication.</p>
+        <p style="font-size:13.5px;"><a href="https://orthosurgery.ucsf.edu/patient-care/faculty/stefano-bini" target="_blank" rel="noopener">UCSF faculty profile</a> &nbsp;·&nbsp; <a href="https://profiles.ucsf.edu/stefano.bini" target="_blank" rel="noopener">UCSF Profiles</a> &nbsp;·&nbsp; <a href="https://docsf.health" target="_blank" rel="noopener">DOCSF</a></p>
       </div>
     </div>
   </div>
@@ -76,20 +78,20 @@
   <div class="wrap">
     <div class="section-head"><div><h2 data-cms="leadership_heading">Leadership</h2></div></div>
     <div class="team-grid" data-cms-list="leadership" data-cms-tpl="member">
-      <div class="member"><div class="avatar">MA</div><div class="name">Matt Allen</div><div class="role">Lab co-lead &middot; MS3, UCSF School of Medicine</div></div>
-      <div class="member"><div class="avatar">RL</div><div class="name">Richard Liu</div><div class="role">Lab co-lead &middot; MS3, Touro School of Medicine</div></div>
-      <div class="member"><div class="avatar">LL</div><div class="name">Lorenzo Lucchetta</div><div class="role">Lab director &middot; Attending orthopaedic surgeon, Universit&agrave; di Perugia</div></div>
+      <div class="member"><div class="avatar">MA</div><div class="name">Matt Allen</div><div class="role">Lab co-lead &middot; Medical Student, UCSF School of Medicine</div></div>
+      <div class="member"><div class="avatar">RL</div><div class="name">Richard Liu</div><div class="role">Lab co-lead &middot; Medical Student, Touro School of Medicine</div></div>
+      <div class="member"><div class="avatar">LL</div><div class="name">Lorenzo Lucchetta</div><div class="role">Lab manager &middot; Attending orthopaedic surgeon, Universit&agrave; di Perugia</div></div>
     </div>
 
     <div class="section-head" style="margin-top: 52px;"><div><h2 data-cms="projects_heading">Project leadership</h2></div></div>
     <div class="team-grid" data-cms-list="project_team" data-cms-tpl="member">
-      <div class="member"><div class="avatar">NR</div><div class="name">Nathan Robbins</div><div class="role">MS1, UCSF School of Medicine &middot; Hormone therapy &amp; greater trochanteric pain</div></div>
-      <div class="member"><div class="avatar">IL</div><div class="name">Izzy LeKander</div><div class="role">MS1, UCSF School of Medicine &middot; Hormone therapy timing &amp; trochanteric pain</div></div>
-      <div class="member"><div class="avatar">IC</div><div class="name">Izzy Chris</div><div class="role">MS1, Rush Medical College</div></div>
-      <div class="member"><div class="avatar">JP</div><div class="name">Jack Pearce</div><div class="role">MS1, University of Vermont &middot; Losartan &amp; recurrent gluteus medius tears</div></div>
-      <div class="member"><div class="avatar">AF</div><div class="name">Andy Fabian</div><div class="role">MS1, UCSF School of Medicine &middot; Gluteus medius outcome measures review</div></div>
+      <div class="member"><div class="avatar">NR</div><div class="name">Nathan Robbins</div><div class="role">Medical Student, UCSF School of Medicine &middot; Hormone therapy &amp; greater trochanteric pain</div></div>
+      <div class="member"><div class="avatar">IL</div><div class="name">Izzy LeKander</div><div class="role">Medical Student, UCSF School of Medicine &middot; Hormone therapy timing &amp; trochanteric pain</div></div>
+      <div class="member"><div class="avatar">IC</div><div class="name">Izzy Chris</div><div class="role">Medical Student, Rush Medical College</div></div>
+      <div class="member"><div class="avatar">JP</div><div class="name">Jack Pearce</div><div class="role">Medical Student, University of Vermont &middot; Losartan &amp; recurrent gluteus medius tears</div></div>
+      <div class="member"><div class="avatar">AF</div><div class="name">Andy Fabian</div><div class="role">Medical Student, UCSF School of Medicine &middot; Gluteus medius outcome measures review</div></div>
       <div class="member"><div class="avatar">AS</div><div class="name">Aislin Suzuki</div><div class="role">Undergraduate, UC Berkeley &middot; Subsurface abductor tears</div></div>
-      <div class="member"><div class="avatar">LB</div><div class="name">Lorenzo Bazzani</div><div class="role">MS1, University of Central Florida &middot; Weight-bearing protocols after hip replacement</div></div>
+      <div class="member"><div class="avatar">LB</div><div class="name">Lorenzo Bazzani</div><div class="role">Medical Student, University of Central Florida &middot; Weight-bearing protocols after hip replacement</div></div>
       <div class="member"><div class="avatar">OF</div><div class="name">Olivia Freedhand</div><div class="role">Undergraduate, Lehigh University &middot; Postoperative urinary retention</div></div>
       <div class="member"><div class="avatar">MP</div><div class="name">Matteo Pilotti</div><div class="role">Visiting scholar, Politecnico di Milano &middot; Robotic knee replacement</div></div>
     </div>
@@ -132,6 +134,7 @@
       <div class="aff"><strong>COSI Lab</strong>Computational Orthopaedics &amp; Surgical Innovation. A research laboratory based in San Francisco.</div>
       <nav>
         <a href="research.html">Current research</a>
+        <a href="publications.html">Publications</a>
         <a href="industry.html">Partnerships</a>
         <a href="people.html">People</a>
         <a href="join.html">Join the lab</a>

@@ -3,7 +3,7 @@
   "page_intro": "The lab works in five areas. They are connected: clinical data raises mechanical questions, biomechanical models inform new techniques, those techniques generate new data, and the lab's own software accelerates all of it. Each area is described below with representative studies, followed by the open problems we are actively working on.",
   "a1_title": "Population-scale evidence",
   "a1_methods": "METHODS\nFederated EHR analysis\nPharmacoepidemiology\nCausal inference\nSurvival modeling",
-  "a1_p1": "Randomized trials answer one question at a time and take years. Modern electronic health record networks hold the records of hundreds of millions of patients, enough to conduct otherwise impossible carefully controlled analyses. We build those analyses for musculoskeletal disease.",
+  "a1_p1": "Randomized trials answer one question at a time and take years. Modern electronic health record networks hold the records of hundreds of millions of patients, enough to run carefully controlled analyses that would otherwise be impossible. We build those analyses for musculoskeletal disease.",
   "a1_p2": "The work is methodological as much as clinical: controlling confounding by indication, handling immortal-time and selection bias, and making federated estimates that hold up across institutions. Done well, it turns routine care data into hypotheses worth testing.",
   "a1_studies": [
     {
