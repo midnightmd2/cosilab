@@ -1,6 +1,6 @@
 {
   "page_title": "What we're working on",
-  "page_intro": "The lab works in five areas. They are connected: clinical data raises mechanical questions, biomechanical models inform new techniques, those techniques generate new data, and the lab's own software accelerates all of it. Each area is described below with representative studies, followed by the open problems we are actively working on.",
+  "page_intro": "The lab works in five areas, and they connect. Clinical data raises mechanical questions; the biomechanical models we build to answer them point to new techniques; those techniques generate new data; and the software we write moves all of it faster. Each area below lists representative work and the open problems we are taking on now.",
   "a1_title": "Population-scale evidence",
   "a1_methods": "METHODS\nFederated EHR analysis\nPharmacoepidemiology\nCausal inference\nSurvival modeling",
   "a1_p1": "Randomized trials answer one question at a time and take years. Modern electronic health record networks hold the records of hundreds of millions of patients, enough to run carefully controlled analyses that would otherwise be impossible. We build those analyses for musculoskeletal disease.",

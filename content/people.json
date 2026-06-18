@@ -13,7 +13,7 @@
     {
       "name": "Matt Allen",
       "role": "Lab co-lead · Medical Student, UCSF School of Medicine",
-      "photo": ""
+      "photo": "images/people/matt-allen.jpg"
     },
     {
       "name": "Richard Liu",
@@ -30,12 +30,22 @@
   "project_team": [
     {
       "name": "Nathan Robbins",
-      "role": "Medical Student, UCSF School of Medicine · Hormone therapy & greater trochanteric pain",
-      "photo": ""
+      "role": "Medical Student, UCSF School of Medicine · Hormone therapy and greater trochanteric pain",
+      "photo": "images/people/nathan-robbins.jpg"
+    },
+    {
+      "name": "Rahul Kumar",
+      "role": "Medical Student, UMass Chan Medical School · Gluteus medius tendon repair",
+      "photo": "images/people/rahul-kumar.jpg"
+    },
+    {
+      "name": "Andrew Bouras",
+      "role": "Medical Student, Nova Southeastern University",
+      "photo": "images/people/andrew-bouras.jpg"
     },
     {
       "name": "Izzy LeKander",
-      "role": "Medical Student, UCSF School of Medicine · Hormone therapy timing & trochanteric pain",
+      "role": "Medical Student, UCSF School of Medicine · Hormone therapy timing in trochanteric pain",
       "photo": ""
     },
     {
@@ -45,12 +55,12 @@
     },
     {
       "name": "Jack Pearce",
-      "role": "Medical Student, University of Vermont · Losartan & recurrent gluteus medius tears",
+      "role": "Medical Student, University of Vermont · Losartan and recurrent gluteus medius tears",
       "photo": ""
     },
     {
       "name": "Andy Fabian",
-      "role": "Medical Student, UCSF School of Medicine · Gluteus medius outcome measures review",
+      "role": "Medical Student, UCSF School of Medicine · Gluteus medius outcome measures",
       "photo": ""
     },
     {
@@ -60,7 +70,7 @@
     },
     {
       "name": "Lorenzo Bazzani",
-      "role": "Medical Student, University of Central Florida · Weight-bearing protocols after hip replacement",
+      "role": "Medical Student, University of Central Florida · Weight-bearing after hip replacement",
       "photo": ""
     },
     {
@@ -71,16 +81,6 @@
     {
       "name": "Matteo Pilotti",
       "role": "Visiting scholar, Politecnico di Milano · Robotic knee replacement",
-      "photo": ""
-    },
-    {
-      "name": "Rahul Kumar",
-      "role": "Medical Student, UMass Chan Medical School · Gluteus medius tendon repair",
-      "photo": ""
-    },
-    {
-      "name": "Andrew Bouras",
-      "role": "Medical Student, Nova Southeastern University",
       "photo": ""
     }
   ],
