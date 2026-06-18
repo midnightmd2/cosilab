@@ -1,6 +1,6 @@
 {
   "page_title": "Publications",
-  "page_intro": "Peer-reviewed work from the lab and its principal investigator, spanning hip and knee arthroplasty, surgical robotics, artificial intelligence in orthopaedics, registry and outcomes research, and digital health. Listed most recent first; each entry links to the published article.",
+  "page_intro": "Peer-reviewed work from the lab and its principal investigator in hip and knee arthroplasty, surgical robotics, artificial intelligence in orthopaedics, registry and outcomes research, and digital health.",
   "publications": [
     { "title": "Custom and off-the-shelf large language models routinely misinterpret implant technique guides", "authors": "Woo JJ, Yang AJ, Saboo YS, … Ramkumar PN", "meta": "JB & JS Open Access · 2026", "link": "https://doi.org/10.2106/JBJS.OA.26.00076" },
     { "title": "Management of periprosthetic fractures around cemented femoral stems: osteosynthesis and revision strategies", "authors": "Kwong JW, Politzer CS, Bini SA, Toogood P, Diaz-Ledezma C", "meta": "EFORT Open Reviews · 2026", "link": "https://doi.org/10.1530/EOR-2024-0205" },

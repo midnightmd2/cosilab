@@ -173,8 +173,6 @@ content:
           - { name: name, label: Name, type: string }
           - { name: role, label: Role, type: string }
           - { name: photo, label: "Photo (square; leave empty for initials)", type: image, media: images }
-      - { name: alumni_heading, label: "Alumni — heading", type: string }
-      - { name: alumni_text, label: "Alumni — text", type: text }
       - { name: collab_heading, label: "Collaborators — heading", type: string }
       - name: collaborators
         label: Collaborators
