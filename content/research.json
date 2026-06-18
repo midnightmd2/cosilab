@@ -19,7 +19,7 @@
   "a2_methods": "METHODS\nFinite element analysis\nPatient-specific modeling\nImage-based meshing\nConstitutive modeling",
   "a2_p1": "Some questions are mechanical and cannot be answered by any trial: how a surgical construct shares load, where it concentrates stress, and where it will fail first. We build patient-specific finite element models from clinical imaging to answer them, then tie the predictions back to real outcomes.",
   "a2_p2": "Our current focus is the hip abductors. Tendon repairs fail often, and augmentation with a scaffold is increasingly common without a clear mechanical rationale. We model exactly how a scaffold redistributes load across the repair, patient by patient, to understand who benefits and why.",
-  "a2_fig_caption": "Load to failure: native repair versus scaffold-augmented construct (schematic).",
+  "a2_fig_caption": "How much load a tendon repair holds before it fails, with and without a scaffold.",
   "a2_studies": [
     {
       "tag": "REPRESENTATIVE STUDY",
@@ -30,7 +30,7 @@
   "a3_methods": "METHODS\nRobotic arthroplasty data\nPrediction vs ground truth\nComputer vision\nRegistry linkage",
   "a3_p1": "Robotic platforms for joint replacement record every cut, gap, and alignment angle, an unusually rich, structured stream of intraoperative data. Most of it is never analyzed. We treat the robot's plan as a prediction and test it against what the surgeon actually finds and does.",
   "a3_p2": "The first results are already pointing somewhere useful: as a patient's native coronal deformity increases, the platform systematically underpredicts the medial gap, with direct implications for how the knee is balanced. Measuring and correcting that gap is what this program works on.",
-  "a3_fig_caption": "Interactive and schematic. Drag the slider to see the measured gap diverge from the robot's plan as native deformity grows.",
+  "a3_fig_caption": "Move the slider: the more a knee is bowed before surgery, the more the gap the robot measures differs from the gap it planned.",
   "a3_studies": [
     {
       "tag": "REPRESENTATIVE STUDY",
