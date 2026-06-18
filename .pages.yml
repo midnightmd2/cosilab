@@ -131,27 +131,14 @@ content:
     fields:
       - { name: page_title, label: Page title, type: string }
       - { name: page_intro, label: Page intro, type: text }
-      - { name: lab_heading, label: "Lab publications — heading", type: string }
-      - name: lab_pubs
-        label: "Lab publications"
+      - name: publications
+        label: "Publications (newest first)"
         type: object
         list: true
         fields:
           - { name: title, label: Title, type: text }
           - { name: authors, label: Authors, type: string }
-          - { name: meta, label: "Venue line (topic · journal · year)", type: string }
-          - { name: area, label: "Area key (hip / ai / arthro)", type: string }
-          - { name: link, label: "Link (DOI or URL)", type: string }
-      - { name: pi_heading, label: "PI publications — heading", type: string }
-      - name: pi_pubs
-        label: "Principal investigator — selected work"
-        type: object
-        list: true
-        fields:
-          - { name: title, label: Title, type: text }
-          - { name: authors, label: Authors, type: string }
-          - { name: meta, label: "Venue line (topic · journal · year)", type: string }
-          - { name: area, label: "Area key (hip / ai / arthro)", type: string }
+          - { name: meta, label: "Venue line (journal · year)", type: string }
           - { name: link, label: "Link (DOI or URL)", type: string }
 
   - name: people
