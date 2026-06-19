@@ -1,7 +1,7 @@
 {
   "hero_line1": "The future of orthopaedics",
   "hero_line2": "is computational",
-  "lede": "COSI is a research lab led by Professor Stefano A. Bini, MD\nwithin the UCSF Department of Orthopaedic Surgery. \nWe use machine learning, population-scale clinical data, \nbiomechanical simulation, and surgical robotics to change \nhow hip and knee surgery is studied, planned, and performed.",
+  "lede": "COSI is a research lab led by Professor Stefano A. Bini, MD within the UCSF Department of Orthopaedic Surgery. We use machine learning, population-scale clinical data, biomechanical simulation, and surgical robotics to change how hip and knee surgery is studied, planned, and performed.",
   "bone_caption": "Derived from a machine-learning segmentation of an MRI hip scan.",
   "manifesto2": "The raw material for a new kind of surgery *already exists*. \nOur work turns it into evidence, tools, and technique.",
   "research_heading": "Research programs",

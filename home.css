@@ -7,7 +7,7 @@
 
 /* ---- hero ---- */
 .hero-ed { padding: clamp(64px, 10vh, 130px) 0 clamp(64px, 10vh, 120px); overflow: hidden; }
-.hero-grid2 { display: grid; grid-template-columns: 1.5fr 1fr; gap: clamp(16px, 2vw, 32px); align-items: center; }
+.hero-grid2 { display: grid; grid-template-columns: 1fr 1.12fr; gap: clamp(20px, 3vw, 52px); align-items: center; }
 .hero-title {
   font-family: var(--display); font-weight: 500; color: var(--navy);
   font-size: clamp(44px, 5.6vw, 82px); line-height: 1.06; letter-spacing: -0.018em;
@@ -15,7 +15,7 @@
 }
 .hero-title .hl-line { display: block; }
 .hero-title em { font-style: italic; font-weight: 400; }
-.hero-ed .lede { font-size: clamp(16px, 1.7vw, 19px); color: var(--slate); max-width: 60ch; line-height: 1.62; margin-bottom: 36px; text-align: justify; text-align-last: justify; }
+.hero-ed .lede { font-size: clamp(16.5px, 1.85vw, 20px); color: var(--slate); max-width: 52ch; line-height: 1.62; margin-bottom: 36px; }
 .hero-ed .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
 
 /* ---- hero CTAs (gradient primary w/ shine sweep + sliding arrow) ---- */
