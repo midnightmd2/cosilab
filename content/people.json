@@ -29,19 +29,9 @@
   "projects_heading": "Project leadership",
   "project_team": [
     {
-      "name": "Lorenzo Bazzani",
-      "role": "Medical Student, University of Central Florida · Weight-bearing after hip replacement",
-      "photo": "images/people/lorenzo-bazzani.jpg"
-    },
-    {
       "name": "Andrew Bouras",
       "role": "Medical Student, Nova Southeastern University",
       "photo": "images/people/andrew-bouras.jpg"
-    },
-    {
-      "name": "Izzy Chris",
-      "role": "Medical Student, Rush Medical College",
-      "photo": ""
     },
     {
       "name": "Andy Fabian",
@@ -49,9 +39,9 @@
       "photo": ""
     },
     {
-      "name": "Rahul Kumar",
-      "role": "Medical Student, UMass Chan Medical School · Gluteus medius tendon repair",
-      "photo": "images/people/rahul-kumar.jpg"
+      "name": "Izzy Chris",
+      "role": "Medical Student, Rush Medical College",
+      "photo": ""
     },
     {
       "name": "Izzy LeKander",
@@ -64,9 +54,19 @@
       "photo": "images/people/jack-pearce.jpg"
     },
     {
+      "name": "Lorenzo Bazzani",
+      "role": "Medical Student, University of Central Florida · Weight-bearing after hip replacement",
+      "photo": "images/people/lorenzo-bazzani.jpg"
+    },
+    {
       "name": "Nathan Robbins",
       "role": "Medical Student, UCSF School of Medicine · Hormone therapy and greater trochanteric pain",
       "photo": "images/people/nathan-robbins.jpg"
+    },
+    {
+      "name": "Rahul Kumar",
+      "role": "Medical Student, UMass Chan Medical School · Gluteus medius tendon repair",
+      "photo": "images/people/rahul-kumar.jpg"
     },
     {
       "name": "Matteo Pilotti",
@@ -74,8 +74,8 @@
       "photo": ""
     },
     {
-      "name": "Olivia Freedhand",
-      "role": "Undergraduate, Lehigh University · Postoperative urinary retention",
+      "name": "Aislin Suzuki",
+      "role": "Undergraduate, UC Berkeley · Subsurface abductor tears",
       "photo": ""
     },
     {
@@ -84,8 +84,8 @@
       "photo": "images/people/brendan-rockwell.jpg"
     },
     {
-      "name": "Aislin Suzuki",
-      "role": "Undergraduate, UC Berkeley · Subsurface abductor tears",
+      "name": "Olivia Freedhand",
+      "role": "Undergraduate, Lehigh University · Postoperative urinary retention",
       "photo": ""
     }
   ],
