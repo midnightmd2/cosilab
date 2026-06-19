@@ -97,7 +97,6 @@ header {
   background: rgba(255,255,255,0.82); backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid var(--line);
 }
-header::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--grad); }
 .nav { display: flex; justify-content: space-between; align-items: center; height: 74px; }
 .wm-link { display: inline-block; text-decoration: none; }
 .wm-link:hover { text-decoration: none; }
