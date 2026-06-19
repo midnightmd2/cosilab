@@ -1,9 +1,8 @@
 {
   "page_title": "The lab",
-  "page_intro": "Surgeons, medical students, engineers, data scientists, and visiting scholars work here as collaborators, not assistants. Members publish their own work, present it at national meetings, and mentor the people who follow.",
   "pi_name": "Professor Stefano A. Bini, MD",
   "pi_role": "PRINCIPAL INVESTIGATOR, COSI LAB\nMARIA MANETTI SHREM ENDOWED PROFESSOR\nPROFESSOR OF ORTHOPAEDIC SURGERY, UCSF\nCHIEF TECHNOLOGY OFFICER, UCSF ORTHOPAEDIC SURGERY",
-  "pi_photo": "images/people/bini.jpg",
+  "pi_photo": "/images/people/bini.jpg",
   "pi_bio1": "Dr. Bini is an orthopaedic surgeon specializing in hip and knee replacement and a leading voice in surgical technology. As Chief Technology Officer of the UCSF Department of Orthopaedic Surgery, he works to bring operating-room robotics, machine learning, and sensor data into everyday clinical practice. His research spans artificial intelligence in orthopaedics, wearable-sensor gait analysis, and the prediction of patient outcomes from routine data, through collaborations that range from Google to surgical-device makers in Milan.",
   "pi_bio2": "He trained in orthopaedic surgery at UCSF and completed fellowships at the Rizzoli Institute in Bologna and the University of Florence. Before returning to UCSF in 2014, he led orthopaedic surgery across several Kaiser Permanente medical centers. He founded DOCSF, the annual San Francisco conference where surgeons, engineers, and founders shape the digital future of musculoskeletal care, as well as the Personalized Arthroplasty Society, and serves as Associate Editor for Artificial Intelligence at the Journal of Bone and Joint Surgery.",
   "pi_bio3": "He runs the lab on the same principle that has guided his clinical and technical work: surgeons, students, and engineers contribute as equals, and trainees are given the responsibility to lead their own projects from first question to publication.",
@@ -13,17 +12,16 @@
     {
       "name": "Matt Allen",
       "role": "Lab co-lead · Medical Student, UCSF School of Medicine",
-      "photo": "images/people/matt-allen.jpg"
+      "photo": "/images/people/matt-allen.jpg"
     },
     {
       "name": "Richard Liu",
       "role": "Lab co-lead · Medical Student, Touro School of Medicine",
-      "photo": "images/people/richard-liu.jpg"
+      "photo": "/images/people/richard-liu.jpg"
     },
     {
       "name": "Lorenzo Lucchetta",
-      "role": "Lab manager · Attending orthopaedic surgeon, Università di Perugia",
-      "photo": ""
+      "role": "Lab manager · Attending orthopaedic surgeon, Università di Perugia"
     }
   ],
   "projects_heading": "Project leadership",
@@ -31,62 +29,57 @@
     {
       "name": "Andrew Bouras",
       "role": "Medical Student, Nova Southeastern University",
-      "photo": "images/people/andrew-bouras.jpg"
+      "photo": "/images/people/andrew-bouras.jpg"
     },
     {
       "name": "Andy Fabian",
-      "role": "Medical Student, UCSF School of Medicine · Gluteus medius outcome measures",
-      "photo": ""
+      "role": "Medical Student, UCSF School of Medicine · Gluteus medius outcome measures"
     },
     {
       "name": "Izzy Chris",
-      "role": "Medical Student, Rush Medical College",
-      "photo": ""
+      "role": "Medical Student, Rush Medical College"
     },
     {
       "name": "Izzy LeKander",
       "role": "Medical Student, UCSF School of Medicine · Hormone therapy timing in trochanteric pain",
-      "photo": "images/people/izzy-lekander.jpg"
+      "photo": "/images/people/izzy-lekander.jpg"
     },
     {
       "name": "Jack Pearce",
       "role": "Medical Student, University of Vermont · Losartan and recurrent gluteus medius tears",
-      "photo": "images/people/jack-pearce.jpg"
+      "photo": "/images/people/jack-pearce.jpg"
     },
     {
       "name": "Lorenzo Bazzani",
       "role": "Medical Student, University of Central Florida · Weight-bearing after hip replacement",
-      "photo": "images/people/lorenzo-bazzani.jpg"
+      "photo": "/images/people/lorenzo-bazzani.jpg"
     },
     {
       "name": "Nathan Robbins",
       "role": "Medical Student, UCSF School of Medicine · Hormone therapy and greater trochanteric pain",
-      "photo": "images/people/nathan-robbins.jpg"
+      "photo": "/images/people/nathan-robbins.jpg"
     },
     {
       "name": "Rahul Kumar",
       "role": "Medical Student, UMass Chan Medical School · Gluteus medius tendon repair",
-      "photo": "images/people/rahul-kumar.jpg"
+      "photo": "/images/people/rahul-kumar.jpg"
     },
     {
       "name": "Matteo Pilotti",
-      "role": "Visiting scholar, Politecnico di Milano · Robotic knee replacement",
-      "photo": ""
+      "role": "Visiting scholar, Politecnico di Milano · Robotic knee replacement"
     },
     {
       "name": "Aislin Suzuki",
-      "role": "Undergraduate, UC Berkeley · Subsurface abductor tears",
-      "photo": ""
+      "role": "Undergraduate, UC Berkeley · Subsurface abductor tears"
     },
     {
       "name": "Brendan Rockwell",
       "role": "Undergraduate, UC Berkeley · Finite element analysis",
-      "photo": "images/people/brendan-rockwell.jpg"
+      "photo": "/images/people/brendan-rockwell.jpg"
     },
     {
       "name": "Olivia Freedhand",
-      "role": "Undergraduate, Lehigh University · Postoperative urinary retention",
-      "photo": ""
+      "role": "Undergraduate, Lehigh University · Postoperative urinary retention"
     }
   ],
   "collab_heading": "Who we work with",
