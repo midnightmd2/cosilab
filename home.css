@@ -15,7 +15,7 @@
 }
 .hero-title .hl-line { display: block; }
 .hero-title em { font-style: italic; font-weight: 400; }
-.hero-ed .lede { font-size: clamp(16px, 1.7vw, 19px); color: var(--slate); max-width: 60ch; line-height: 1.62; margin-bottom: 36px; }
+.hero-ed .lede { font-size: clamp(16px, 1.7vw, 19px); color: var(--slate); max-width: 60ch; line-height: 1.62; margin-bottom: 36px; text-align: justify; text-align-last: justify; }
 .hero-ed .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
 
 /* ---- hero CTAs (gradient primary w/ shine sweep + sliding arrow) ---- */
