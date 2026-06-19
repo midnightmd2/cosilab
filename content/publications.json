@@ -2,65 +2,203 @@
   "page_title": "Publications",
   "page_intro": "Peer-reviewed work from the lab and its principal investigator in hip and knee arthroplasty, surgical robotics, artificial intelligence in orthopaedics, registry and outcomes research, and digital health.",
   "publications": [
-    { "title": "Custom and off-the-shelf large language models routinely misinterpret implant technique guides", "authors": "Woo JJ, Yang AJ, Saboo YS, … Ramkumar PN", "meta": "JB & JS Open Access · 2026", "link": "https://doi.org/10.2106/JBJS.OA.26.00076" },
-    { "title": "Management of periprosthetic fractures around cemented femoral stems: osteosynthesis and revision strategies", "authors": "Kwong JW, Politzer CS, Bini SA, Toogood P, Diaz-Ledezma C", "meta": "EFORT Open Reviews · 2026", "link": "https://doi.org/10.1530/EOR-2024-0205" },
-    { "title": "The application of agentic artificial intelligence in orthopaedics", "authors": "Billi F, Bini SA", "meta": "Journal of Bone & Joint Surgery (Am) · 2026", "link": "https://doi.org/10.2106/JBJS.25.01497" },
-    { "title": "Comparative efficacy of biologic augmentations in gluteus medius tendon repair is lacking: a systematic review", "authors": "Liu Y, Allen M, Kumar R, Bini SA", "meta": "Orthopaedic Reviews (Pavia) · 2025", "link": "https://doi.org/10.52965/001c.143293" },
-    { "title": "Unlocking gait analysis beyond the gait lab: high-fidelity replication of knee kinematics using inertial motion units and a convolutional neural network", "authors": "Bini SA, Gillian N, Peterson TA, … Poupyrev I", "meta": "Arthroplasty Today · 2025", "link": "https://doi.org/10.1016/j.artd.2025.101656" },
-    { "title": "Clinical outcomes of hip abductor repair using transosseous sutures versus suture anchors: a systematic review and meta-analysis", "authors": "Portela-Parra E, Sappey-Marinier E, Julian K, Bini SA", "meta": "Orthopaedic Journal of Sports Medicine · 2025", "link": "https://doi.org/10.1177/23259671241290320" },
-    { "title": "The microbiome of osteoarthritic hip and knee joints: a prospective multicenter investigation", "authors": "Goswami K, Clarkson S, Tipton C, … Parvizi J", "meta": "Journal of Bone & Joint Surgery (Am) · 2023", "link": "https://doi.org/10.2106/JBJS.22.00594" },
-    { "title": "Kinematic alignment of failed mechanically aligned total knee arthroplasty restored constitutional limb alignment and improved clinical outcomes", "authors": "Sappey-Marinier E, Wu SA, Bini SA", "meta": "Journal of Personalized Medicine · 2022", "link": "https://doi.org/10.3390/jpm12111780" },
-    { "title": "An enhanced understanding of culture-negative periprosthetic joint infection with next-generation sequencing: a multicenter study", "authors": "Goswami K, Clarkson S, Phillips CD, … Parvizi J", "meta": "Journal of Bone & Joint Surgery (Am) · 2022", "link": "https://doi.org/10.2106/JBJS.21.01061" },
-    { "title": "Impact of fatty degeneration on the functional outcomes of 38 patients undergoing surgical repair of gluteal tendon tears", "authors": "Maslaris A, Vail TP, Zhang AL, Patel R, Bini SA", "meta": "Archives of Orthopaedic and Trauma Surgery · 2021", "link": "https://doi.org/10.1007/s00402-021-03787-2" },
-    { "title": "Neurologic dysfunction associated with mechanically assisted crevice corrosion and elevated cobalt ion levels after total hip arthroplasty", "authors": "Yan BW, Bini SA", "meta": "Arthroplasty Today · 2021", "link": "https://doi.org/10.1016/j.artd.2021.09.002" },
-    { "title": "Tibial mechanical axis is nonorthogonal to the floor in varus knee alignment", "authors": "Bini SA, Chung CC, Wu SA, Hansen EN", "meta": "Arthroplasty Today · 2021", "link": "https://doi.org/10.1016/j.artd.2021.03.009" },
-    { "title": "The effect of the COVID-19 pandemic on hip and knee arthroplasty patients in the United States: a multicenter update", "authors": "Brown TS, Bedard NA, Rojas EO, … Dasa V", "meta": "Arthroplasty Today · 2020", "link": "https://doi.org/10.1016/j.artd.2020.11.025" },
-    { "title": "Risk adjustment in the California Joint Replacement Registry: is patient complexity accurately assessed in academic versus nonacademic hospitals?", "authors": "Amanatullah DF, Lawson KA, Li Z, SooHoo NF, Bini SA, Huddleston JI", "meta": "The Journal of Arthroplasty · 2020", "link": "https://doi.org/10.1016/j.arth.2020.06.075" },
-    { "title": "Risk-adjusted cost performance for 90-day total hip arthroplasty episodes: comparing US hospitals nationwide before CJR", "authors": "Schilling PL, He J, Chen S, Placzek H, Bini SA", "meta": "The Journal of Arthroplasty · 2020", "link": "https://doi.org/10.1016/j.arth.2020.06.042" },
-    { "title": "Incremental inputs improve the automated detection of implant loosening using machine-learning algorithms", "authors": "Shah RF, Bini SA, Martinez AM, Pedoia V, Vail TP", "meta": "The Bone & Joint Journal · 2020", "link": "https://doi.org/10.1302/0301-620X.102B6.BJJ-2019-1577.R1" },
-    { "title": "Digital orthopaedics: a glimpse into the future in the midst of a pandemic", "authors": "Bini SA, Schilling PL, Patel SP, … Steele GD", "meta": "The Journal of Arthroplasty · 2020", "link": "https://doi.org/10.1016/j.arth.2020.04.048" },
-    { "title": "Equivalent mid-term results of open versus endoscopic gluteal tendon tear repair using suture anchors in forty-five patients", "authors": "Maslaris A, Vail TP, Zhang AL, Patel R, Jäger M, Bini SA", "meta": "The Journal of Arthroplasty · 2020", "link": "https://doi.org/10.1016/j.arth.2020.03.013" },
-    { "title": "Rethinking the value of computer-assisted surgery: a commentary on Roberts et al.", "authors": "Bini SA", "meta": "Journal of Bone & Joint Surgery (Am) · 2020", "link": "https://doi.org/10.2106/JBJS.20.00094" },
-    { "title": "Wearable activity sensors and early pain after total joint arthroplasty", "authors": "Patterson JT, Wu HH, Chung CC, Bendich I, Barry JJ, Bini SA", "meta": "Arthroplasty Today · 2020", "link": "https://doi.org/10.1016/j.artd.2019.12.006" },
-    { "title": "Variation in the thickness of knee cartilage: a novel machine learning algorithm for cartilage segmentation of MRI", "authors": "Shah RF, Martinez AM, Pedoia V, Majumdar S, Vail TP, Bini SA", "meta": "The Journal of Arthroplasty · 2019", "link": "https://doi.org/10.1016/j.arth.2019.07.022" },
-    { "title": "Optimal sampling frequency for wearable sensor data in arthroplasty outcomes research: a prospective observational cohort trial", "authors": "Shah RF, Zaid MB, Bendich I, Hwang KM, Patterson JT, Bini SA", "meta": "The Journal of Arthroplasty · 2019", "link": "https://doi.org/10.1016/j.arth.2019.08.001" },
-    { "title": "Machine learning algorithms can use wearable sensor data to accurately predict six-week patient-reported outcome scores following joint replacement", "authors": "Bini SA, Shah RF, Bendich I, Patterson JT, Hwang KM, Zaid MB", "meta": "The Journal of Arthroplasty · 2019", "link": "https://doi.org/10.1016/j.arth.2019.07.024" },
-    { "title": "Definition of successful infection management and guidelines for reporting outcomes after surgical treatment of periprosthetic joint infection (MSIS)", "authors": "Fillingham YA, Della Valle CJ, Suleiman LI, … Parvizi J", "meta": "Journal of Bone & Joint Surgery (Am) · 2019", "link": "https://doi.org/10.2106/JBJS.19.00062" },
-    { "title": "Implementing a perioperative efficiency initiative for orthopedic surgery instrumentation at an academic center", "authors": "Capra R, Bini SA, Bowden DE, … Vail TP", "meta": "Medicine (Baltimore) · 2019", "link": "https://doi.org/10.1097/MD.0000000000014338" },
-    { "title": "Tranexamic acid in total joint arthroplasty: the endorsed clinical practice guidelines of the AAHKS, ASRA, AAOS, Hip Society, and Knee Society", "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ", "meta": "Regional Anesthesia and Pain Medicine · 2019", "link": "https://doi.org/10.1136/rapm-2018-000024" },
-    { "title": "Preoperative corticosteroid use is associated with increased postoperative infectious complications and readmissions after total hip arthroplasty: a propensity-matched study", "authors": "Boddapati V, Fu MC, Su EP, Sculco PK, Bini SA, Mayman DJ", "meta": "American Journal of Orthopedics · 2018", "link": "https://doi.org/10.12788/ajo.2018.0104" },
-    { "title": "Tranexamic acid use in total joint arthroplasty: the clinical practice guidelines endorsed by the AAHKS, ASRA, AAOS, Hip Society, and Knee Society", "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ", "meta": "The Journal of Arthroplasty · 2018", "link": "https://doi.org/10.1016/j.arth.2018.08.002" },
-    { "title": "The efficacy of tranexamic acid in total hip arthroplasty: a network meta-analysis", "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ", "meta": "The Journal of Arthroplasty · 2018", "link": "https://doi.org/10.1016/j.arth.2018.06.023" },
-    { "title": "Response to the letter on 'The safety of tranexamic acid in total joint arthroplasty: a direct meta-analysis'", "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ", "meta": "The Journal of Arthroplasty · 2018", "link": "https://doi.org/10.1016/j.arth.2018.05.029" },
-    { "title": "The efficacy of tranexamic acid in total knee arthroplasty: a network meta-analysis", "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ", "meta": "The Journal of Arthroplasty · 2018", "link": "https://doi.org/10.1016/j.arth.2018.04.043" },
-    { "title": "The safety of tranexamic acid in total joint arthroplasty: a direct meta-analysis", "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ", "meta": "The Journal of Arthroplasty · 2018", "link": "https://doi.org/10.1016/j.arth.2018.03.031" },
-    { "title": "Artificial intelligence, machine learning, deep learning, and cognitive computing: what do these terms mean and how will they impact health care?", "authors": "Bini SA", "meta": "The Journal of Arthroplasty · 2018", "link": "https://doi.org/10.1016/j.arth.2018.02.067" },
-    { "title": "Risk factors for reaching the post-operative transfusion trigger in a community primary total knee arthroplasty population", "authors": "Bini SA, Darbinian JA, Brox WT, Khatod M", "meta": "The Journal of Arthroplasty · 2017", "link": "https://doi.org/10.1016/j.arth.2017.10.029" },
-    { "title": "Midterm-adjusted survival comparing the best performing unicompartmental and total knee arthroplasties in a registry", "authors": "Bini SA, Cafri G, Khatod M", "meta": "The Journal of Arthroplasty · 2017", "link": "https://doi.org/10.1016/j.arth.2017.05.050" },
-    { "title": "Comparative effectiveness and safety of drug prophylaxis for prevention of venous thromboembolism after total knee arthroplasty", "authors": "Cafri G, Paxton EW, Chen Y, … Khatod M", "meta": "The Journal of Arthroplasty · 2017", "link": "https://doi.org/10.1016/j.arth.2017.05.042" },
-    { "title": "The genesis of an idea: the International Committee of the American Association of Hip and Knee Surgeons", "authors": "Bini SA", "meta": "Arthroplasty Today · 2017", "link": "https://doi.org/10.1016/j.artd.2017.07.007" },
-    { "title": "Is there a difference in revision risk between metal and ceramic heads on highly crosslinked polyethylene liners?", "authors": "Cafri G, Paxton EW, Love R, Bini SA, Kurtz SM", "meta": "Clinical Orthopaedics and Related Research · 2017", "link": "https://doi.org/10.1007/s11999-016-4966-1" },
-    { "title": "Clinical outcomes of remote asynchronous telerehabilitation are equivalent to traditional therapy following total knee arthroplasty: a randomized controlled study", "authors": "Bini SA, Mahajan J", "meta": "Journal of Telemedicine and Telecare · 2016", "link": "https://doi.org/10.1177/1357633X16634518" },
-    { "title": "Achieving 90% adoption of clinical practice guidelines using the Delphi consensus method in a large orthopedic group", "authors": "Bini SA, Mahajan J", "meta": "The Journal of Arthroplasty · 2016", "link": "https://doi.org/10.1016/j.arth.2015.12.050" },
-    { "title": "Antibiotic cement was associated with half the risk of re-revision in 1,154 aseptic revision total knee arthroplasties", "authors": "Bini SA, Chan PH, Inacio MCS, Paxton EW, Khatod M", "meta": "Acta Orthopaedica · 2016", "link": "https://doi.org/10.3109/17453674.2015.1103568" },
-    { "title": "Association of bisphosphonate use and risk of revision after total hip arthroplasty: outcomes from a US Total Joint Replacement Registry", "authors": "Khatod M, Inacio MCS, Dell RM, Bini SA, Paxton EW, Namba RS", "meta": "Clinical Orthopaedics and Related Research · 2015", "link": "https://doi.org/10.1007/s11999-015-4263-4" },
-    { "title": "Are there modifiable risk factors for hospital readmission after total hip arthroplasty in a US healthcare system?", "authors": "Paxton EW, Inacio MCS, Singh JA, Love R, Bini SA, Namba RS", "meta": "Clinical Orthopaedics and Related Research · 2015", "link": "https://doi.org/10.1007/s11999-015-4278-x" },
-    { "title": "The value of international perspectives in orthopaedics", "authors": "Bini SA", "meta": "Arthroplasty Today · 2015", "link": "https://doi.org/10.1016/j.artd.2015.04.004" },
-    { "title": "Revision total hip arthroplasty: factors associated with re-revision surgery", "authors": "Khatod M, Cafri G, Inacio MCS, Schepps AL, Paxton EW, Bini SA", "meta": "Journal of Bone & Joint Surgery (Am) · 2015", "link": "https://doi.org/10.2106/JBJS.N.00073" },
-    { "title": "Two-day length of stay is not inferior to three days in total knee arthroplasty with regard to 30-day readmissions", "authors": "Bini SA, Inacio MCS, Cafri G", "meta": "The Journal of Arthroplasty · 2014", "link": "https://doi.org/10.1016/j.arth.2014.12.006" },
-    { "title": "Same-day versus staged bilateral total knee arthroplasty poses no increase in complications in 6,672 primary procedures", "authors": "Bini SA, Khatod M, Inacio MCS, Paxton EW", "meta": "The Journal of Arthroplasty · 2013", "link": "https://doi.org/10.1016/j.arth.2012.09.009" },
-    { "title": "Perioperative antibiotics", "authors": "Hansen E, Belden K, Silibovsky R, … Yamada K", "meta": "The Journal of Arthroplasty · 2013", "link": "https://doi.org/10.1016/j.arth.2013.09.030" },
-    { "title": "Surgical outcomes of total knee replacement according to diabetes status and glycemic control, 2001 to 2009", "authors": "Adams AL, Paxton EW, Wang JQ, … Namba RS", "meta": "Journal of Bone & Joint Surgery (Am) · 2013", "link": "https://doi.org/10.2106/JBJS.L.00109" },
-    { "title": "Does pre-coating total knee tibial implants affect the risk of aseptic revision?", "authors": "Bini SA, Chen Y, Khatod M, Paxton EW", "meta": "The Bone & Joint Journal · 2013", "link": "https://doi.org/10.1302/0301-620X.95B3.27585" },
-    { "title": "Prophylaxis against pulmonary embolism in patients undergoing total hip arthroplasty", "authors": "Khatod M, Inacio MCS, Bini SA, Paxton EW", "meta": "Journal of Bone & Joint Surgery (Am) · 2011", "link": "https://doi.org/10.2106/JBJS.J.01130" },
-    { "title": "Slowing demand for total joint arthroplasty in a population of 3.2 million", "authors": "Bini SA, Sidney S, Sorel M", "meta": "The Journal of Arthroplasty · 2011", "link": "https://doi.org/10.1016/j.arth.2011.03.043" },
-    { "title": "Pulmonary embolism prophylaxis in more than 30,000 total knee arthroplasty patients: is there a best choice?", "authors": "Khatod M, Inacio MCS, Bini SA, Paxton EW", "meta": "The Journal of Arthroplasty · 2011", "link": "https://doi.org/10.1016/j.arth.2011.04.006" },
-    { "title": "Does discharge disposition after primary total joint arthroplasty affect readmission rates?", "authors": "Bini SA, Fithian DC, Paxton LW, Khatod MX, Inacio MC, Namba RS", "meta": "The Journal of Arthroplasty · 2009", "link": "https://doi.org/10.1016/j.arth.2008.11.007" },
-    { "title": "Knee replacement: epidemiology, outcomes, and trends in Southern California, 17,080 replacements from 1995 through 2004", "authors": "Khatod M, Inacio M, Paxton EW, Bini SA, Namba RS, Burchette RJ, Fithian DC", "meta": "Acta Orthopaedica · 2008", "link": "https://doi.org/10.1080/17453670810016902" },
-    { "title": "Compliant prestress fixation in tumor prostheses: interface retrieval data", "authors": "Bini SA, Johnston JO, Martin DL", "meta": "Orthopedics · 2000", "link": "https://doi.org/10.3928/0147-7447-20000701-18" },
-    { "title": "Follow-up protocols in orthopedic oncology", "authors": "Donati D, Bini SA, Bacci G, Campanacci M", "meta": "Tumori · 1998", "link": "https://doi.org/10.1177/030089169808400112" },
-    { "title": "Giant cell tumor of bone: curettage and cement reconstruction", "authors": "Bini SA, Gill K, Johnston JO", "meta": "Clinical Orthopaedics and Related Research · 1995", "link": "https://pubmed.ncbi.nlm.nih.gov/7497676/" },
-    { "title": "Supracondylar femoral osteotomies for the correction of angular deformity about the knee in children", "authors": "Nercessian OA, Roye DP, Bini SA, Dick HM", "meta": "The American Journal of Knee Surgery · 1995", "link": "https://pubmed.ncbi.nlm.nih.gov/7634013/" },
-    { "title": "Late surgical treatment of lateral condylar fractures in children", "authors": "Roye DP, Bini SA, Infosino A", "meta": "Journal of Pediatric Orthopedics · 1991", "link": "https://doi.org/10.1097/01241398-199103000-00011" }
+    {
+      "title": "Custom and off-the-shelf large language models routinely misinterpret implant technique guides",
+      "authors": "Woo JJ, Yang AJ, Saboo YS, … Ramkumar PN",
+      "meta": "JB & JS Open Access · 2026",
+      "link": "https://doi.org/10.2106/JBJS.OA.26.00076"
+    },
+    {
+      "title": "Management of periprosthetic fractures around cemented femoral stems: osteosynthesis and revision strategies",
+      "authors": "Kwong JW, Politzer CS, Bini SA, Toogood P, Diaz-Ledezma C",
+      "meta": "EFORT Open Reviews · 2026",
+      "link": "https://doi.org/10.1530/EOR-2024-0205"
+    },
+    {
+      "title": "The application of agentic artificial intelligence in orthopaedics",
+      "authors": "Billi F, Bini SA",
+      "meta": "Journal of Bone & Joint Surgery (Am) · 2026",
+      "link": "https://doi.org/10.2106/JBJS.25.01497"
+    },
+    {
+      "title": "Comparative efficacy of biologic augmentations in gluteus medius tendon repair is lacking: a systematic review",
+      "authors": "Liu Y, Allen M, Kumar R, Bini SA",
+      "meta": "Orthopaedic Reviews (Pavia) · 2025",
+      "link": "https://doi.org/10.52965/001c.143293"
+    },
+    {
+      "title": "Unlocking gait analysis beyond the gait lab: high-fidelity replication of knee kinematics using inertial motion units and a convolutional neural network",
+      "authors": "Bini SA, Gillian N, Peterson TA, … Poupyrev I",
+      "meta": "Arthroplasty Today · 2025",
+      "link": "https://doi.org/10.1016/j.artd.2025.101656"
+    },
+    {
+      "title": "Clinical outcomes of hip abductor repair using transosseous sutures versus suture anchors: a systematic review and meta-analysis",
+      "authors": "Portela-Parra E, Sappey-Marinier E, Julian K, Bini SA",
+      "meta": "Orthopaedic Journal of Sports Medicine · 2025",
+      "link": "https://doi.org/10.1177/23259671241290320"
+    },
+    {
+      "title": "The microbiome of osteoarthritic hip and knee joints: a prospective multicenter investigation",
+      "authors": "Goswami K, Clarkson S, Tipton C, … Parvizi J",
+      "meta": "Journal of Bone & Joint Surgery (Am) · 2023",
+      "link": "https://doi.org/10.2106/JBJS.22.00594"
+    },
+    {
+      "title": "Kinematic alignment of failed mechanically aligned total knee arthroplasty restored constitutional limb alignment and improved clinical outcomes",
+      "authors": "Sappey-Marinier E, Wu SA, Bini SA",
+      "meta": "Journal of Personalized Medicine · 2022",
+      "link": "https://doi.org/10.3390/jpm12111780"
+    },
+    {
+      "title": "An enhanced understanding of culture-negative periprosthetic joint infection with next-generation sequencing: a multicenter study",
+      "authors": "Goswami K, Clarkson S, Phillips CD, … Parvizi J",
+      "meta": "Journal of Bone & Joint Surgery (Am) · 2022",
+      "link": "https://doi.org/10.2106/JBJS.21.01061"
+    },
+    {
+      "title": "Impact of fatty degeneration on the functional outcomes of 38 patients undergoing surgical repair of gluteal tendon tears",
+      "authors": "Maslaris A, Vail TP, Zhang AL, Patel R, Bini SA",
+      "meta": "Archives of Orthopaedic and Trauma Surgery · 2021",
+      "link": "https://doi.org/10.1007/s00402-021-03787-2"
+    },
+    {
+      "title": "Neurologic dysfunction associated with mechanically assisted crevice corrosion and elevated cobalt ion levels after total hip arthroplasty",
+      "authors": "Yan BW, Bini SA",
+      "meta": "Arthroplasty Today · 2021",
+      "link": "https://doi.org/10.1016/j.artd.2021.09.002"
+    },
+    {
+      "title": "Tibial mechanical axis is nonorthogonal to the floor in varus knee alignment",
+      "authors": "Bini SA, Chung CC, Wu SA, Hansen EN",
+      "meta": "Arthroplasty Today · 2021",
+      "link": "https://doi.org/10.1016/j.artd.2021.03.009"
+    },
+    {
+      "title": "The effect of the COVID-19 pandemic on hip and knee arthroplasty patients in the United States: a multicenter update",
+      "authors": "Brown TS, Bedard NA, Rojas EO, … Dasa V",
+      "meta": "Arthroplasty Today · 2020",
+      "link": "https://doi.org/10.1016/j.artd.2020.11.025"
+    },
+    {
+      "title": "Risk adjustment in the California Joint Replacement Registry: is patient complexity accurately assessed in academic versus nonacademic hospitals?",
+      "authors": "Amanatullah DF, Lawson KA, Li Z, SooHoo NF, Bini SA, Huddleston JI",
+      "meta": "The Journal of Arthroplasty · 2020",
+      "link": "https://doi.org/10.1016/j.arth.2020.06.075"
+    },
+    {
+      "title": "Risk-adjusted cost performance for 90-day total hip arthroplasty episodes: comparing US hospitals nationwide before CJR",
+      "authors": "Schilling PL, He J, Chen S, Placzek H, Bini SA",
+      "meta": "The Journal of Arthroplasty · 2020",
+      "link": "https://doi.org/10.1016/j.arth.2020.06.042"
+    },
+    {
+      "title": "Incremental inputs improve the automated detection of implant loosening using machine-learning algorithms",
+      "authors": "Shah RF, Bini SA, Martinez AM, Pedoia V, Vail TP",
+      "meta": "The Bone & Joint Journal · 2020",
+      "link": "https://doi.org/10.1302/0301-620X.102B6.BJJ-2019-1577.R1"
+    },
+    {
+      "title": "Digital orthopaedics: a glimpse into the future in the midst of a pandemic",
+      "authors": "Bini SA, Schilling PL, Patel SP, … Steele GD",
+      "meta": "The Journal of Arthroplasty · 2020",
+      "link": "https://doi.org/10.1016/j.arth.2020.04.048"
+    },
+    {
+      "title": "Equivalent mid-term results of open versus endoscopic gluteal tendon tear repair using suture anchors in forty-five patients",
+      "authors": "Maslaris A, Vail TP, Zhang AL, Patel R, Jäger M, Bini SA",
+      "meta": "The Journal of Arthroplasty · 2020",
+      "link": "https://doi.org/10.1016/j.arth.2020.03.013"
+    },
+    {
+      "title": "Rethinking the value of computer-assisted surgery: a commentary on Roberts et al.",
+      "authors": "Bini SA",
+      "meta": "Journal of Bone & Joint Surgery (Am) · 2020",
+      "link": "https://doi.org/10.2106/JBJS.20.00094"
+    },
+    {
+      "title": "Wearable activity sensors and early pain after total joint arthroplasty",
+      "authors": "Patterson JT, Wu HH, Chung CC, Bendich I, Barry JJ, Bini SA",
+      "meta": "Arthroplasty Today · 2020",
+      "link": "https://doi.org/10.1016/j.artd.2019.12.006"
+    },
+    {
+      "title": "Variation in the thickness of knee cartilage: a novel machine learning algorithm for cartilage segmentation of MRI",
+      "authors": "Shah RF, Martinez AM, Pedoia V, Majumdar S, Vail TP, Bini SA",
+      "meta": "The Journal of Arthroplasty · 2019",
+      "link": "https://doi.org/10.1016/j.arth.2019.07.022"
+    },
+    {
+      "title": "Optimal sampling frequency for wearable sensor data in arthroplasty outcomes research: a prospective observational cohort trial",
+      "authors": "Shah RF, Zaid MB, Bendich I, Hwang KM, Patterson JT, Bini SA",
+      "meta": "The Journal of Arthroplasty · 2019",
+      "link": "https://doi.org/10.1016/j.arth.2019.08.001"
+    },
+    {
+      "title": "Machine learning algorithms can use wearable sensor data to accurately predict six-week patient-reported outcome scores following joint replacement",
+      "authors": "Bini SA, Shah RF, Bendich I, Patterson JT, Hwang KM, Zaid MB",
+      "meta": "The Journal of Arthroplasty · 2019",
+      "link": "https://doi.org/10.1016/j.arth.2019.07.024"
+    },
+    {
+      "title": "Definition of successful infection management and guidelines for reporting outcomes after surgical treatment of periprosthetic joint infection (MSIS)",
+      "authors": "Fillingham YA, Della Valle CJ, Suleiman LI, … Parvizi J",
+      "meta": "Journal of Bone & Joint Surgery (Am) · 2019",
+      "link": "https://doi.org/10.2106/JBJS.19.00062"
+    },
+    {
+      "title": "Implementing a perioperative efficiency initiative for orthopedic surgery instrumentation at an academic center",
+      "authors": "Capra R, Bini SA, Bowden DE, … Vail TP",
+      "meta": "Medicine (Baltimore) · 2019",
+      "link": "https://doi.org/10.1097/MD.0000000000014338"
+    },
+    {
+      "title": "Tranexamic acid in total joint arthroplasty: the endorsed clinical practice guidelines of the AAHKS, ASRA, AAOS, Hip Society, and Knee Society",
+      "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ",
+      "meta": "Regional Anesthesia and Pain Medicine · 2019",
+      "link": "https://doi.org/10.1136/rapm-2018-000024"
+    },
+    {
+      "title": "Preoperative corticosteroid use is associated with increased postoperative infectious complications and readmissions after total hip arthroplasty: a propensity-matched study",
+      "authors": "Boddapati V, Fu MC, Su EP, Sculco PK, Bini SA, Mayman DJ",
+      "meta": "American Journal of Orthopedics · 2018",
+      "link": "https://doi.org/10.12788/ajo.2018.0104"
+    },
+    {
+      "title": "Tranexamic acid use in total joint arthroplasty: the clinical practice guidelines endorsed by the AAHKS, ASRA, AAOS, Hip Society, and Knee Society",
+      "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ",
+      "meta": "The Journal of Arthroplasty · 2018",
+      "link": "https://doi.org/10.1016/j.arth.2018.08.002"
+    },
+    {
+      "title": "The efficacy of tranexamic acid in total hip arthroplasty: a network meta-analysis",
+      "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ",
+      "meta": "The Journal of Arthroplasty · 2018",
+      "link": "https://doi.org/10.1016/j.arth.2018.06.023"
+    },
+    {
+      "title": "Response to the letter on 'The safety of tranexamic acid in total joint arthroplasty: a direct meta-analysis'",
+      "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ",
+      "meta": "The Journal of Arthroplasty · 2018",
+      "link": "https://doi.org/10.1016/j.arth.2018.05.029"
+    },
+    {
+      "title": "The efficacy of tranexamic acid in total knee arthroplasty: a network meta-analysis",
+      "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ",
+      "meta": "The Journal of Arthroplasty · 2018",
+      "link": "https://doi.org/10.1016/j.arth.2018.04.043"
+    },
+    {
+      "title": "The safety of tranexamic acid in total joint arthroplasty: a direct meta-analysis",
+      "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ",
+      "meta": "The Journal of Arthroplasty · 2018",
+      "link": "https://doi.org/10.1016/j.arth.2018.03.031"
+    },
+    {
+      "title": "Artificial intelligence, machine learning, deep learning, and cognitive computing: what do these terms mean and how will they impact health care?",
+      "authors": "Bini SA",
+      "meta": "The Journal of Arthroplasty · 2018",
+      "link": "https://doi.org/10.1016/j.arth.2018.02.067"
+    }
   ]
 }
