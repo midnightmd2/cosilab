@@ -29,14 +29,9 @@
   "projects_heading": "Project leadership",
   "project_team": [
     {
-      "name": "Nathan Robbins",
-      "role": "Medical Student, UCSF School of Medicine · Hormone therapy and greater trochanteric pain",
-      "photo": "images/people/nathan-robbins.jpg"
-    },
-    {
-      "name": "Rahul Kumar",
-      "role": "Medical Student, UMass Chan Medical School · Gluteus medius tendon repair",
-      "photo": "images/people/rahul-kumar.jpg"
+      "name": "Lorenzo Bazzani",
+      "role": "Medical Student, University of Central Florida · Weight-bearing after hip replacement",
+      "photo": "images/people/lorenzo-bazzani.jpg"
     },
     {
       "name": "Andrew Bouras",
@@ -44,19 +39,9 @@
       "photo": "images/people/andrew-bouras.jpg"
     },
     {
-      "name": "Izzy LeKander",
-      "role": "Medical Student, UCSF School of Medicine · Hormone therapy timing in trochanteric pain",
-      "photo": "images/people/izzy-lekander.jpg"
-    },
-    {
       "name": "Izzy Chris",
       "role": "Medical Student, Rush Medical College",
       "photo": ""
-    },
-    {
-      "name": "Jack Pearce",
-      "role": "Medical Student, University of Vermont · Losartan and recurrent gluteus medius tears",
-      "photo": "images/people/jack-pearce.jpg"
     },
     {
       "name": "Andy Fabian",
@@ -64,19 +49,24 @@
       "photo": ""
     },
     {
-      "name": "Aislin Suzuki",
-      "role": "Undergraduate, UC Berkeley · Subsurface abductor tears",
-      "photo": ""
+      "name": "Rahul Kumar",
+      "role": "Medical Student, UMass Chan Medical School · Gluteus medius tendon repair",
+      "photo": "images/people/rahul-kumar.jpg"
     },
     {
-      "name": "Lorenzo Bazzani",
-      "role": "Medical Student, University of Central Florida · Weight-bearing after hip replacement",
-      "photo": "images/people/lorenzo-bazzani.jpg"
+      "name": "Izzy LeKander",
+      "role": "Medical Student, UCSF School of Medicine · Hormone therapy timing in trochanteric pain",
+      "photo": "images/people/izzy-lekander.jpg"
     },
     {
-      "name": "Olivia Freedhand",
-      "role": "Undergraduate, Lehigh University · Postoperative urinary retention",
-      "photo": ""
+      "name": "Jack Pearce",
+      "role": "Medical Student, University of Vermont · Losartan and recurrent gluteus medius tears",
+      "photo": "images/people/jack-pearce.jpg"
+    },
+    {
+      "name": "Nathan Robbins",
+      "role": "Medical Student, UCSF School of Medicine · Hormone therapy and greater trochanteric pain",
+      "photo": "images/people/nathan-robbins.jpg"
     },
     {
       "name": "Matteo Pilotti",
@@ -84,9 +74,19 @@
       "photo": ""
     },
     {
+      "name": "Olivia Freedhand",
+      "role": "Undergraduate, Lehigh University · Postoperative urinary retention",
+      "photo": ""
+    },
+    {
       "name": "Brendan Rockwell",
       "role": "Undergraduate, UC Berkeley · Finite element analysis",
       "photo": "images/people/brendan-rockwell.jpg"
+    },
+    {
+      "name": "Aislin Suzuki",
+      "role": "Undergraduate, UC Berkeley · Subsurface abductor tears",
+      "photo": ""
     }
   ],
   "collab_heading": "Who we work with",
