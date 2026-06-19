@@ -11,8 +11,7 @@
 .hero-title {
   font-family: var(--display); font-weight: 500; color: var(--navy);
   font-size: clamp(44px, 5.6vw, 82px); line-height: 1.06; letter-spacing: -0.018em;
-  margin: 0 0 30px; width: fit-content; max-width: 100%;
-  text-align: justify; text-align-last: justify;
+  margin: 0 0 30px; max-width: 13ch;
 }
 .hero-title .hl-line { display: block; }
 .hero-title em { font-style: italic; font-weight: 400; }
