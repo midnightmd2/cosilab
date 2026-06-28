@@ -64,6 +64,9 @@
         if (tpl === 'problem') return '<div class="problem"><div><h3>' + esc(it.title || '') + '</h3><p>' + rich(it.desc || '') + '</p>' + (it.needs ? '<span class="needs">' + rich(it.needs) + '</span>' : '') + '</div></div>';
         return '';
       }).join('');
+      /* opt-in: hide an ancestor (e.g. the whole section) when the list is empty */
+      var hideSel = box.getAttribute('data-cms-empty-hide');
+      if (hideSel) { var wrap = box.closest(hideSel); if (wrap) wrap.hidden = !arr.length; }
     });
   }).catch(function () { /* file failed to load -> keep baked-in text */ });
 })();
