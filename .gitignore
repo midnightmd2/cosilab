@@ -1,4 +1,16 @@
+# Loose source-photo drops in the repo root (processed 800x800 copies live in
+# images/people/). Keeps `git add -A` from sweeping them into commits.
+/*.png
+!/favicon-16.png
+!/favicon-32.png
+!/favicon-48.png
+!/og-card.png
+!/icon-512.png
+!/apple-touch-icon.png
+/*.jpg
+/*.jpeg
+/*.heic
+/*.HEIC
+/*.JPG
+/*.stl
 .DS_Store
-
-# local source uploads (web copies live in images/people/)
-Member Profile Pictures/
