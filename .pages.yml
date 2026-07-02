@@ -164,15 +164,23 @@ content:
           - { name: name, label: Name, type: string }
           - { name: role, label: Role, type: string }
           - { name: photo, label: "Photo (square; leave empty for initials)", type: image, media: images }
-      - { name: projects_heading, label: "Project leadership — heading", type: string }
+      - { name: projects_heading, label: "Research team — heading", type: string }
       - name: project_team
-        label: Project leadership
+        label: Research team
         type: object
         list: true
         fields:
           - { name: name, label: Name, type: string }
           - { name: role, label: Role, type: string }
           - { name: photo, label: "Photo (square; leave empty for initials)", type: image, media: images }
+      - { name: alumni_heading, label: "Alumni — heading", type: string }
+      - name: alumni
+        label: Alumni
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: role, label: "Current role (residency, institution)", type: string }
       - { name: collab_heading, label: "Collaborators — heading", type: string }
       - name: collaborators
         label: Collaborators
