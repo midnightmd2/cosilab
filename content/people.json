@@ -113,16 +113,6 @@
     {
       "name": "DOCSF",
       "role": "Digital Orthopaedics Conference San Francisco network"
-    },
-    {
-      "name": "Zimmer Biomet",
-      "role": "Orthopaedic implants and surgical robotics",
-      "link": "https://www.zimmerbiomet.com/en"
-    },
-    {
-      "name": "The Tensor Lab",
-      "role": "Computational medicine fellowship",
-      "link": "https://thetensorlab.org"
     }
   ]
 }

@@ -201,6 +201,8 @@ content:
       - { name: worked_heading, label: "Who we've worked with — heading", type: string }
       - { name: google_role, label: "Google — role", type: string }
       - { name: conmed_role, label: "ConMed — role", type: string }
+      - { name: zimmer_role, label: "Zimmer Biomet — role", type: string }
+      - { name: tensor_role, label: "The Tensor Lab — role", type: string }
       - { name: models_heading, label: "Partnership models — heading", type: string }
       - { name: model1_tag, label: "Model 1 — tag", type: string }
       - { name: model1_title, label: "Model 1 — title", type: string }
