@@ -189,6 +189,7 @@ content:
         fields:
           - { name: name, label: Name, type: string }
           - { name: role, label: Role, type: string }
+          - { name: link, label: "Link (optional)", type: string }
 
   - name: partnerships
     label: Partnerships

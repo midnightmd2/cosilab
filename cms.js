@@ -40,7 +40,11 @@
             : esc(initials(it.name || ''));
           return '<div class="member"><div class="avatar">' + face + '</div><div class="name">' + esc(it.name || '') + '</div><div class="role">' + rich(it.role || '') + '</div></div>';
         }
-        if (tpl === 'collab') return '<div class="collab"><div class="name">' + esc(it.name || '') + '</div><div class="role">' + rich(it.role || '') + '</div></div>';
+        if (tpl === 'collab') {
+          var cname = esc(it.name || '');
+          if (it.link && String(it.link).trim()) cname = '<a href="' + esc(String(it.link).trim()) + '" target="_blank" rel="noopener">' + cname + '</a>';
+          return '<div class="collab"><div class="name">' + cname + '</div><div class="role">' + rich(it.role || '') + '</div></div>';
+        }
         if (tpl === 'position') {
           var plink = it.link && String(it.link).trim();
           var cta = plink ? '<a href="' + esc(plink) + '" target="_blank" rel="noopener" class="btn btn-ghost">' + esc(it.cta || 'View posting') + '</a>' : '';
