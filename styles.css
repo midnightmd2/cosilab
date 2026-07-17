@@ -422,4 +422,5 @@ footer nav a:hover { color: var(--teal-ink); text-decoration: none; }
 .logo-grid { display: flex; gap: clamp(40px, 7vw, 96px); flex-wrap: wrap; align-items: flex-start; }
 .logo-cell { display: flex; flex-direction: column; gap: 14px; }
 .logo-cell .plogo { height: 30px; width: auto; max-width: none; align-self: flex-start; color: var(--navy); opacity: 0.82; display: block; }
+.logo-cell img.plogo { height: 50px; margin: -10px 0; } /* square marks need more height than wordmarks for equal optical weight; negative margins keep the role line aligned with the 30px wordmark cells */
 .logo-cell .role { font-size: 13px; color: var(--slate); }
