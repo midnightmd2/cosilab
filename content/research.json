@@ -8,15 +8,15 @@
   "a1_studies": [
     {
       "tag": "Representative study",
-      "text": "A medication-wide screen of 50 drugs for association with hip and knee osteoarthritis, using a federated network of routinely collected clinical data."
-    },
-    {
-      "tag": "Representative study",
       "text": "Post-menopausal hormone therapy and greater trochanteric pain syndrome: a retrospective cohort of 385,868 women, including the effect of initiation timing."
     },
     {
       "tag": "Representative study",
       "text": "Implant survivorship and hip-specific complications after total hip replacement in adults with neurodevelopmental versus acquired physical disability, drawn from the UCSF de-identified clinical data warehouse."
+    },
+    {
+      "tag": "Representative study",
+      "text": "A medication-wide screen of 50 drugs for association with hip and knee osteoarthritis, using a federated network of routinely collected clinical data."
     }
   ],
   "a2_title": "Computational biomechanics",
