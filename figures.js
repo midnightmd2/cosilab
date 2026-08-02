@@ -37,14 +37,14 @@
     mk(svg, 'path', { d: 'M 52 45 A 118 118 0 0 1 248 45', fill: 'none', stroke: '#052049', 'stroke-width': 0.9, 'stroke-dasharray': '4 4', opacity: 0.55 });
     mk(svg, 'line', { x1: cx + 55, y1: cy - 55, x2: 262, y2: 34, stroke: '#058488', 'stroke-width': 0.8 });
     mk(svg, 'circle', { cx: cx + 55, cy: cy - 55, r: 2.2, fill: '#058488' });
-    var t1 = mk(svg, 'text', { x: 262, y: 29, 'text-anchor': 'end', 'font-size': '10', 'font-family': 'SF Mono, Menlo, monospace', fill: '#058488' }); t1.textContent = 'peak stress region';
+    var t1 = mk(svg, 'text', { x: 262, y: 29, 'text-anchor': 'end', 'font-size': '10', 'font-family': 'Inter, system-ui, sans-serif', fill: '#058488' }); t1.textContent = 'peak stress region';
     mk(svg, 'line', { x1: cx - 72, y1: cy + 38, x2: 32, y2: 196, stroke: '#506380', 'stroke-width': 0.8 });
     mk(svg, 'circle', { cx: cx - 72, cy: cy + 38, r: 2.2, fill: '#506380' });
-    var t2 = mk(svg, 'text', { x: 32, y: 208, 'font-size': '10', 'font-family': 'SF Mono, Menlo, monospace', fill: '#506380' }); t2.textContent = 'elements n=14,202';
+    var t2 = mk(svg, 'text', { x: 32, y: 208, 'font-size': '10', 'font-family': 'Inter, system-ui, sans-serif', fill: '#506380' }); t2.textContent = 'elements n=14,202';
     mk(svg, 'line', { x1: 72, y1: 228, x2: 228, y2: 228, stroke: '#052049', 'stroke-width': 0.8 });
     mk(svg, 'line', { x1: 72, y1: 223, x2: 72, y2: 233, stroke: '#052049', 'stroke-width': 0.8 });
     mk(svg, 'line', { x1: 228, y1: 223, x2: 228, y2: 233, stroke: '#052049', 'stroke-width': 0.8 });
-    var t3 = mk(svg, 'text', { x: 150, y: 244, 'text-anchor': 'middle', 'font-size': '10', 'font-family': 'SF Mono, Menlo, monospace', fill: '#506380' }); t3.textContent = '48.2 mm';
+    var t3 = mk(svg, 'text', { x: 150, y: 244, 'text-anchor': 'middle', 'font-size': '10', 'font-family': 'Inter, system-ui, sans-serif', fill: '#506380' }); t3.textContent = '48.2 mm';
   }
 
   /* Load-displacement curves: native vs scaffold-augmented construct */
@@ -53,8 +53,8 @@
     var ox = 46, oy = 205, pw = 230, ph = 165;
     mk(svg, 'line', { x1: ox, y1: oy, x2: ox + pw, y2: oy, stroke: '#052049', 'stroke-width': 1 });
     mk(svg, 'line', { x1: ox, y1: oy, x2: ox, y2: oy - ph, stroke: '#052049', 'stroke-width': 1 });
-    var yl = mk(svg, 'text', { x: 14, y: oy - ph / 2, 'font-size': '10', 'font-family': 'SF Mono, Menlo, monospace', fill: '#506380', transform: 'rotate(-90 14 ' + (oy - ph / 2) + ')', 'text-anchor': 'middle' }); yl.textContent = 'load (N)';
-    var xl = mk(svg, 'text', { x: ox + pw / 2, y: 240, 'font-size': '10', 'font-family': 'SF Mono, Menlo, monospace', fill: '#506380', 'text-anchor': 'middle' }); xl.textContent = 'displacement (mm)';
+    var yl = mk(svg, 'text', { x: 14, y: oy - ph / 2, 'font-size': '10', 'font-family': 'Inter, system-ui, sans-serif', fill: '#506380', transform: 'rotate(-90 14 ' + (oy - ph / 2) + ')', 'text-anchor': 'middle' }); yl.textContent = 'load (N)';
+    var xl = mk(svg, 'text', { x: ox + pw / 2, y: 240, 'font-size': '10', 'font-family': 'Inter, system-ui, sans-serif', fill: '#506380', 'text-anchor': 'middle' }); xl.textContent = 'displacement (mm)';
     function curve(k, color, dash, peak) {
       var d = 'M ' + ox + ' ' + oy, n = 40;
       for (var i = 1; i <= n; i++) {
@@ -68,8 +68,8 @@
     curve(3.4, '#9BA6B6', '4 3', 0.62);
     curve(4.6, '#058488', null, 0.92);
     mk(svg, 'circle', { cx: ox + pw * 0.86, cy: oy - 0.92 * ph, r: 2.6, fill: '#058488' });
-    var a1 = mk(svg, 'text', { x: ox + pw * 0.86 - 6, y: oy - 0.92 * ph - 8, 'font-size': '9.5', 'font-family': 'SF Mono, Menlo, monospace', fill: '#058488', 'text-anchor': 'end' }); a1.textContent = 'augmented · failure';
-    var a2 = mk(svg, 'text', { x: ox + pw * 0.78, y: oy - 0.50 * ph + 16, 'font-size': '9.5', 'font-family': 'SF Mono, Menlo, monospace', fill: '#506380', 'text-anchor': 'end' }); a2.textContent = 'native repair';
+    var a1 = mk(svg, 'text', { x: ox + pw * 0.86 - 6, y: oy - 0.92 * ph - 8, 'font-size': '9.5', 'font-family': 'Inter, system-ui, sans-serif', fill: '#058488', 'text-anchor': 'end' }); a1.textContent = 'augmented · failure';
+    var a2 = mk(svg, 'text', { x: ox + pw * 0.78, y: oy - 0.50 * ph + 16, 'font-size': '9.5', 'font-family': 'Inter, system-ui, sans-serif', fill: '#506380', 'text-anchor': 'end' }); a2.textContent = 'native repair';
   }
 
   /* Robotic TKA: planned vs measured gap across coronal deformity */
@@ -78,10 +78,10 @@
     var ox = 46, oy = 205, pw = 230, ph = 165;
     mk(svg, 'line', { x1: ox, y1: oy, x2: ox + pw, y2: oy, stroke: '#052049', 'stroke-width': 1 });
     mk(svg, 'line', { x1: ox, y1: oy, x2: ox, y2: oy - ph, stroke: '#052049', 'stroke-width': 1 });
-    var yl = mk(svg, 'text', { x: 14, y: oy - ph / 2, 'font-size': '10', 'font-family': 'SF Mono, Menlo, monospace', fill: '#506380', transform: 'rotate(-90 14 ' + (oy - ph / 2) + ')', 'text-anchor': 'middle' }); yl.textContent = 'medial gap (mm)';
-    var xl = mk(svg, 'text', { x: ox + pw / 2, y: 240, 'font-size': '10', 'font-family': 'SF Mono, Menlo, monospace', fill: '#506380', 'text-anchor': 'middle' }); xl.textContent = 'native coronal deformity (deg)';
+    var yl = mk(svg, 'text', { x: 14, y: oy - ph / 2, 'font-size': '10', 'font-family': 'Inter, system-ui, sans-serif', fill: '#506380', transform: 'rotate(-90 14 ' + (oy - ph / 2) + ')', 'text-anchor': 'middle' }); yl.textContent = 'medial gap (mm)';
+    var xl = mk(svg, 'text', { x: ox + pw / 2, y: 240, 'font-size': '10', 'font-family': 'Inter, system-ui, sans-serif', fill: '#506380', 'text-anchor': 'middle' }); xl.textContent = 'native coronal deformity (deg)';
     mk(svg, 'line', { x1: ox, y1: oy - 0.5 * ph, x2: ox + pw, y2: oy - 0.5 * ph, stroke: '#052049', 'stroke-width': 0.8, 'stroke-dasharray': '4 3', opacity: 0.5 });
-    var pl = mk(svg, 'text', { x: ox + pw - 2, y: oy - 0.5 * ph - 6, 'font-size': '9.5', 'font-family': 'SF Mono, Menlo, monospace', fill: '#506380', 'text-anchor': 'end' }); pl.textContent = 'robot-planned gap';
+    var pl = mk(svg, 'text', { x: ox + pw - 2, y: oy - 0.5 * ph - 6, 'font-size': '9.5', 'font-family': 'Inter, system-ui, sans-serif', fill: '#506380', 'text-anchor': 'end' }); pl.textContent = 'robot-planned gap';
     var seed = 7;
     function rnd() { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
     for (var i = 0; i < 26; i++) {
@@ -91,7 +91,7 @@
       mk(svg, 'circle', { cx: X.toFixed(1), cy: Y.toFixed(1), r: 2.6, fill: '#18A3AC', opacity: 0.78 });
     }
     mk(svg, 'path', { d: 'M ' + (ox + 12) + ' ' + (oy - 0.5 * ph) + ' L ' + (ox + pw - 12) + ' ' + (oy - 0.5 * ph + 0.34 * ph), fill: 'none', stroke: '#058488', 'stroke-width': 1.6 });
-    var tr = mk(svg, 'text', { x: ox + pw - 14, y: oy - 0.5 * ph + 0.34 * ph + 14, 'font-size': '9.5', 'font-family': 'SF Mono, Menlo, monospace', fill: '#058488', 'text-anchor': 'end' }); tr.textContent = 'measured · underpredicted';
+    var tr = mk(svg, 'text', { x: ox + pw - 14, y: oy - 0.5 * ph + 0.34 * ph + 14, 'font-size': '9.5', 'font-family': 'Inter, system-ui, sans-serif', fill: '#058488', 'text-anchor': 'end' }); tr.textContent = 'measured · underpredicted';
   }
 
   /* progressive draw-in: each element fades on with a small stagger */
@@ -124,18 +124,18 @@
       clear(svg); grid(svg, w, h);
       mk(svg, 'line', { x1: ox, y1: oy, x2: ox + pw, y2: oy, stroke: '#052049', 'stroke-width': 1 });
       mk(svg, 'line', { x1: ox, y1: oy, x2: ox, y2: oy - ph, stroke: '#052049', 'stroke-width': 1 });
-      var yl = mk(svg, 'text', { x: 14, y: oy - ph / 2, 'font-size': '10', 'font-family': 'SF Mono, Menlo, monospace', fill: '#506380', transform: 'rotate(-90 14 ' + (oy - ph / 2) + ')', 'text-anchor': 'middle' }); yl.textContent = 'medial gap (mm)';
-      var xl = mk(svg, 'text', { x: ox + pw / 2, y: 240, 'font-size': '10', 'font-family': 'SF Mono, Menlo, monospace', fill: '#506380', 'text-anchor': 'middle' }); xl.textContent = 'native coronal deformity (deg)';
+      var yl = mk(svg, 'text', { x: 14, y: oy - ph / 2, 'font-size': '10', 'font-family': 'Inter, system-ui, sans-serif', fill: '#506380', transform: 'rotate(-90 14 ' + (oy - ph / 2) + ')', 'text-anchor': 'middle' }); yl.textContent = 'medial gap (mm)';
+      var xl = mk(svg, 'text', { x: ox + pw / 2, y: 240, 'font-size': '10', 'font-family': 'Inter, system-ui, sans-serif', fill: '#506380', 'text-anchor': 'middle' }); xl.textContent = 'native coronal deformity (deg)';
       var yPlan = oy - 0.42 * ph;
       mk(svg, 'line', { x1: ox, y1: yPlan, x2: ox + pw, y2: yPlan, stroke: '#506380', 'stroke-width': 0.9, 'stroke-dasharray': '4 3', opacity: 0.7 });
-      var pl = mk(svg, 'text', { x: ox + pw - 2, y: yPlan - 6, 'font-size': '9.5', 'font-family': 'SF Mono, Menlo, monospace', fill: '#506380', 'text-anchor': 'end' }); pl.textContent = 'robot-planned gap';
+      var pl = mk(svg, 'text', { x: ox + pw - 2, y: yPlan - 6, 'font-size': '9.5', 'font-family': 'Inter, system-ui, sans-serif', fill: '#506380', 'text-anchor': 'end' }); pl.textContent = 'robot-planned gap';
       mk(svg, 'path', { d: 'M ' + ox + ' ' + yPlan + ' L ' + (ox + pw) + ' ' + (oy - 0.84 * ph), fill: 'none', stroke: '#058488', 'stroke-width': 1.6, opacity: 0.45 });
       var frac = d / 15, X = ox + frac * pw, yMeas = oy - (0.42 + 0.42 * frac) * ph;
       mk(svg, 'line', { x1: X, y1: oy, x2: X, y2: yMeas, stroke: '#18A3AC', 'stroke-width': 0.9, 'stroke-dasharray': '2 2' });
       mk(svg, 'circle', { cx: X, cy: yPlan, r: 3, fill: '#506380' });
       var dot = mk(svg, 'circle', { cx: X, cy: yMeas, r: 3.8, fill: '#058488' });
       if (frac > 0) {
-        var ml = mk(svg, 'text', { x: X, y: yMeas - 9, 'font-size': '9.5', 'font-family': 'SF Mono, Menlo, monospace', fill: '#058488', 'text-anchor': 'middle' }); ml.textContent = 'measured';
+        var ml = mk(svg, 'text', { x: X, y: yMeas - 9, 'font-size': '9.5', 'font-family': 'Inter, system-ui, sans-serif', fill: '#058488', 'text-anchor': 'middle' }); ml.textContent = 'measured';
       }
     }
     function update() {

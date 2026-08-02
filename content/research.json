@@ -1,74 +1,33 @@
 {
   "page_title": "What we're working on",
-  "page_intro": "The lab works in five areas, and they connect. Clinical data raises mechanical questions; the biomechanical models we build to answer them point to new techniques; those techniques generate new data; and the software we write moves all of it faster.",
-  "a1_title": "Population-scale evidence",
-  "a1_methods": "Federated EHR analysis\nPharmacoepidemiology\nCausal inference\nSurvival modeling",
-  "a1_p1": "Randomized trials answer one question at a time and take years. Modern electronic health record networks hold the records of hundreds of millions of patients, enough to run carefully controlled analyses that would otherwise be impossible. We build those analyses for musculoskeletal disease.",
-  "a1_p2": "The work is methodological as much as clinical: controlling confounding by indication, handling immortal-time and selection bias, and making federated estimates that hold up across institutions. Done well, it turns routine care data into hypotheses worth testing.",
-  "a1_studies": [
-    {
-      "tag": "Representative study",
-      "text": "Post-menopausal hormone therapy and greater trochanteric pain syndrome: a retrospective cohort of 385,868 women, including the effect of initiation timing."
-    },
-    {
-      "tag": "Representative study",
-      "text": "Implant survivorship and hip-specific complications after total hip replacement in adults with neurodevelopmental versus acquired physical disability, drawn from the UCSF de-identified clinical data warehouse."
-    },
-    {
-      "tag": "Representative study",
-      "text": "A medication-wide screen of 50 drugs for association with hip and knee osteoarthritis, using a federated network of routinely collected clinical data."
-    }
-  ],
-  "a2_title": "Computational biomechanics",
-  "a2_methods": "Finite element analysis\nPatient-specific modeling\nImage-based meshing\nConstitutive modeling",
-  "a2_p1": "Some questions are mechanical and cannot be answered by any trial: how a surgical construct shares load, where it concentrates stress, and where it will fail first. We build patient-specific finite element models from clinical imaging to answer them, then tie the predictions back to real outcomes.",
-  "a2_p2": "Our current focus is the hip abductors. Tendon repairs fail often, and augmentation with a scaffold is increasingly common without a clear mechanical rationale. We model exactly how a scaffold redistributes load across the repair, patient by patient, to understand who benefits and why.",
-  "a2_fig_caption": "How much load a tendon repair holds before it fails, with and without a scaffold.",
-  "a2_studies": [
-    {
-      "tag": "Representative study",
-      "text": "Load-sharing mechanics of scaffold augmentation in gluteus medius tendon repairs: a patient-specific finite element analysis."
-    }
-  ],
-  "a3_title": "Robotics and intraoperative data",
-  "a3_methods": "Robotic arthroplasty data\nPrediction vs ground truth\nComputer vision\nRegistry linkage",
-  "a3_p1": "Robotic platforms for joint replacement record every cut, gap, and alignment angle, an unusually rich, structured stream of intraoperative data. Most of it is never analyzed. We treat the robot's plan as a prediction and test it against what the surgeon actually finds and does.",
-  "a3_p2": "The first results are already pointing somewhere useful: as a patient's native coronal deformity increases, the platform systematically underpredicts the medial gap, with direct implications for how the knee is balanced. Measuring and correcting that gap is what this program works on.",
-  "a3_fig_caption": "Move the slider: the more a knee is bowed before surgery, the more the gap the robot measures differs from the gap it planned.",
-  "a3_studies": [
-    {
-      "tag": "Representative study",
-      "text": "Increasing native coronal deformity is associated with medial gap underprediction in robotic-assisted total knee arthroplasty."
-    }
-  ],
-  "a4_title": "AI agents in the clinical workflow",
-  "a4_methods": "LLM & agent engineering\nRetrieval & evidence synthesis\nFHIR / clinical data\nEvaluation & safety",
-  "a4_p1": "The lab runs on software it builds. We design agentic systems to do real work in a surgical department: synthesizing evidence, assembling cohorts from messy clinical data, and drafting structured documentation. Because they operate where care happens, we hold them to a clinical standard, evaluated, audited, and measured against the task they claim to do.",
-  "a4_p2": "This is the through-line of the whole lab. The same agents that accelerate a literature review or a database build are prototypes for tools that could one day sit inside the clinical workflow itself. We are interested in both: the research accelerant and the eventual product.",
-  "a4_studies": [
-    {
-      "tag": "Direction",
-      "text": "Agents that turn intraoperative and EHR data into registry-ready, auditable surgical documentation, evaluated like any other clinical intervention."
-    }
-  ],
-  "a5_title": "Surgical technique innovation",
-  "a5_methods": "Surgical anatomy\nApproach & construct design\nCadaveric & clinical validation\nOutcome measurement",
-  "a5_p1": "This program takes anatomic and biomechanical insight all the way to technique: new approaches, instruments, and repair strategies, then measures whether they actually help.",
-  "a5_p2": "Recent work includes a novel superior approach to total hip arthroplasty and a re-examination of how partial, concealed abductor tears are classified, an under-recognized lesion that standard descriptions miss. The aim is a technique that changes practice, supported by data.",
-  "a5_studies": [
-    {
-      "tag": "Representative work",
-      "text": "A scoping review of the Superior Transverse Anatomic Reconstruction (STAR) approach in total hip arthroplasty: the first synthesis of its published clinical evidence."
-    },
-    {
-      "tag": "Representative work",
-      "text": "Undersurface detachment of the hip abductor tendons: the terminology, pathoanatomy, and surgical management of a lesion described across nine studies under competing names."
-    },
-    {
-      "tag": "Representative work",
-      "text": "Confirmed gluteus medius and minimus tendon tears in greater trochanteric pain syndrome: a systematic review and meta-analysis building a stage-based treatment algorithm."
-    }
-  ],
+  "page_intro": "One problem runs through most of this lab: disease of the hip abductors. It is a common cause of lateral hip pain, and the field has not settled what to call it, how to measure recovery from it, or when to operate. The program below works that problem end to end, on a platform of population-scale records, biomechanical models, and robotic case data that answers questions well beyond it.",
+  "prog_heading": "Hip abductor disease",
+  "prog_intro": "Greater trochanteric pain syndrome affects roughly one in six adults over 50, and the lesion behind it is usually a tendon rather than a bursa. Even so, the literature describes the same tear under competing names, no outcome instrument has been validated for these patients, and no payment model exists for treating them.",
+  "prog_p1": "The same pathology appears under competing acronyms, with terminology borrowed from the rotator cuff and little cross-citation between the groups describing it. Our scoping review consolidates nine of those studies into one account of undersurface detachment of the hip abductor tendons: what the lesion is, how it presents, and how it has been repaired.",
+  "prog_p2": "How common it is remains unsettled, because published incidence comes from single health networks and does not generalize. We are merging federated record networks to estimate that properly and to find what the disease travels with. One line of that work is a cohort of 385,868 women testing whether post-menopausal hormone therapy changes the risk of greater trochanteric pain syndrome, and whether the timing of initiation matters. Establishing the size of the problem is what makes the case for research funding, device development, and reimbursement.",
+  "prog_p3": "Recovery is difficult to measure because almost none of the instruments in use were validated for these patients. We assessed the gluteal outcome instruments against COSMIN standards, and separately asked whether preoperative fatty infiltration on MRI predicts gait-specific rather than global function after repair.",
+  "prog_p4": "Repairs fail at meaningful rates, and augmenting them with a scaffold is increasingly common without a clear mechanical rationale. Cadaveric testing and patient-specific finite element models let us measure how a construct shares load, where it concentrates stress, and which repairs are at risk.",
+  "s4_fig_caption": "How much load a tendon repair holds before it fails, with and without a scaffold.",
+  "prog_p5": "Treatment spans physical therapy, image-guided injection, open repair, and endoscopic technique, and the evidence for each sits in a separate literature. We pooled them into a single stage-based pathway for tears confirmed on imaging. We also study the surgical approach itself, including a scoping review of the Superior Transverse Anatomic Reconstruction approach to hip replacement.",
+  "prog_p6": "The end point is agreement. With radiology, primary care, and physical therapy we are building a consensus process covering how this disease is named on imaging, diagnosed in clinic, and managed after surgery.",
+  "plat_heading": "The platform",
+  "plat_intro": "The infrastructure the abductor work runs on also answers questions well beyond the hip.",
+  "p1_title": "Population-scale clinical data",
+  "p1_text": "Record networks hold the histories of hundreds of millions of patients, enough to run controlled analyses no trial could. The work is as methodological as it is clinical: confounding by indication, immortal-time and selection bias, and estimates that hold up across institutions.",
+  "p1_methods": "Federated EHR analysis · Pharmacoepidemiology · Causal inference · Survival modeling",
+  "p2_title": "Computational biomechanics",
+  "p2_text": "Some questions are mechanical and no trial can answer them: how a construct shares load, where it concentrates stress, where it fails first. We build patient-specific models from clinical imaging and test them against cadaveric mechanics.",
+  "p2_methods": "Finite element analysis · Patient-specific modeling · Cadaveric testing · Image-based meshing",
+  "p3_title": "Robotics and intraoperative data",
+  "p3_text": "Robotic platforms record every cut, gap, and alignment angle, and almost none of it is ever analyzed. We treat the robot's plan as a prediction and test it against what the surgeon actually finds. As native coronal deformity increases, the platform systematically underpredicts the medial gap, which changes how the knee should be balanced.",
+  "p3_methods": "Robotic arthroplasty data · Prediction vs ground truth · Registry linkage",
+  "p3_fig_caption": "Move the slider: the more a knee is bowed before surgery, the more the gap the robot measures differs from the gap it planned.",
+  "p4_title": "Value and cost of care",
+  "p4_text": "Payment models price risk by what care costs to deliver, not by what it is charged. We measure cost from the bottom up, by the time each resource is used across a full cycle of care, and compare that against what hospital accounting reports.",
+  "p4_methods": "Time-driven activity-based costing · Micro-costing · Value-based care",
+  "p5_title": "AI agents and tooling",
+  "p5_text": "The lab runs on software it builds: agents that synthesize evidence, assemble cohorts from messy clinical data, and draft structured documentation. Because they operate where care happens, we hold them to a clinical standard, evaluated and audited against the task they claim to do.",
+  "p5_methods": "LLM & agent engineering · Retrieval & evidence synthesis · FHIR / clinical data · Evaluation & safety",
   "open_heading": "Where the work is headed",
   "open_problems": [
     {
