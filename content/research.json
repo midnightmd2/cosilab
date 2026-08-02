@@ -13,6 +13,10 @@
     {
       "tag": "Representative study",
       "text": "Post-menopausal hormone therapy and greater trochanteric pain syndrome: a retrospective cohort of 385,868 women, including the effect of initiation timing."
+    },
+    {
+      "tag": "Representative study",
+      "text": "Implant survivorship and hip-specific complications after total hip replacement in adults with neurodevelopmental versus acquired physical disability, drawn from the UCSF de-identified clinical data warehouse."
     }
   ],
   "a2_title": "Computational biomechanics",
@@ -54,11 +58,15 @@
   "a5_studies": [
     {
       "tag": "Representative work",
-      "text": "The Superior Transverse Anatomic Reconstruction (STAR) approach in total hip arthroplasty."
+      "text": "A scoping review of the Superior Transverse Anatomic Reconstruction (STAR) approach in total hip arthroplasty: the first synthesis of its published clinical evidence."
     },
     {
       "tag": "Representative work",
-      "text": "Partial subsurface detachment of the hip abductors: a concealed lesion described across nine studies under competing names."
+      "text": "Undersurface detachment of the hip abductor tendons: the terminology, pathoanatomy, and surgical management of a lesion described across nine studies under competing names."
+    },
+    {
+      "tag": "Representative work",
+      "text": "Confirmed gluteus medius and minimus tendon tears in greater trochanteric pain syndrome: a systematic review and meta-analysis building a stage-based treatment algorithm."
     }
   ],
   "open_heading": "Where the work is headed",
@@ -90,7 +98,7 @@
     },
     {
       "title": "A reproducible classification for concealed abductor tears",
-      "desc": "Partial, subsurface abductor tears sit under intact superficial fibers and are described in the literature under competing names. The work is an imaging-based, reproducible classification, ideally with automated segmentation, that the field can use consistently.",
+      "desc": "Undersurface abductor tears sit beneath intact superficial fibers and are described in the literature under competing names. The work is an imaging-based, reproducible classification, ideally with automated segmentation, that the field can use consistently.",
       "needs": "Data: MRI · Methods: segmentation, clinical research"
     }
   ]
