@@ -60,6 +60,7 @@ content:
       - { name: a1_title, label: "Area 1 — title", type: string }
       - { name: a1_p1, label: "Area 1 — paragraph 1", type: text }
       - { name: a1_p2, label: "Area 1 — paragraph 2", type: text }
+      - { name: a1_p3, label: "Area 1 — paragraph 3", type: text }
       - { name: a2_title, label: "Area 2 — title", type: string }
       - { name: a2_p1, label: "Area 2 — paragraph 1", type: text }
       - { name: a2_p2, label: "Area 2 — paragraph 2", type: text }
