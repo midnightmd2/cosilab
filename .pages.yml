@@ -57,33 +57,19 @@ content:
     fields:
       - { name: page_title, label: Page title, type: string }
       - { name: page_intro, label: Page intro, type: text }
-      - { name: prog_heading, label: "Flagship program — heading", type: string }
-      - { name: prog_intro, label: "Flagship program — intro", type: text }
-      - { name: prog_p1, label: "Program — paragraph 1", type: text }
-      - { name: prog_p2, label: "Program — paragraph 2", type: text }
-      - { name: prog_p3, label: "Program — paragraph 3", type: text }
-      - { name: prog_p4, label: "Program — paragraph 4", type: text }
-      - { name: s4_fig_caption, label: "Program — figure caption", type: text }
-      - { name: prog_p5, label: "Program — paragraph 5", type: text }
-      - { name: prog_p6, label: "Program — paragraph 6", type: text }
-      - { name: plat_heading, label: "Platform — heading", type: string }
-      - { name: plat_intro, label: "Platform — intro", type: text }
-      - { name: p1_title, label: "Platform 1 — title", type: string }
-      - { name: p1_text, label: "Platform 1 — text", type: text }
-      - { name: p1_methods, label: "Platform 1 — methods line", type: string }
-      - { name: p2_title, label: "Platform 2 — title", type: string }
-      - { name: p2_text, label: "Platform 2 — text", type: text }
-      - { name: p2_methods, label: "Platform 2 — methods line", type: string }
-      - { name: p3_title, label: "Platform 3 — title", type: string }
-      - { name: p3_text, label: "Platform 3 — text", type: text }
-      - { name: p3_methods, label: "Platform 3 — methods line", type: string }
-      - { name: p3_fig_caption, label: "Platform 3 — figure caption", type: text }
-      - { name: p4_title, label: "Platform 4 — title", type: string }
-      - { name: p4_text, label: "Platform 4 — text", type: text }
-      - { name: p4_methods, label: "Platform 4 — methods line", type: string }
-      - { name: p5_title, label: "Platform 5 — title", type: string }
-      - { name: p5_text, label: "Platform 5 — text", type: text }
-      - { name: p5_methods, label: "Platform 5 — methods line", type: string }
+      - { name: a1_title, label: "Area 1 — title", type: string }
+      - { name: a1_p1, label: "Area 1 — paragraph 1", type: text }
+      - { name: a1_p2, label: "Area 1 — paragraph 2", type: text }
+      - { name: a2_title, label: "Area 2 — title", type: string }
+      - { name: a2_p1, label: "Area 2 — paragraph 1", type: text }
+      - { name: a2_p2, label: "Area 2 — paragraph 2", type: text }
+      - { name: a2_p3, label: "Area 2 — paragraph 3", type: text }
+      - { name: a3_title, label: "Area 3 — title", type: string }
+      - { name: a3_p1, label: "Area 3 — paragraph 1", type: text }
+      - { name: a3_p2, label: "Area 3 — paragraph 2", type: text }
+      - { name: a3_p3, label: "Area 3 — paragraph 3", type: text }
+      - { name: a3_fig_caption, label: "Area 3 — figure 1 caption", type: text }
+      - { name: a3_fig2_caption, label: "Area 3 — figure 2 caption", type: text }
       - { name: open_heading, label: "Open problems — heading", type: string }
       - name: open_problems
         label: "Open problems"
