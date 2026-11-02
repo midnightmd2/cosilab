@@ -27,6 +27,7 @@
   --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --display: 'EB Garamond', 'Granjon LT Std', Georgia, serif;
   --mono: 'SF Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --page-title-size: clamp(30px, 3.8vw, 44px);
 
   --maxw: 1180px;
   --r: 14px;
@@ -131,7 +132,7 @@ nav.links a.btn-solid, nav.links a.btn-solid:hover { color: #fff; }
 /* ---- page banner (subpages) ---- */
 .page-head { padding: clamp(48px, 7vw, 92px) 0 0; border-bottom: 1px solid var(--line); background: radial-gradient(50% 86% at 84% -16%, rgba(108,177,242,0.20), transparent 60%); }
 .page-head .inner { padding-bottom: clamp(32px, 4vw, 48px); max-width: 72ch; }
-.page-head h1 { font-size: clamp(32px, 4.6vw, 52px); margin: 20px 0 20px; }
+.page-head h1 { font-size: var(--page-title-size); margin: 20px 0 20px; }
 .page-head p { font-size: clamp(16px, 1.9vw, 19px); color: var(--slate); max-width: 60ch; line-height: 1.55; }
 
 /* ---- domain / proof band ---- */

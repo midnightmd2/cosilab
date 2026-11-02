@@ -6,205 +6,1300 @@
       "authors": "Marth AA, Allen M, Liu Y, Joseph GB, Bini SA, Link TM, Feuerriegel GC",
       "meta": "European Radiology · 2026",
       "link": "https://link.springer.com/article/10.1007/s00330-026-12856-2",
-      "published_date": "2026-10-30"
+      "published_date": "2026-10-30",
+      "pmid": "42961652",
+      "author_list": [
+        "Marth AA",
+        "Allen M",
+        "Liu Y",
+        "Joseph GB",
+        "Bini SA",
+        "Link TM",
+        "Feuerriegel GC"
+      ],
+      "publication_date_label": "2026 Oct 30",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/42961652/",
+      "doi": "10.1007/s00330-026-12856-2"
+    },
+    {
+      "title": "Cemented Femoral Fixation for Primary Total Hip Arthroplasty in the United States: How Surgeon-Cemented Volume Impacts Failure Risk",
+      "authors": "Abrolat JL, Zedan AM, Ahmadi A, Juels M, Taylor JM, Bini SA, Diaz-Ledezma C",
+      "meta": "The Journal of arthroplasty · 2026",
+      "link": "https://doi.org/10.1016/j.arth.2026.09.053",
+      "pmid": "42843687",
+      "author_list": [
+        "Abrolat JL",
+        "Zedan AM",
+        "Ahmadi A",
+        "Juels M",
+        "Taylor JM",
+        "Bini SA",
+        "Diaz-Ledezma C"
+      ],
+      "publication_date_label": "2026 Oct 7",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/42843687/",
+      "doi": "10.1016/j.arth.2026.09.053",
+      "published_date": "2026-10-07"
+    },
+    {
+      "title": "Generative Artificial Intelligence in Hip and Knee Arthroplasty: A Systematic Review of Emerging Clinical Applications in Patient Communication and Education, Documentation, and Decision Support",
+      "authors": "Garces IA, Wong AG, Brutti JA, Bini SA, McDaid A, Lawrie CM",
+      "meta": "JB & JS open access · 2026",
+      "link": "https://doi.org/10.2106/JBJS.OA.26.00077",
+      "pmid": "42757394",
+      "author_list": [
+        "Garces IA",
+        "Wong AG",
+        "Brutti JA",
+        "Bini SA",
+        "McDaid A",
+        "Lawrie CM"
+      ],
+      "publication_date_label": "2026 Sep 22",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/42757394/",
+      "doi": "10.2106/JBJS.OA.26.00077",
+      "published_date": "2026-09-22"
+    },
+    {
+      "title": "Early Clinico-Radiographic Outcomes of Cementless Collared Triple Taper Stems in Osteoporotic Patients Undergoing Elective Total Hip Arthroplasty: A Descriptive Analysis",
+      "authors": "Zedan AM, Abrolat JL, Diaz M, Zhong A, Barry JJ, Hansen EN, Bini SA, Diaz-Ledezma C",
+      "meta": "Arthroplasty today · 2026",
+      "link": "https://doi.org/10.1016/j.artd.2026.102109",
+      "pmid": "42620806",
+      "author_list": [
+        "Zedan AM",
+        "Abrolat JL",
+        "Diaz M",
+        "Zhong A",
+        "Barry JJ",
+        "Hansen EN",
+        "Bini SA",
+        "Diaz-Ledezma C"
+      ],
+      "publication_date_label": "2026 Aug 11",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/42620806/",
+      "doi": "10.1016/j.artd.2026.102109",
+      "published_date": "2026-08-11"
+    },
+    {
+      "title": "Impact of Intervention Timing on the Failure of Debridement, Antibiotics, and Implant Retention for Acute Postoperative Periprosthetic Joint Infections: A Contemporary United States Population-Level Analysis",
+      "authors": "Zedan AM, Barber T, Bini SA, Diaz-Ledezma CA",
+      "meta": "The Journal of arthroplasty · 2026",
+      "link": "https://doi.org/10.1016/j.arth.2026.06.044",
+      "pmid": "42315062",
+      "author_list": [
+        "Zedan AM",
+        "Barber T",
+        "Bini SA",
+        "Diaz-Ledezma CA"
+      ],
+      "publication_date_label": "2026 Jun 18",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/42315062/",
+      "doi": "10.1016/j.arth.2026.06.044",
+      "published_date": "2026-06-18"
     },
     {
       "title": "Custom and off-the-shelf large language models routinely misinterpret implant technique guides",
       "authors": "Woo JJ, Yang AJ, Saboo YS, … Ramkumar PN",
       "meta": "JB & JS Open Access · 2026",
-      "link": "https://doi.org/10.2106/JBJS.OA.26.00076"
+      "link": "https://doi.org/10.2106/JBJS.OA.26.00076",
+      "pmid": "42299369",
+      "author_list": [
+        "Woo JJ",
+        "Yang AJ",
+        "Saboo YS",
+        "Wassef AJ",
+        "Stavrakis AI",
+        "Bini SA",
+        "Christ AB",
+        "Ramkumar PN"
+      ],
+      "publication_date_label": "2026 Jun 15",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/42299369/",
+      "doi": "10.2106/JBJS.OA.26.00076",
+      "published_date": "2026-06-15"
     },
     {
       "title": "Management of periprosthetic fractures around cemented femoral stems: osteosynthesis and revision strategies",
       "authors": "Kwong JW, Politzer CS, Bini SA, Toogood P, Diaz-Ledezma C",
       "meta": "EFORT Open Reviews · 2026",
-      "link": "https://doi.org/10.1530/EOR-2024-0205"
+      "link": "https://doi.org/10.1530/EOR-2024-0205",
+      "pmid": "42227252",
+      "author_list": [
+        "Kwong JW",
+        "Politzer CS",
+        "Bini SA",
+        "Toogood P",
+        "Diaz-Ledezma C"
+      ],
+      "publication_date_label": "2026 Jun 1",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/42227252/",
+      "doi": "10.1530/EOR-2024-0205",
+      "published_date": "2026-06-01"
+    },
+    {
+      "title": "The Future of AI in Orthopaedics: Boon or Bust?",
+      "authors": "Strelzow J, Bini SA, Ghert M",
+      "meta": "The Journal of bone and joint surgery. American volume · 2026",
+      "link": "https://doi.org/10.2106/JBJS.25.01514",
+      "pmid": "41706004",
+      "author_list": [
+        "Strelzow J",
+        "Alec Bini S",
+        "Ghert M"
+      ],
+      "publication_date_label": "2026 Feb 18",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/41706004/",
+      "doi": "10.2106/JBJS.25.01514",
+      "published_date": "2026-02-18"
     },
     {
       "title": "The application of agentic artificial intelligence in orthopaedics",
       "authors": "Billi F, Bini SA",
       "meta": "Journal of Bone & Joint Surgery (Am) · 2026",
-      "link": "https://doi.org/10.2106/JBJS.25.01497"
+      "link": "https://doi.org/10.2106/JBJS.25.01497",
+      "pmid": "41490410",
+      "author_list": [
+        "Billi F",
+        "Bini SA"
+      ],
+      "publication_date_label": "2026 Jan 5",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/41490410/",
+      "doi": "10.2106/JBJS.25.01497",
+      "published_date": "2026-01-05"
     },
     {
       "title": "Comparative efficacy of biologic augmentations in gluteus medius tendon repair is lacking: a systematic review",
       "authors": "Liu Y, Allen M, Kumar R, Bini SA",
       "meta": "Orthopaedic Reviews (Pavia) · 2025",
-      "link": "https://doi.org/10.52965/001c.143293"
+      "link": "https://doi.org/10.52965/001c.143293",
+      "pmid": "40995569",
+      "author_list": [
+        "Liu Y",
+        "Allen M",
+        "Kumar R",
+        "Bini S"
+      ],
+      "publication_date_label": "2025 Sep 21",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/40995569/",
+      "doi": "10.52965/001c.143293",
+      "published_date": "2025-09-21"
     },
     {
       "title": "Unlocking gait analysis beyond the gait lab: high-fidelity replication of knee kinematics using inertial motion units and a convolutional neural network",
       "authors": "Bini SA, Gillian N, Peterson TA, … Poupyrev I",
       "meta": "Arthroplasty Today · 2025",
-      "link": "https://doi.org/10.1016/j.artd.2025.101656"
+      "link": "https://doi.org/10.1016/j.artd.2025.101656",
+      "pmid": "40276526",
+      "author_list": [
+        "Bini SA",
+        "Gillian N",
+        "Peterson TA",
+        "Souza RB",
+        "Schultz B",
+        "Mormul W",
+        "Cichoń MK",
+        "Szczotka AB",
+        "Poupyrev I"
+      ],
+      "publication_date_label": "2025 Apr 15",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/40276526/",
+      "doi": "10.1016/j.artd.2025.101656",
+      "published_date": "2025-04-15"
     },
     {
       "title": "Clinical outcomes of hip abductor repair using transosseous sutures versus suture anchors: a systematic review and meta-analysis",
       "authors": "Portela-Parra E, Sappey-Marinier E, Julian K, Bini SA",
       "meta": "Orthopaedic Journal of Sports Medicine · 2025",
-      "link": "https://doi.org/10.1177/23259671241290320"
+      "link": "https://doi.org/10.1177/23259671241290320",
+      "pmid": "39758143",
+      "author_list": [
+        "Portela-Parra E",
+        "Sappey-Marinier E",
+        "Julian K",
+        "Bini SA"
+      ],
+      "publication_date_label": "2025 Jan 1",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/39758143/",
+      "doi": "10.1177/23259671241290320",
+      "published_date": "2025-01-01"
+    },
+    {
+      "title": "Assessing Total Knee Arthroplasty Implant Balance with a Passive Knee Drop Test",
+      "authors": "Abbruzzese K, Dunbar M, Weir J, Bini S, Sequeira SB, Mont MA, LiArno S",
+      "meta": "Surgical technology international · 2024",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/39591203/",
+      "pmid": "39591203",
+      "author_list": [
+        "Abbruzzese K",
+        "Dunbar M",
+        "Weir J",
+        "Bini S",
+        "Sequeira SB",
+        "Mont MA",
+        "LiArno S"
+      ],
+      "publication_date_label": "2024 Nov 25",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/39591203/",
+      "published_date": "2024-11-25"
+    },
+    {
+      "title": "Why personalized surgery is the future of hip and knee arthroplasty: a statement from the Personalized Arthroplasty Society",
+      "authors": "Vendittoli PA, Riviere C, Hirschmann MT, Bini S",
+      "meta": "EFORT open reviews · 2023",
+      "link": "https://doi.org/10.1530/EOR-22-0096",
+      "pmid": "38038379",
+      "author_list": [
+        "Vendittoli PA",
+        "Riviere C",
+        "Hirschmann MT",
+        "Bini S"
+      ],
+      "publication_date_label": "2023 Dec 1",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/38038379/",
+      "doi": "10.1530/EOR-22-0096",
+      "published_date": "2023-12-01"
+    },
+    {
+      "title": "Unrestricted kinematic alignment corrects fixed flexion contracture in robotically aligned total knees without raising the joint line in extension",
+      "authors": "Sappey-Marinier E, Bini S",
+      "meta": "Journal of experimental orthopaedics · 2023",
+      "link": "https://doi.org/10.1186/s40634-023-00670-4",
+      "pmid": "37950808",
+      "author_list": [
+        "Sappey-Marinier E",
+        "Bini S"
+      ],
+      "publication_date_label": "2023 Nov 11",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/37950808/",
+      "doi": "10.1186/s40634-023-00670-4",
+      "published_date": "2023-11-11"
+    },
+    {
+      "title": "Impact of an automated peri-procedural digital health intervention on rates of emergency department visits and readmissions",
+      "authors": "Liu AW, Pierce L, Ganeshan S, Brown W 3rd, Judson T, Divakaran D, Bini S, Odisho AY, Mourad M",
+      "meta": "American journal of surgery · 2023",
+      "link": "https://doi.org/10.1016/j.amjsurg.2023.07.037",
+      "pmid": "37604749",
+      "author_list": [
+        "Liu AW",
+        "Pierce L",
+        "Ganeshan S",
+        "Brown W 3rd",
+        "Judson T",
+        "Divakaran D",
+        "Bini S",
+        "Odisho AY",
+        "Mourad M"
+      ],
+      "publication_date_label": "2023 Jul 27",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/37604749/",
+      "doi": "10.1016/j.amjsurg.2023.07.037",
+      "published_date": "2023-07-27"
     },
     {
       "title": "The microbiome of osteoarthritic hip and knee joints: a prospective multicenter investigation",
       "authors": "Goswami K, Clarkson S, Tipton C, … Parvizi J",
       "meta": "Journal of Bone & Joint Surgery (Am) · 2023",
-      "link": "https://doi.org/10.2106/JBJS.22.00594"
+      "link": "https://doi.org/10.2106/JBJS.22.00594",
+      "pmid": "37192280",
+      "author_list": [
+        "Goswami K",
+        "Clarkson S",
+        "Tipton C",
+        "Phillips CD",
+        "Dennis DA",
+        "Klatt BA",
+        "O'Malley M",
+        "Smith EL",
+        "Gililland J",
+        "Pelt CE",
+        "Peters CL",
+        "Malkani AL",
+        "Palumbo BT",
+        "Lyons ST",
+        "Bernasek TL",
+        "Minter J",
+        "Goyal N",
+        "Purtill W",
+        "McDonald JF 3rd",
+        "Cross MB",
+        "Prieto HA",
+        "Lee GC",
+        "Hansen EN",
+        "Bini SA",
+        "Ward DT",
+        "Zhao N",
+        "Shohat N",
+        "Higuera CA",
+        "Nam D",
+        "Della Valle CJ",
+        "Parvizi J",
+        "Orthopedic Genomics Workgroup"
+      ],
+      "publication_date_label": "2023 Jun 7",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/37192280/",
+      "doi": "10.2106/JBJS.22.00594",
+      "published_date": "2023-06-07"
+    },
+    {
+      "title": "Practical Artificial Intelligence: Realistic Ways It Can Help Orthopaedic Surgeons and the Challenges It Will Face",
+      "authors": "Shah R, Jayakumar P, Trutner Z, Bini S",
+      "meta": "Instructional course lectures · 2023",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/36534850/",
+      "pmid": "36534850",
+      "author_list": [
+        "Shah R",
+        "Jayakumar P",
+        "Trutner Z",
+        "Bini S"
+      ],
+      "publication_date_label": "2023",
+      "publication_date_precision": "year",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/36534850/"
     },
     {
       "title": "Kinematic alignment of failed mechanically aligned total knee arthroplasty restored constitutional limb alignment and improved clinical outcomes",
       "authors": "Sappey-Marinier E, Wu SA, Bini SA",
       "meta": "Journal of Personalized Medicine · 2022",
-      "link": "https://doi.org/10.3390/jpm12111780"
+      "link": "https://doi.org/10.3390/jpm12111780",
+      "pmid": "36579480",
+      "author_list": [
+        "Sappey-Mariner E",
+        "Wu SA",
+        "Bini SA"
+      ],
+      "publication_date_label": "2022 Oct 28",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/36579480/",
+      "doi": "10.3390/jpm12111780",
+      "published_date": "2022-10-28"
     },
     {
       "title": "An enhanced understanding of culture-negative periprosthetic joint infection with next-generation sequencing: a multicenter study",
       "authors": "Goswami K, Clarkson S, Phillips CD, … Parvizi J",
       "meta": "Journal of Bone & Joint Surgery (Am) · 2022",
-      "link": "https://doi.org/10.2106/JBJS.21.01061"
+      "link": "https://doi.org/10.2106/JBJS.21.01061",
+      "pmid": "35726882",
+      "author_list": [
+        "Goswami K",
+        "Clarkson S",
+        "Phillips CD",
+        "Dennis DA",
+        "Klatt BA",
+        "O'Malley MJ",
+        "Smith EL",
+        "Gililland JM",
+        "Pelt CE",
+        "Peters CL",
+        "Malkani AL",
+        "Palumbo BT",
+        "Lyons ST",
+        "Bernasek TL",
+        "Minter J",
+        "Goyal N",
+        "McDonald JF 3rd",
+        "Cross MB",
+        "Prieto HA",
+        "Lee GC",
+        "Hansen EN",
+        "Bini SA",
+        "Ward DT",
+        "Shohat N",
+        "Higuera CA",
+        "Nam D",
+        "Della Valle CJ",
+        "Parvizi J",
+        "Orthopedic Genomics Workgroup"
+      ],
+      "publication_date_label": "2022 Jun 20",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/35726882/",
+      "doi": "10.2106/JBJS.21.01061",
+      "published_date": "2022-06-20"
     },
     {
-      "title": "Impact of fatty degeneration on the functional outcomes of 38 patients undergoing surgical repair of gluteal tendon tears",
-      "authors": "Maslaris A, Vail TP, Zhang AL, Patel R, Bini SA",
-      "meta": "Archives of Orthopaedic and Trauma Surgery · 2021",
-      "link": "https://doi.org/10.1007/s00402-021-03787-2"
+      "title": "No Correlation Between Clinical Outcomes and Changes in the Tibia-Metaphyseal Angle Following Total Knee Arthroplasty: A Retrospective Study",
+      "authors": "Cherches M, Coss N, Nguyen K, Halvorson R, Allahabadi S, Bini S",
+      "meta": "The Journal of arthroplasty · 2022",
+      "link": "https://doi.org/10.1016/j.arth.2022.04.024",
+      "pmid": "35469985",
+      "author_list": [
+        "Cherches M",
+        "Coss N",
+        "Nguyen K",
+        "Halvorson R",
+        "Allahabadi S",
+        "Bini S"
+      ],
+      "publication_date_label": "2022 Apr 22",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/35469985/",
+      "doi": "10.1016/j.arth.2022.04.024",
+      "published_date": "2022-04-22"
     },
     {
       "title": "Neurologic dysfunction associated with mechanically assisted crevice corrosion and elevated cobalt ion levels after total hip arthroplasty",
       "authors": "Yan BW, Bini SA",
       "meta": "Arthroplasty Today · 2021",
-      "link": "https://doi.org/10.1016/j.artd.2021.09.002"
+      "link": "https://doi.org/10.1016/j.artd.2021.09.002",
+      "pmid": "34646925",
+      "author_list": [
+        "Yan BW",
+        "Bini SA"
+      ],
+      "publication_date_label": "2021 Oct 7",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/34646925/",
+      "doi": "10.1016/j.artd.2021.09.002",
+      "published_date": "2021-10-07"
+    },
+    {
+      "title": "Multicenter Evaluation of Telehealth Utilization in Hip and Knee Arthroplasty Before and for One Year During the COVID-19 Pandemic",
+      "authors": "Bini S, Chiu YF, Ast M, Krueger C, Maratt J, Bendich I",
+      "meta": "Arthroplasty today · 2021",
+      "link": "https://doi.org/10.1016/j.artd.2021.09.012",
+      "pmid": "34632025",
+      "author_list": [
+        "Bini S",
+        "Chiu YF",
+        "Ast M",
+        "Krueger C",
+        "Maratt J",
+        "Bendich I"
+      ],
+      "publication_date_label": "2021 Oct 2",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/34632025/",
+      "doi": "10.1016/j.artd.2021.09.012",
+      "published_date": "2021-10-02"
+    },
+    {
+      "title": "Predictive Models for Clinical Outcomes in Total Knee Arthroplasty: A Systematic Analysis",
+      "authors": "Batailler C, Lording T, De Massari D, Witvoet-Braam S, Bini S, Lustig S",
+      "meta": "Arthroplasty today · 2021",
+      "link": "https://doi.org/10.1016/j.artd.2021.03.013",
+      "pmid": "33997202",
+      "author_list": [
+        "Batailler C",
+        "Lording T",
+        "De Massari D",
+        "Witvoet-Braam S",
+        "Bini S",
+        "Lustig S"
+      ],
+      "publication_date_label": "2021 Apr 24",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/33997202/",
+      "doi": "10.1016/j.artd.2021.03.013",
+      "published_date": "2021-04-24"
     },
     {
       "title": "Tibial mechanical axis is nonorthogonal to the floor in varus knee alignment",
       "authors": "Bini SA, Chung CC, Wu SA, Hansen EN",
       "meta": "Arthroplasty Today · 2021",
-      "link": "https://doi.org/10.1016/j.artd.2021.03.009"
+      "link": "https://doi.org/10.1016/j.artd.2021.03.009",
+      "pmid": "33937465",
+      "author_list": [
+        "Bini SA",
+        "Chung CC",
+        "Wu SA",
+        "Hansen EN"
+      ],
+      "publication_date_label": "2021 Apr 15",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/33937465/",
+      "doi": "10.1016/j.artd.2021.03.009",
+      "published_date": "2021-04-15"
+    },
+    {
+      "title": "Impact of fatty degeneration on the functional outcomes of 38 patients undergoing surgical repair of gluteal tendon tears",
+      "authors": "Maslaris A, Vail TP, Zhang AL, Patel R, Bini SA",
+      "meta": "Archives of Orthopaedic and Trauma Surgery · 2021",
+      "link": "https://doi.org/10.1007/s00402-021-03787-2",
+      "pmid": "33651145",
+      "author_list": [
+        "Maslaris A",
+        "Vail TP",
+        "Zhang AL",
+        "Patel R",
+        "Bini SA"
+      ],
+      "publication_date_label": "2021 Mar 2",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/33651145/",
+      "doi": "10.1007/s00402-021-03787-2",
+      "published_date": "2021-03-02"
     },
     {
       "title": "The effect of the COVID-19 pandemic on hip and knee arthroplasty patients in the United States: a multicenter update to the previous survey",
       "authors": "Brown TS, Bedard NA, Rojas EO, … Dasa V",
       "meta": "Arthroplasty Today · 2021",
-      "link": "https://doi.org/10.1016/j.artd.2020.11.025"
+      "link": "https://doi.org/10.1016/j.artd.2020.11.025",
+      "pmid": "33294537",
+      "author_list": [
+        "Brown TS",
+        "Bedard NA",
+        "Rojas EO",
+        "Anthony CA",
+        "Schwarzkopf R",
+        "Stambough JB",
+        "Nandi S",
+        "Prieto H",
+        "Parvizi J",
+        "Bini SA",
+        "Higuera CA",
+        "Piuzzi NS",
+        "Blankstein M",
+        "Wellman SS",
+        "Dietz MJ",
+        "Jennings JM",
+        "Dasa V",
+        "AAHKS Research Committee"
+      ],
+      "publication_date_label": "2020 Dec 3",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/33294537/",
+      "doi": "10.1016/j.artd.2020.11.025",
+      "published_date": "2020-12-03"
+    },
+    {
+      "title": "FDA public workshop: Orthopaedic sensing, measuring, and advanced reporting technology (SMART) devices",
+      "authors": "Baumann AP, O'Neill C, Owens MC, … Dmitriev AE",
+      "meta": "Journal of orthopaedic research : official publication of the Orthopaedic Research Society · 2021",
+      "link": "https://doi.org/10.1002/jor.24833",
+      "pmid": "32827329",
+      "author_list": [
+        "Baumann AP",
+        "O'Neill C",
+        "Owens MC",
+        "Weber SC",
+        "Sivan S",
+        "D'Amico R",
+        "Carmody S",
+        "Bini S",
+        "Sawyer AJ",
+        "Lotz JC",
+        "Goel V",
+        "Dmitriev AE"
+      ],
+      "publication_date_label": "2020 Oct 7",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/32827329/",
+      "doi": "10.1002/jor.24833",
+      "published_date": "2020-10-07"
     },
     {
       "title": "Risk adjustment in the California Joint Replacement Registry: is patient complexity accurately assessed in academic versus nonacademic hospitals?",
       "authors": "Amanatullah DF, Lawson KA, Li Z, SooHoo NF, Bini SA, Huddleston JI",
       "meta": "The Journal of Arthroplasty · 2020",
-      "link": "https://doi.org/10.1016/j.arth.2020.06.075"
+      "link": "https://doi.org/10.1016/j.arth.2020.06.075",
+      "pmid": "32739083",
+      "author_list": [
+        "Amanatullah DF",
+        "Lawson KA",
+        "Li Z",
+        "SooHoo NF",
+        "Bini SA",
+        "Huddleston JI 3rd"
+      ],
+      "publication_date_label": "2020 Jul 2",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/32739083/",
+      "doi": "10.1016/j.arth.2020.06.075",
+      "published_date": "2020-07-02"
+    },
+    {
+      "title": "Data for registry and quality review can be retrospectively collected using natural language processing from unstructured charts of arthroplasty patients",
+      "authors": "Shah RF, Bini S, Vail T",
+      "meta": "The bone & joint journal · 2020",
+      "link": "https://doi.org/10.1302/0301-620X.102B7.BJJ-2019-1574.R1",
+      "pmid": "32600201",
+      "author_list": [
+        "Shah RF",
+        "Bini S",
+        "Vail T"
+      ],
+      "publication_date_label": "2020 Jul",
+      "publication_date_precision": "month",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/32600201/",
+      "doi": "10.1302/0301-620X.102B7.BJJ-2019-1574.R1"
     },
     {
       "title": "Risk-adjusted cost performance for 90-day total hip arthroplasty episodes: comparing US hospitals nationwide before CJR",
       "authors": "Schilling PL, He J, Chen S, Placzek H, Bini SA",
       "meta": "The Journal of Arthroplasty · 2020",
-      "link": "https://doi.org/10.1016/j.arth.2020.06.042"
+      "link": "https://doi.org/10.1016/j.arth.2020.06.042",
+      "pmid": "32713725",
+      "author_list": [
+        "Schilling PL",
+        "He J",
+        "Chen S",
+        "Placzek H",
+        "Bini SA"
+      ],
+      "publication_date_label": "2020 Jun 19",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/32713725/",
+      "doi": "10.1016/j.arth.2020.06.042",
+      "published_date": "2020-06-19"
+    },
+    {
+      "title": "Response to Letter to the Editor on \"Digital Orthopedics. A Glimpse Into the Future in the Midst of a Pandemic\"",
+      "authors": "Bini SA, Schilling PL, Patel SP, Kalore NV, Ast MP, Maratt JD, Schuett DJ, Lawrie CM, Chung CC, Steele GD",
+      "meta": "The Journal of arthroplasty · 2020",
+      "link": "https://doi.org/10.1016/j.arth.2020.06.009",
+      "pmid": "32654941",
+      "author_list": [
+        "Bini SA",
+        "Schilling PL",
+        "Patel SP",
+        "Kalore NV",
+        "Ast MP",
+        "Maratt JD",
+        "Schuett DJ",
+        "Lawrie CM",
+        "Chung CC",
+        "Steele GD"
+      ],
+      "publication_date_label": "2020 Jun 11",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/32654941/",
+      "doi": "10.1016/j.arth.2020.06.009",
+      "published_date": "2020-06-11"
+    },
+    {
+      "title": "Risk-Adjusted Cost Performance for 90-Day Total Knee Arthroplasty Episodes: Data and Methods for Comparing U.S. Hospitals Nationwide",
+      "authors": "Schilling PL, He J, Chen S, Placzek H, Bini S",
+      "meta": "The Journal of bone and joint surgery. American volume · 2020",
+      "link": "https://doi.org/10.2106/JBJS.19.01017",
+      "pmid": "32251141",
+      "author_list": [
+        "Schilling PL",
+        "He J",
+        "Chen S",
+        "Placzek H",
+        "Bini S"
+      ],
+      "publication_date_label": "2020 Jun 3",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/32251141/",
+      "doi": "10.2106/JBJS.19.01017",
+      "published_date": "2020-06-03"
     },
     {
       "title": "Incremental inputs improve the automated detection of implant loosening using machine-learning algorithms",
       "authors": "Shah RF, Bini SA, Martinez AM, Pedoia V, Vail TP",
       "meta": "The Bone & Joint Journal · 2020",
-      "link": "https://doi.org/10.1302/0301-620X.102B6.BJJ-2019-1577.R1"
+      "link": "https://doi.org/10.1302/0301-620X.102B6.BJJ-2019-1577.R1",
+      "pmid": "32475275",
+      "author_list": [
+        "Shah RF",
+        "Bini SA",
+        "Martinez AM",
+        "Pedoia V",
+        "Vail TP"
+      ],
+      "publication_date_label": "2020 Jun",
+      "publication_date_precision": "month",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/32475275/",
+      "doi": "10.1302/0301-620X.102B6.BJJ-2019-1577.R1"
     },
     {
       "title": "Digital orthopaedics: a glimpse into the future in the midst of a pandemic",
       "authors": "Bini SA, Schilling PL, Patel SP, … Steele GD",
       "meta": "The Journal of Arthroplasty · 2020",
-      "link": "https://doi.org/10.1016/j.arth.2020.04.048"
-    },
-    {
-      "title": "Equivalent mid-term results of open versus endoscopic gluteal tendon tear repair using suture anchors in forty-five patients",
-      "authors": "Maslaris A, Vail TP, Zhang AL, Patel R, Jäger M, Bini SA",
-      "meta": "The Journal of Arthroplasty · 2020",
-      "link": "https://doi.org/10.1016/j.arth.2020.03.013"
+      "link": "https://doi.org/10.1016/j.arth.2020.04.048",
+      "pmid": "32416956",
+      "author_list": [
+        "Bini SA",
+        "Schilling PL",
+        "Patel SP",
+        "Kalore NV",
+        "Ast MP",
+        "Maratt JD",
+        "Schuett DJ",
+        "Lawrie CM",
+        "Chung CC",
+        "Steele GD"
+      ],
+      "publication_date_label": "2020 Apr 22",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/32416956/",
+      "doi": "10.1016/j.arth.2020.04.048",
+      "published_date": "2020-04-22"
     },
     {
       "title": "Rethinking the value of computer-assisted surgery: a commentary on Roberts et al.",
       "authors": "Bini SA",
       "meta": "Journal of Bone & Joint Surgery (Am) · 2020",
-      "link": "https://doi.org/10.2106/JBJS.20.00094"
+      "link": "https://doi.org/10.2106/JBJS.20.00094",
+      "pmid": "32235178",
+      "author_list": [
+        "Bini SA"
+      ],
+      "publication_date_label": "2020 Apr 1",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/32235178/",
+      "doi": "10.2106/JBJS.20.00094",
+      "published_date": "2020-04-01"
+    },
+    {
+      "title": "Equivalent mid-term results of open versus endoscopic gluteal tendon tear repair using suture anchors in forty-five patients",
+      "authors": "Maslaris A, Vail TP, Zhang AL, Patel R, Jäger M, Bini SA",
+      "meta": "The Journal of Arthroplasty · 2020",
+      "link": "https://doi.org/10.1016/j.arth.2020.03.013",
+      "pmid": "32279942",
+      "author_list": [
+        "Maslaris A",
+        "Vail TP",
+        "Zhang AL",
+        "Patel R",
+        "Jäger M",
+        "Bini SA"
+      ],
+      "publication_date_label": "2020 Mar 12",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/32279942/",
+      "doi": "10.1016/j.arth.2020.03.013",
+      "published_date": "2020-03-12"
     },
     {
       "title": "Wearable activity sensors and early pain after total joint arthroplasty",
       "authors": "Patterson JT, Wu HH, Chung CC, Bendich I, Barry JJ, Bini SA",
       "meta": "Arthroplasty Today · 2020",
-      "link": "https://doi.org/10.1016/j.artd.2019.12.006"
+      "link": "https://doi.org/10.1016/j.artd.2019.12.006",
+      "pmid": "32211478",
+      "author_list": [
+        "Patterson JT",
+        "Wu HH",
+        "Chung CC",
+        "Bendich I",
+        "Barry JJ",
+        "Bini SA"
+      ],
+      "publication_date_label": "2020 Mar 6",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/32211478/",
+      "doi": "10.1016/j.artd.2019.12.006",
+      "published_date": "2020-03-06"
     },
     {
-      "title": "Variation in the thickness of knee cartilage: a novel machine learning algorithm for cartilage segmentation of MRI",
-      "authors": "Shah RF, Martinez AM, Pedoia V, Majumdar S, Vail TP, Bini SA",
-      "meta": "The Journal of Arthroplasty · 2019",
-      "link": "https://doi.org/10.1016/j.arth.2019.07.022"
+      "title": "Invagination of elevated lip liner preventing reduction of dislocated total hip",
+      "authors": "Ordaz A, Schirmers J, Bini S",
+      "meta": "Arthroplasty today · 2020",
+      "link": "https://doi.org/10.1016/j.artd.2019.11.005",
+      "pmid": "32211469",
+      "author_list": [
+        "Ordaz A",
+        "Schirmers J",
+        "Bini S"
+      ],
+      "publication_date_label": "2020 Jan 7",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/32211469/",
+      "doi": "10.1016/j.artd.2019.11.005",
+      "published_date": "2020-01-07"
     },
     {
       "title": "Optimal sampling frequency for wearable sensor data in arthroplasty outcomes research: a prospective observational cohort trial",
       "authors": "Shah RF, Zaid MB, Bendich I, Hwang KM, Patterson JT, Bini SA",
       "meta": "The Journal of Arthroplasty · 2019",
-      "link": "https://doi.org/10.1016/j.arth.2019.08.001"
+      "link": "https://doi.org/10.1016/j.arth.2019.08.001",
+      "pmid": "31445866",
+      "author_list": [
+        "Shah RF",
+        "Zaid MB",
+        "Bendich I",
+        "Hwang KM",
+        "Patterson JT",
+        "Bini SA"
+      ],
+      "publication_date_label": "2019 Aug 7",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/31445866/",
+      "doi": "10.1016/j.arth.2019.08.001",
+      "published_date": "2019-08-07"
+    },
+    {
+      "title": "Variation in the thickness of knee cartilage: a novel machine learning algorithm for cartilage segmentation of MRI",
+      "authors": "Shah RF, Martinez AM, Pedoia V, Majumdar S, Vail TP, Bini SA",
+      "meta": "The Journal of Arthroplasty · 2019",
+      "link": "https://doi.org/10.1016/j.arth.2019.07.022",
+      "pmid": "31445869",
+      "author_list": [
+        "Shah RF",
+        "Martinez AM",
+        "Pedoia V",
+        "Majumdar S",
+        "Vail TP",
+        "Bini SA"
+      ],
+      "publication_date_label": "2019 Jul 24",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/31445869/",
+      "doi": "10.1016/j.arth.2019.07.022",
+      "published_date": "2019-07-24"
     },
     {
       "title": "Machine learning algorithms can use wearable sensor data to accurately predict six-week patient-reported outcome scores following joint replacement",
       "authors": "Bini SA, Shah RF, Bendich I, Patterson JT, Hwang KM, Zaid MB",
       "meta": "The Journal of Arthroplasty · 2019",
-      "link": "https://doi.org/10.1016/j.arth.2019.07.024"
+      "link": "https://doi.org/10.1016/j.arth.2019.07.024",
+      "pmid": "31439405",
+      "author_list": [
+        "Bini SA",
+        "Shah RF",
+        "Bendich I",
+        "Patterson JT",
+        "Hwang KM",
+        "Zaid MB"
+      ],
+      "publication_date_label": "2019 Jul 24",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/31439405/",
+      "doi": "10.1016/j.arth.2019.07.024",
+      "published_date": "2019-07-24"
     },
     {
       "title": "Definition of successful infection management and guidelines for reporting outcomes after surgical treatment of periprosthetic joint infection (MSIS)",
       "authors": "Fillingham YA, Della Valle CJ, Suleiman LI, … Parvizi J",
       "meta": "Journal of Bone & Joint Surgery (Am) · 2019",
-      "link": "https://doi.org/10.2106/JBJS.19.00062"
+      "link": "https://doi.org/10.2106/JBJS.19.00062",
+      "pmid": "31318814",
+      "author_list": [
+        "Fillingham YA",
+        "Della Valle CJ",
+        "Suleiman LI",
+        "Springer BD",
+        "Gehrke T",
+        "Bini SA",
+        "Segreti J",
+        "Chen AF",
+        "Goswami K",
+        "Tan TL",
+        "Shohat N",
+        "Diaz-Ledezma C",
+        "Schwartz AJ",
+        "Parvizi J"
+      ],
+      "publication_date_label": "2019 Jul 17",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/31318814/",
+      "doi": "10.2106/JBJS.19.00062",
+      "published_date": "2019-07-17"
+    },
+    {
+      "title": "2019 Mark Coventry Award: A multicentre randomized clinical trial of tranexamic acid in revision total knee arthroplasty: does the dosing regimen matter?",
+      "authors": "Fillingham YA, Darrith B, Calkins TE, … Hip Society Research Group",
+      "meta": "The bone & joint journal · 2019",
+      "link": "https://doi.org/10.1302/0301-620X.101B7.BJJ-2018-1451.R1",
+      "pmid": "31256650",
+      "author_list": [
+        "Fillingham YA",
+        "Darrith B",
+        "Calkins TE",
+        "Abdel MP",
+        "Malkani AL",
+        "Schwarzkopf R",
+        "Padgett DE",
+        "Culvern C",
+        "Sershon RA",
+        "Bini S",
+        "Della Valle CJ",
+        "Hip Society Research Group"
+      ],
+      "publication_date_label": "2019 Jul",
+      "publication_date_precision": "month",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/31256650/",
+      "doi": "10.1302/0301-620X.101B7.BJJ-2018-1451.R1"
+    },
+    {
+      "title": "Changes in prospectively collected longitudinal patient-generated health data are associated with short-term patient-reported outcomes after total joint arthroplasty: a pilot study",
+      "authors": "Bendich I, Chung C, Hwang K, Patterson J, Mulvihill J, Barry J, Bini S",
+      "meta": "Arthroplasty today · 2019",
+      "link": "https://doi.org/10.1016/j.artd.2019.01.005",
+      "pmid": "31020024",
+      "author_list": [
+        "Bendich I",
+        "Chung C",
+        "Hwang K",
+        "Patterson J",
+        "Mulvihill J",
+        "Barry J",
+        "Bini S"
+      ],
+      "publication_date_label": "2019 Mar 14",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/31020024/",
+      "doi": "10.1016/j.artd.2019.01.005",
+      "published_date": "2019-03-14"
     },
     {
       "title": "Implementing a perioperative efficiency initiative for orthopedic surgery instrumentation at an academic center",
       "authors": "Capra R, Bini SA, Bowden DE, … Vail TP",
       "meta": "Medicine (Baltimore) · 2019",
-      "link": "https://doi.org/10.1097/MD.0000000000014338"
+      "link": "https://doi.org/10.1097/MD.0000000000014338",
+      "pmid": "30762733",
+      "author_list": [
+        "Capra R",
+        "Bini SA",
+        "Bowden DE",
+        "Etter K",
+        "Callahan M",
+        "Smith RT",
+        "Vail TP"
+      ],
+      "publication_date_label": "2019 Feb",
+      "publication_date_precision": "month",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/30762733/",
+      "doi": "10.1097/MD.0000000000014338"
     },
     {
       "title": "Tranexamic acid in total joint arthroplasty: the endorsed clinical practice guidelines of the AAHKS, ASRA, AAOS, Hip Society, and Knee Society",
       "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ",
       "meta": "Regional Anesthesia and Pain Medicine · 2019",
-      "link": "https://doi.org/10.1136/rapm-2018-000024"
+      "link": "https://doi.org/10.1136/rapm-2018-000024",
+      "pmid": "30640647",
+      "author_list": [
+        "Fillingham YA",
+        "Ramkumar DB",
+        "Jevsevar DS",
+        "Yates AJ",
+        "Bini SA",
+        "Clarke HD",
+        "Schemitsch E",
+        "Johnson RL",
+        "Memtsoudis SG",
+        "Sayeed SA",
+        "Sah AP",
+        "Della Valle CJ"
+      ],
+      "publication_date_label": "2019 Jan",
+      "publication_date_precision": "month",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/30640647/",
+      "doi": "10.1136/rapm-2018-000024"
     },
     {
       "title": "Preoperative corticosteroid use for medical conditions is associated with increased postoperative infectious complications and readmissions after total hip arthroplasty: a propensity-matched study",
       "authors": "Boddapati V, Fu MC, Su EP, Sculco PK, Bini SA, Mayman DJ",
       "meta": "American Journal of Orthopedics · 2018",
-      "link": "https://pubmed.ncbi.nlm.nih.gov/30650172/"
+      "link": "https://pubmed.ncbi.nlm.nih.gov/30650172/",
+      "pmid": "30650172",
+      "author_list": [
+        "Boddapati V",
+        "Fu MC",
+        "Su EP",
+        "Sculco PK",
+        "Bini SA",
+        "Mayman DJ"
+      ],
+      "publication_date_label": "2018 Dec",
+      "publication_date_precision": "month",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/30650172/",
+      "doi": "10.12788/ajo.2018.0104"
+    },
+    {
+      "title": "Hip and Knee Section, Outcomes: Proceedings of International Consensus on Orthopedic Infections",
+      "authors": "Abblitt WP, Ascione T, Bini S, … Zeng YR",
+      "meta": "The Journal of arthroplasty · 2019",
+      "link": "https://doi.org/10.1016/j.arth.2018.09.035",
+      "pmid": "30348557",
+      "author_list": [
+        "Abblitt WP",
+        "Ascione T",
+        "Bini S",
+        "Bori G",
+        "Brekke AC",
+        "Chen AF",
+        "Courtney PM",
+        "Della Valle CJ",
+        "Diaz-Ledezma C",
+        "Ebied A",
+        "Fillingham YJ",
+        "Gehrke T",
+        "Goswami K",
+        "Grammatopoulos G",
+        "Marei S",
+        "Oliashirazi A",
+        "Parvizi J",
+        "Polkowski G",
+        "Saeed K",
+        "Schwartz AJ",
+        "Segreti J",
+        "Shohat N",
+        "Springer BD",
+        "Suleiman LI",
+        "Swiderek LK",
+        "Tan TL",
+        "Yan CH",
+        "Zeng YR"
+      ],
+      "publication_date_label": "2018 Oct 19",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/30348557/",
+      "doi": "10.1016/j.arth.2018.09.035",
+      "published_date": "2018-10-19"
+    },
+    {
+      "title": "Hip and Knee Section, Prevention, Surgical Technique: Proceedings of International Consensus on Orthopedic Infections",
+      "authors": "Balato G, Barbaric K, Bićanić G, … Tzavellas AN",
+      "meta": "The Journal of arthroplasty · 2019",
+      "link": "https://doi.org/10.1016/j.arth.2018.09.015",
+      "pmid": "30348555",
+      "author_list": [
+        "Balato G",
+        "Barbaric K",
+        "Bićanić G",
+        "Bini S",
+        "Chen J",
+        "Crnogaca K",
+        "Kenanidis E",
+        "Giori N",
+        "Goel R",
+        "Hirschmann M",
+        "Marcacci M",
+        "Amat Mateu C",
+        "Nam D",
+        "Shao H",
+        "Shen B",
+        "Tarabichi M",
+        "Tarabichi S",
+        "Tsiridis E",
+        "Tzavellas AN"
+      ],
+      "publication_date_label": "2018 Oct 19",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/30348555/",
+      "doi": "10.1016/j.arth.2018.09.015",
+      "published_date": "2018-10-19"
     },
     {
       "title": "Tranexamic acid use in total joint arthroplasty: the clinical practice guidelines endorsed by the AAHKS, ASRA, AAOS, Hip Society, and Knee Society",
       "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ",
       "meta": "The Journal of Arthroplasty · 2018",
-      "link": "https://doi.org/10.1016/j.arth.2018.08.002"
+      "link": "https://doi.org/10.1016/j.arth.2018.08.002",
+      "pmid": "30146350",
+      "author_list": [
+        "Fillingham YA",
+        "Ramkumar DB",
+        "Jevsevar DS",
+        "Yates AJ",
+        "Bini SA",
+        "Clarke HD",
+        "Schemitsch E",
+        "Johnson RL",
+        "Memtsoudis SG",
+        "Sayeed SA",
+        "Sah AP",
+        "Della Valle CJ"
+      ],
+      "publication_date_label": "2018 Aug 7",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/30146350/",
+      "doi": "10.1016/j.arth.2018.08.002",
+      "published_date": "2018-08-07"
     },
     {
       "title": "The efficacy of tranexamic acid in total hip arthroplasty: a network meta-analysis",
       "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ",
       "meta": "The Journal of Arthroplasty · 2018",
-      "link": "https://doi.org/10.1016/j.arth.2018.06.023"
+      "link": "https://doi.org/10.1016/j.arth.2018.06.023",
+      "pmid": "30007789",
+      "author_list": [
+        "Fillingham YA",
+        "Ramkumar DB",
+        "Jevsevar DS",
+        "Yates AJ",
+        "Shores P",
+        "Mullen K",
+        "Bini SA",
+        "Clarke HD",
+        "Schemitsch E",
+        "Johnson RL",
+        "Memtsoudis SG",
+        "Sayeed SA",
+        "Sah AP",
+        "Della Valle CJ"
+      ],
+      "publication_date_label": "2018 Jun 27",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/30007789/",
+      "doi": "10.1016/j.arth.2018.06.023",
+      "published_date": "2018-06-27"
     },
     {
       "title": "Response to letter to the editor on 'The safety of tranexamic acid in total joint arthroplasty: a direct meta-analysis'",
       "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ",
       "meta": "The Journal of Arthroplasty · 2018",
-      "link": "https://doi.org/10.1016/j.arth.2018.05.029"
+      "link": "https://doi.org/10.1016/j.arth.2018.05.029",
+      "pmid": "29935811",
+      "author_list": [
+        "Fillingham YA",
+        "Ramkumar DB",
+        "Jevsevar DS",
+        "Yates AJ",
+        "Shores P",
+        "Mullen K",
+        "Bini SA",
+        "Clarke HD",
+        "Schemitsch E",
+        "Johnson RL",
+        "Memtsoudis SG",
+        "Sayeed SA",
+        "Sah AP",
+        "Della Valle CJ"
+      ],
+      "publication_date_label": "2018 May 29",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/29935811/",
+      "doi": "10.1016/j.arth.2018.05.029",
+      "published_date": "2018-05-29"
     },
     {
       "title": "The efficacy of tranexamic acid in total knee arthroplasty: a network meta-analysis",
       "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ",
       "meta": "The Journal of Arthroplasty · 2018",
-      "link": "https://doi.org/10.1016/j.arth.2018.04.043"
+      "link": "https://doi.org/10.1016/j.arth.2018.04.043",
+      "pmid": "29805106",
+      "author_list": [
+        "Fillingham YA",
+        "Ramkumar DB",
+        "Jevsevar DS",
+        "Yates AJ",
+        "Shores P",
+        "Mullen K",
+        "Bini SA",
+        "Clarke HD",
+        "Schemitsch E",
+        "Johnson RL",
+        "Memtsoudis SG",
+        "Sayeed SA",
+        "Sah AP",
+        "Della Valle CJ"
+      ],
+      "publication_date_label": "2018 May 5",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/29805106/",
+      "doi": "10.1016/j.arth.2018.04.043",
+      "published_date": "2018-05-05"
     },
     {
       "title": "The safety of tranexamic acid in total joint arthroplasty: a direct meta-analysis",
       "authors": "Fillingham YA, Ramkumar DB, Jevsevar DS, … Della Valle CJ",
       "meta": "The Journal of Arthroplasty · 2018",
-      "link": "https://doi.org/10.1016/j.arth.2018.03.031"
+      "link": "https://doi.org/10.1016/j.arth.2018.03.031",
+      "pmid": "29699826",
+      "author_list": [
+        "Fillingham YA",
+        "Ramkumar DB",
+        "Jevsevar DS",
+        "Yates AJ",
+        "Shores P",
+        "Mullen K",
+        "Bini SA",
+        "Clarke HD",
+        "Schemitsch E",
+        "Johnson RL",
+        "Memtsoudis SG",
+        "Sayeed SA",
+        "Sah AP",
+        "Della Valle CJ"
+      ],
+      "publication_date_label": "2018 Mar 22",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/29699826/",
+      "doi": "10.1016/j.arth.2018.03.031",
+      "published_date": "2018-03-22"
     },
     {
       "title": "Artificial intelligence, machine learning, deep learning, and cognitive computing: what do these terms mean and how will they impact health care?",
       "authors": "Bini SA",
       "meta": "The Journal of Arthroplasty · 2018",
-      "link": "https://doi.org/10.1016/j.arth.2018.02.067"
+      "link": "https://doi.org/10.1016/j.arth.2018.02.067",
+      "pmid": "29656964",
+      "author_list": [
+        "Bini SA"
+      ],
+      "publication_date_label": "2018 Feb 27",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/29656964/",
+      "doi": "10.1016/j.arth.2018.02.067",
+      "published_date": "2018-02-27"
+    },
+    {
+      "title": "Risk Factors for Reaching the Post-Operative Transfusion Trigger in a Community Primary Total Knee Arthroplasty Population",
+      "authors": "Bini SA, Darbinian JA, Brox WT, Khatod M",
+      "meta": "The Journal of arthroplasty · 2018",
+      "link": "https://doi.org/10.1016/j.arth.2017.10.029",
+      "pmid": "29221841",
+      "author_list": [
+        "Bini SA",
+        "Darbinian JA",
+        "Brox WT",
+        "Khatod M"
+      ],
+      "publication_date_label": "2017 Dec 6",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/29221841/",
+      "doi": "10.1016/j.arth.2017.10.029",
+      "published_date": "2017-12-06"
+    },
+    {
+      "title": "Midterm-Adjusted Survival Comparing the Best Performing Unicompartmental and Total Knee Arthroplasties in a Registry",
+      "authors": "Bini SA, Cafri G, Khatod M",
+      "meta": "The Journal of arthroplasty · 2017",
+      "link": "https://doi.org/10.1016/j.arth.2017.05.050",
+      "pmid": "28803816",
+      "author_list": [
+        "Bini SA",
+        "Cafri G",
+        "Khatod M"
+      ],
+      "publication_date_label": "2017 Jun 8",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/28803816/",
+      "doi": "10.1016/j.arth.2017.05.050",
+      "published_date": "2017-06-08"
+    },
+    {
+      "title": "Comparative Effectiveness and Safety of Drug Prophylaxis for Prevention of Venous Thromboembolism After Total Knee Arthroplasty",
+      "authors": "Cafri G, Paxton EW, Chen Y, Cheetham CT, Gould MK, Sluggett J, Bini SA, Khatod M",
+      "meta": "The Journal of arthroplasty · 2017",
+      "link": "https://doi.org/10.1016/j.arth.2017.05.042",
+      "pmid": "28634095",
+      "author_list": [
+        "Cafri G",
+        "Paxton EW",
+        "Chen Y",
+        "Cheetham CT",
+        "Gould MK",
+        "Sluggett J",
+        "Bini SA",
+        "Khatod M"
+      ],
+      "publication_date_label": "2017 May 31",
+      "publication_date_precision": "day",
+      "publication_date_source": "https://pubmed.ncbi.nlm.nih.gov/28634095/",
+      "doi": "10.1016/j.arth.2017.05.042",
+      "published_date": "2017-05-31"
     }
   ],
   "publication_window": {

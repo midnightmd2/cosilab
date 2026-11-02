@@ -51,6 +51,15 @@ content:
           - { name: authors, label: Authors, type: string }
           - { name: meta, label: "Venue line (journal · year)", type: string }
           - { name: published_date, label: "Exact publication date when verified (YYYY-MM-DD)", type: string }
+          - { name: pmid, label: PubMed ID, type: string }
+          - { name: doi, label: DOI, type: string }
+          - name: author_list
+            label: Full ordered source authors
+            type: string
+            list: true
+          - { name: publication_date_label, label: Reported publication date, type: string }
+          - { name: publication_date_precision, label: Date precision, type: string }
+          - { name: publication_date_source, label: Publication date source, type: string }
           - { name: link, label: "Link (DOI or URL)", type: string }
 
   - name: people
