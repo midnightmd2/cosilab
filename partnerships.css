@@ -1,0 +1,58 @@
+/* One native scrolling row, with the existing partner marks and descriptions. */
+.partnerships-page .partner-scroll-help {
+  margin: -16px 0 18px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--slate);
+}
+
+.partnerships-page .partner-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 32px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scrollbar-color: var(--slate) var(--line);
+  scrollbar-width: auto;
+  padding: 8px 6px 22px;
+}
+
+.partnerships-page .partner-scroll::-webkit-scrollbar { height: 10px; }
+.partnerships-page .partner-scroll::-webkit-scrollbar-track { background: var(--line); }
+.partnerships-page .partner-scroll::-webkit-scrollbar-thumb {
+  background: var(--slate);
+  border: 2px solid var(--line);
+  border-radius: 10px;
+}
+
+.partnerships-page .partner-scroll .logo-cell {
+  display: grid;
+  grid-template-rows: 72px auto;
+  justify-items: center;
+  align-items: center;
+  flex: 0 0 270px;
+  gap: 18px;
+  scroll-snap-align: start;
+}
+
+.partnerships-page .partner-scroll .plogo {
+  height: 32px;
+  width: auto;
+  max-width: 230px;
+  align-self: center;
+  margin: 0;
+}
+
+.partnerships-page .partner-scroll svg[aria-label="Google"] { height: 44px; }
+.partnerships-page .partner-scroll img.plogo { height: 66px; }
+.partnerships-page .partner-scroll .role {
+  max-width: 28ch;
+  text-align: center;
+  align-self: start;
+}
+
+@media (max-width: 560px) {
+  .partnerships-page .partner-scroll { gap: 24px; }
+  .partnerships-page .partner-scroll .logo-cell { flex-basis: 250px; }
+}

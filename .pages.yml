@@ -21,26 +21,14 @@ content:
     path: content/research.json
     fields:
       - { name: page_title, label: Page title, type: string }
-      - { name: page_intro, label: Page intro, type: text }
-      - { name: a1_title, label: "Area 1 — title", type: string }
-      - { name: a1_p1, label: "Area 1 — paragraph 1", type: text }
-      - { name: a1_p2, label: "Area 1 — paragraph 2", type: text }
-      - { name: a2_title, label: "Area 2 — title", type: string }
-      - { name: a2_p1, label: "Area 2 — paragraph 1", type: text }
-      - { name: a2_p2, label: "Area 2 — paragraph 2", type: text }
-      - { name: a3_title, label: "Area 3 — title", type: string }
-      - { name: a3_p1, label: "Area 3 — paragraph 1", type: text }
-      - { name: a3_p2, label: "Area 3 — paragraph 2", type: text }
-      - { name: a3_fig_caption, label: "Area 3 — figure 1 caption", type: text }
-      - { name: a3_fig2_caption, label: "Area 3 — figure 2 caption", type: text }
-      - { name: open_heading, label: "Open problems — heading", type: string }
-      - name: open_problems
-        label: "Open problems"
-        type: object
-        list: true
-        fields:
-          - { name: title, label: Title, type: string }
-          - { name: desc, label: Description, type: text }
+      - { name: a1_title, label: Physical AI category, type: string }
+      - { name: a1_text, label: Category 1 description, type: text }
+      - { name: a2_title, label: Biomechanics category, type: string }
+      - { name: a2_text, label: Category 2 description, type: text }
+      - { name: a3_title, label: Gluteus medius category, type: string }
+      - { name: a3_text, label: Category 3 description, type: text }
+      - { name: a4_title, label: Population evidence category, type: string }
+      - { name: a4_text, label: Category 4 description, type: text }
 
   - name: publications
     label: Publications
@@ -49,8 +37,12 @@ content:
     fields:
       - { name: page_title, label: Page title, type: string }
       - { name: page_intro, label: Page intro, type: text }
+      - name: selected_publication_links
+        label: "Selected publication URLs (display order)"
+        type: string
+        list: true
       - name: publications
-        label: "Publications (newest first)"
+        label: "Full bibliography (newest first)"
         type: object
         list: true
         fields:

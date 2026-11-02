@@ -33,6 +33,14 @@
       var arr = d[box.getAttribute('data-cms-list')];
       if (!Array.isArray(arr)) return;
       var tpl = box.getAttribute('data-cms-tpl');
+      var selectionKey = box.getAttribute('data-cms-selection');
+      if (selectionKey) {
+        var selection = d[selectionKey];
+        if (!Array.isArray(selection)) return;
+        arr = selection.map(function (link) {
+          return arr.find(function (item) { return item.link === link; });
+        }).filter(Boolean);
+      }
       box.innerHTML = arr.map(function (it) {
         if (tpl === 'member') {
           var face = (it.photo && String(it.photo).trim())
@@ -56,34 +64,14 @@
           return '<div class="news-item"><div class="date">' + esc(it.date || '') + '</div><div class="body">' + (it.cat ? '<span class="cat">' + esc(it.cat) + '</span>' : '') + ntext + '</div></div>';
         }
         if (tpl === 'pub') {
-          // Preserve the CMS order; a year starts wherever the venue year changes.
-          function pubYear(item) {
-            var match = String(item.meta || '').match(/\b((?:19|20)\d{2})\s*$/);
-            return match ? match[1] : 'Other';
-          }
-          var index = arr.indexOf(it);
-          var year = pubYear(it);
-          var first = index === 0 || pubYear(arr[index - 1]) !== year;
-          var last = index === arr.length - 1 || pubYear(arr[index + 1]) !== year;
-          var out = '';
-          if (index === 0) {
-            out += '<nav class="publication-years" aria-label="Publication years">';
-            arr.forEach(function (item, i) {
-              if (i === 0 || pubYear(arr[i - 1]) !== pubYear(item)) {
-                out += '<a href="#publications-' + i + '">' + esc(pubYear(item)) + '</a>';
-              }
-            });
-            out += '</nav>';
-          }
-          if (first) out += '<section class="publication-year" aria-labelledby="publications-' + index + '"><h2 id="publications-' + index + '">' + esc(year) + '</h2><ol class="publication-list">';
           var link = it.link && String(it.link).trim();
           var title = link ? '<a href="' + esc(link) + '" target="_blank" rel="noopener">' + rich(it.title || '') + '<span class="article-arrow" aria-hidden="true">↗</span></a>' : rich(it.title || '');
-          out += '<li class="pub"><article><h3 class="pt">' + title + '</h3>' +
+          // Keep the complete citation in source; show only its journal here.
+          var journal = String(it.meta || '').replace(/\s*·\s*(?:19|20)\d{2}\s*$/, '');
+          return '<li class="pub"><article><h2 class="pt">' + title + '</h2>' +
             (it.authors ? '<p class="pa">' + rich(it.authors) + '</p>' : '') +
-            (it.meta ? '<p class="pm">' + rich(it.meta) + '</p>' : '') +
+            (journal ? '<p class="pm">' + rich(journal) + '</p>' : '') +
             '</article></li>';
-          if (last) out += '</ol></section>';
-          return out;
         }
         if (tpl === 'study') return '<div class="example"><span class="tag">' + esc(it.tag || '') + '</span><span class="t">' + rich(it.text || '') + '</span></div>';
         if (tpl === 'problem') return '<div class="problem"><div><h3>' + esc(it.title || '') + '</h3><p>' + rich(it.desc || '') + '</p>' + '</div></div>';

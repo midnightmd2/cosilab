@@ -1,5 +1,5 @@
 {
-  "page_title": "Publications",
+  "page_title": "Selected Publications",
   "page_intro": "Selected publications from COSI Lab and its principal investigator, Stefano A. Bini, MD.",
   "publications": [
     {
@@ -200,5 +200,17 @@
       "meta": "The Journal of Arthroplasty · 2018",
       "link": "https://doi.org/10.1016/j.arth.2018.02.067"
     }
+  ],
+  "selected_publication_links": [
+    "https://doi.org/10.2106/JBJS.OA.26.00076",
+    "https://doi.org/10.52965/001c.143293",
+    "https://doi.org/10.1016/j.artd.2025.101656",
+    "https://doi.org/10.1177/23259671241290320",
+    "https://doi.org/10.3390/jpm12111780",
+    "https://doi.org/10.1007/s00402-021-03787-2",
+    "https://doi.org/10.1016/j.arth.2020.06.075",
+    "https://doi.org/10.1016/j.arth.2020.06.042",
+    "https://doi.org/10.1302/0301-620X.102B6.BJJ-2019-1577.R1",
+    "https://doi.org/10.1016/j.arth.2019.07.022"
   ]
 }

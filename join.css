@@ -1,9 +1,4 @@
 /* Join page: plain application information, without animated card treatments. */
-body.join-page {
-  background: #fff;
-  background-attachment: initial;
-}
-
 .join-page .join-content {
   padding-top: clamp(48px, 6vw, 84px);
   padding-bottom: clamp(64px, 7vw, 100px);
