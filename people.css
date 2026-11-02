@@ -1,0 +1,15 @@
+/* People metadata: explicit role and institution lines in the site typeface. */
+.people-page .pi-feature .role,
+.people-page .member .role,
+.people-page .collab .role {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--navy);
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: 1.55;
+}
+
+.people-page .pi-feature .role { font-style: italic; }

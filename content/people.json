@@ -1,7 +1,7 @@
 {
   "page_title": "Welcome to COSI Lab",
   "pi_name": "Professor Stefano A. Bini, MD",
-  "pi_role": "PRINCIPAL INVESTIGATOR, COSI LAB\nMARIA MANETTI SHREM ENDOWED PROFESSOR\nPROFESSOR OF ORTHOPAEDIC SURGERY, UCSF\nCHIEF TECHNOLOGY OFFICER, UCSF ORTHOPAEDIC SURGERY",
+  "pi_role": "Principal Investigator, COSI Lab\nMaria Manetti Shrem Endowed Professor; Professor of Orthopaedic Surgery, UCSF\nChief Technology Officer, UCSF Orthopaedic Surgery",
   "pi_photo": "/images/people/bini.jpg",
   "pi_bio1": "Dr. Bini is an orthopaedic surgeon specializing in hip and knee replacement and a leading voice in surgical technology. As Chief Technology Officer of the UCSF Department of Orthopaedic Surgery, he works to bring operating-room robotics, machine learning, and sensor data into everyday clinical practice. His research spans artificial intelligence in orthopaedics, wearable-sensor gait analysis, and the prediction of patient outcomes from routine data, through collaborations that range from Google to surgical-device makers in Milan.",
   "pi_bio2": "He trained in orthopaedic surgery at UCSF and completed fellowships at the Rizzoli Institute in Bologna and the University of Florence. Before returning to UCSF in 2014, he led orthopaedic surgery across several Kaiser Permanente medical centers. He founded DOCSF, the annual San Francisco conference where surgeons, engineers, and founders shape the digital future of musculoskeletal care, as well as the Personalized Arthroplasty Society, and serves as Associate Editor for Artificial Intelligence at the Journal of Bone and Joint Surgery.",
@@ -11,17 +11,17 @@
   "leadership": [
     {
       "name": "Matt Allen",
-      "role": "Lab co-lead · Medical Student, UCSF School of Medicine",
+      "role": "Lab co-lead\nMedical Student\nUCSF School of Medicine",
       "photo": "/images/people/matt-allen.jpg"
     },
     {
       "name": "Richard Liu",
-      "role": "Lab co-lead · Medical Student, Touro School of Medicine",
+      "role": "Lab co-lead\nMedical Student\nTouro School of Medicine",
       "photo": "/images/people/richard-liu.jpg"
     },
     {
       "name": "Lorenzo Lucchetta",
-      "role": "Lab manager · Attending orthopaedic surgeon, Università di Perugia",
+      "role": "Lab manager\nAttending orthopaedic surgeon\nUniversità di Perugia",
       "photo": "/images/people/lorenzo-lucchetta.jpg"
     }
   ],
@@ -29,67 +29,67 @@
   "project_team": [
     {
       "name": "Andrew Bouras",
-      "role": "Medical Student, Nova Southeastern University",
+      "role": "Medical Student\nNova Southeastern University",
       "photo": "/images/people/andrew-bouras.jpg"
     },
     {
       "name": "Andy Fabian",
-      "role": "Medical Student, UCSF School of Medicine"
+      "role": "Medical Student\nUCSF School of Medicine"
     },
     {
       "name": "Izzy Chris",
-      "role": "Medical Student, Rush Medical College"
+      "role": "Medical Student\nRush Medical College"
     },
     {
       "name": "Izzy LeKander",
-      "role": "Medical Student, UCSF School of Medicine",
+      "role": "Medical Student\nUCSF School of Medicine",
       "photo": "/images/people/izzy-lekander.jpg"
     },
     {
       "name": "Jack Pearce",
-      "role": "Medical Student, University of Vermont",
+      "role": "Medical Student\nUniversity of Vermont",
       "photo": "/images/people/jack-pearce.jpg"
     },
     {
       "name": "Lorenzo Bazzani",
-      "role": "Medical Student, University of Central Florida",
+      "role": "Medical Student\nUniversity of Central Florida",
       "photo": "/images/people/lorenzo-bazzani.jpg"
     },
     {
       "name": "Nathan Robbins",
-      "role": "Medical Student, UCSF School of Medicine",
+      "role": "Medical Student\nUCSF School of Medicine",
       "photo": "/images/people/nathan-robbins.jpg"
     },
     {
       "name": "Rahul Kumar",
-      "role": "Medical Student, University of Massachusetts Chan Medical School",
+      "role": "Medical Student\nUniversity of Massachusetts Chan Medical School",
       "photo": "/images/people/rahul-kumar.jpg"
     },
     {
       "name": "Matteo Pilotti",
-      "role": "Visiting scholar, Politecnico di Milano",
+      "role": "Engineer\nPolitecnico di Milano",
       "photo": "/images/people/matteo-pilotti.jpg"
     },
     {
       "name": "Aislin Suzuki",
-      "role": "Undergraduate, UC Berkeley",
+      "role": "Undergraduate\nUC Berkeley",
       "photo": "/images/people/aislin-suzuki.jpg"
     },
     {
       "name": "Brendan Rockwell",
-      "role": "Undergraduate, UC Berkeley",
+      "role": "Undergraduate\nUC Berkeley",
       "photo": "/images/people/brendan-rockwell.jpg"
     },
     {
       "name": "Olivia Freedhand",
-      "role": "Undergraduate, Lehigh University"
+      "role": "Undergraduate\nLehigh University"
     }
   ],
   "alumni_heading": "Alumni",
   "alumni": [
     {
       "name": "Eduardo Portela-Parra",
-      "role": "Orthopaedic Surgery Resident, HCA Florida JFK"
+      "role": "Orthopaedic Surgery Resident\nHCA Florida JFK"
     }
   ]
 }
