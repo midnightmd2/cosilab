@@ -1,0 +1,133 @@
+/* Join page: plain application information, without animated card treatments. */
+body.join-page {
+  background: #fff;
+  background-attachment: initial;
+}
+
+.join-page .join-content {
+  padding-top: clamp(48px, 6vw, 84px);
+  padding-bottom: clamp(64px, 7vw, 100px);
+}
+
+.join-page .join-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 1fr);
+  gap: clamp(44px, 7vw, 96px);
+  align-items: start;
+}
+
+.join-page .join-intro h1 {
+  font-size: clamp(46px, 5.4vw, 68px);
+  font-weight: 400;
+  line-height: 1.08;
+  margin: 0 0 25px;
+}
+
+.join-page .join-intro-copy p {
+  font-size: clamp(17px, 1.6vw, 19px);
+  color: var(--slate);
+  line-height: 1.7;
+  max-width: 49ch;
+}
+
+.join-page .join-apply {
+  border-left: 1px solid var(--line-2);
+  padding: 5px 0 6px clamp(26px, 3vw, 40px);
+}
+
+.join-page .join-apply h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.join-page .join-apply p {
+  color: var(--slate);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.join-page .join-apply .btn {
+  border-radius: 2px;
+  padding: 12px 22px;
+}
+
+.join-page .btn-solid:hover {
+  background: var(--navy-2);
+  border-color: var(--navy-2);
+}
+
+.join-page .join-research-link {
+  display: block;
+  width: fit-content;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 18px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.join-page .join-research-link span { margin-left: 3px; }
+
+.join-page .join-audiences {
+  padding: clamp(60px, 7vw, 88px) 0 0;
+}
+
+.join-page .join-audiences > h2,
+.join-page .join-openings > h2 {
+  font-size: clamp(28px, 3vw, 34px);
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.join-page .join-audience {
+  display: grid;
+  grid-template-columns: minmax(220px, .85fr) minmax(0, 1.5fr);
+  gap: clamp(30px, 5vw, 72px);
+  border-top: 1px solid var(--line-2);
+  padding: 25px 0;
+  align-items: baseline;
+}
+
+.join-page .join-audience:last-child {
+  border-bottom: 1px solid var(--line-2);
+}
+
+.join-page .join-audience h3 {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  max-width: 28ch;
+}
+
+.join-page .join-audience p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--slate);
+  max-width: 63ch;
+}
+
+.join-page .join-openings { padding: 64px 0 0; }
+.join-page .join-openings[hidden] { display: none; }
+.join-page .opening {
+  border-radius: 0;
+  background: #fff;
+  box-shadow: none;
+  transition: none;
+}
+.join-page .opening:hover { box-shadow: none; border-color: var(--line-2); }
+
+@media (max-width: 760px) {
+  .join-page .join-intro { grid-template-columns: 1fr; gap: 34px; }
+  .join-page .join-intro-copy p { max-width: 60ch; }
+  .join-page .join-apply {
+    padding: 27px 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--line-2);
+  }
+  .join-page .join-apply p { max-width: 58ch; }
+  .join-page .join-audience { grid-template-columns: 1fr; gap: 9px; padding: 22px 0; }
+  .join-page .join-audience h3 { font-size: 23px; max-width: none; }
+  .join-page .join-audience p { max-width: 60ch; }
+}

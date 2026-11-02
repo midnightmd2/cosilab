@@ -10,46 +10,11 @@ content:
       - { name: hero_line2, label: Hero headline — line 2 (italic), type: string }
       - { name: lede, label: Intro paragraph, type: text }
       - { name: bone_caption, label: Caption under the 3D bone, type: string }
-      - { name: manifesto1, label: "Manifesto — line 1", type: text }
-      - { name: manifesto2, label: "Manifesto — line 2 (use *stars* to italicise)", type: text }
-      - { name: research_heading, label: "Research section — heading", type: string }
-      - { name: research_intro, label: "Research section — intro", type: text }
-      - { name: prog1_title, label: "Program 1 — title", type: string }
-      - { name: prog1_desc, label: "Program 1 — description", type: text }
-      - { name: prog2_title, label: "Program 2 — title", type: string }
-      - { name: prog2_desc, label: "Program 2 — description", type: text }
-      - { name: prog3_title, label: "Program 3 — title", type: string }
-      - { name: prog3_desc, label: "Program 3 — description", type: text }
-      - { name: prog4_title, label: "Program 4 — title", type: string }
-      - { name: prog4_desc, label: "Program 4 — description", type: text }
-      - { name: prog5_title, label: "Program 5 — title", type: string }
-      - { name: prog5_desc, label: "Program 5 — description", type: text }
-      - { name: work_heading, label: "Selected work — heading", type: string }
-      - { name: work1_tag, label: "Work 1 — category tag", type: string }
-      - { name: work1_title, label: "Work 1 — title", type: text }
-      - { name: work1_desc, label: "Work 1 — description", type: text }
-      - { name: work2_tag, label: "Work 2 — category tag", type: string }
-      - { name: work2_title, label: "Work 2 — title", type: text }
-      - { name: work2_desc, label: "Work 2 — description", type: text }
-      - { name: work3_tag, label: "Work 3 — category tag", type: string }
-      - { name: work3_title, label: "Work 3 — title", type: text }
-      - { name: work3_desc, label: "Work 3 — description", type: text }
       - { name: involve_heading, label: "Get involved — heading", type: string }
       - { name: involve1_title, label: "Get involved — card 1 title", type: string }
       - { name: involve1_desc, label: "Get involved — card 1 text", type: text }
       - { name: involve2_title, label: "Get involved — card 2 title", type: string }
       - { name: involve2_desc, label: "Get involved — card 2 text", type: text }
-      - { name: news_heading, label: "Lab news — heading", type: string }
-      - name: news
-        label: "Lab news (newest first)"
-        type: object
-        list: true
-        fields:
-          - { name: date, label: "Date (e.g. Sep 2025)", type: string }
-          - { name: cat, label: "Category tag", type: string }
-          - { name: text, label: "Item text", type: text }
-          - { name: link, label: "Link (URL or page, optional)", type: string }
-
   - name: research
     label: Research
     type: file
@@ -76,7 +41,6 @@ content:
         fields:
           - { name: title, label: Title, type: string }
           - { name: desc, label: Description, type: text }
-          - { name: needs, label: "Data / methods line", type: string }
 
   - name: publications
     label: Publications
@@ -135,16 +99,6 @@ content:
         fields:
           - { name: name, label: Name, type: string }
           - { name: role, label: "Current role (residency, institution)", type: string }
-      - { name: collab_heading, label: "Collaborators — heading", type: string }
-      - name: collaborators
-        label: Collaborators
-        type: object
-        list: true
-        fields:
-          - { name: name, label: Name, type: string }
-          - { name: role, label: Role, type: string }
-          - { name: link, label: "Link (optional)", type: string }
-
   - name: partnerships
     label: Partnerships
     type: file
@@ -178,7 +132,6 @@ content:
     fields:
       - { name: page_title, label: Page title, type: string }
       - { name: page_intro, label: Page intro, type: text }
-      - { name: apply_button, label: "Apply button label (top)", type: string }
       - { name: openings_heading, label: "Open positions — heading", type: string }
       - name: openings
         label: "Open positions (clear when filled)"
@@ -190,7 +143,7 @@ content:
           - { name: detail, label: "Description", type: text }
           - { name: cta, label: "Button label", type: string }
           - { name: link, label: "Link to posting", type: string }
-      - { name: recruit_heading, label: "Who we recruit — heading", type: string }
+      - { name: recruit_heading, label: "Who can apply — heading", type: string }
       - { name: level1_title, label: "Level 1 — title", type: string }
       - { name: level1_desc, label: "Level 1 — description", type: text }
       - { name: level2_title, label: "Level 2 — title", type: string }
@@ -199,8 +152,6 @@ content:
       - { name: level3_desc, label: "Level 3 — description", type: text }
       - { name: level4_title, label: "Level 4 — title", type: string }
       - { name: level4_desc, label: "Level 4 — description", type: text }
-      - { name: values_heading, label: "What we value — heading", type: string }
-      - { name: values_text, label: "What we value — text", type: text }
       - { name: apply_heading, label: "How to apply — heading", type: string }
       - { name: apply_text, label: "How to apply — text", type: text }
       - { name: apply_form_button, label: "Application button label", type: string }

@@ -89,30 +89,7 @@
   "alumni": [
     {
       "name": "Eduardo Portela-Parra",
-      "role": "Orthopaedic Surgery PGY-1, HCA Florida JFK"
-    }
-  ],
-  "collab_heading": "Who we work with",
-  "collaborators": [
-    {
-      "name": "UCSF Department of Orthopaedic Surgery",
-      "role": "Clinical site"
-    },
-    {
-      "name": "Politecnico di Milano",
-      "role": "Visiting scholars in robotics and biomechanics"
-    },
-    {
-      "name": "Touro University California",
-      "role": "Clinical research collaboration"
-    },
-    {
-      "name": "Università di Perugia",
-      "role": "Orthopaedics and traumatology"
-    },
-    {
-      "name": "DOCSF",
-      "role": "Digital Orthopaedics Conference San Francisco network"
+      "role": "Orthopaedic Surgery Resident, HCA Florida JFK"
     }
   ]
 }

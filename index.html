@@ -30,8 +30,8 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css?v=37">
-<link rel="stylesheet" href="home.css?v=29">
-<script defer src="cms.js?v=9"></script>
+<link rel="stylesheet" href="home.css?v=30">
+<script defer src="cms.js?v=10"></script>
 <link rel="preload" href="femur_mesh.json?v=22" as="fetch" crossorigin>
 <link rel="preload" href="femur_slices.json?v=22" as="fetch" crossorigin>
 <!-- This import map + the JSON-LD block below are whitelisted in the page CSP by SHA-256 hash.
@@ -110,76 +110,6 @@
   </div>
 </section>
 
-<!-- ============ Why now ============ -->
-<section class="manifesto" style="padding-top: clamp(16px, 3vw, 48px); padding-bottom: 0;">
-  <div class="wrap">
-    <p class="m1" data-cms="manifesto1">Surgical robots log every cut and every gap. Record networks hold the histories of tens of millions of patients. A tendon repair can be simulated before the incision is made.</p>
-    <p class="m2" data-cms="manifesto2">The raw material for a new kind of surgery <em>already exists</em>. Our work turns it into evidence, tools, and technique.</p>
-  </div>
-</section>
-
-<!-- ============ Research ============ -->
-<section id="research">
-  <div class="wrap">
-    <div class="section-head">
-      <div><h2 data-cms="research_heading">Research programs</h2></div>
-      <a class="more" href="research.html">Current research</a>
-    </div>
-    <p class="thesis" style="margin: -8px 0 28px;" data-cms="research_intro">Five connected programs: clinical data raises mechanical questions, models inform new techniques, and those techniques generate new data.</p>
-    <a class="program" href="research.html#population"><h3 data-cms="prog1_title">Population-scale evidence</h3>
-      <p data-cms="prog1_desc">Screening entire classes of drugs and exposures against musculoskeletal disease in the records of tens of millions of patients.</p>
-    </a>
-    <a class="program" href="research.html#biomechanics"><h3 data-cms="prog2_title">Computational biomechanics</h3>
-      <p data-cms="prog2_desc">Patient-specific simulations of surgical repairs: how a construct shares load, and where it fails, before the operating room.</p>
-    </a>
-    <a class="program" href="research.html#robotics"><h3 data-cms="prog3_title">Robotics and intraoperative data</h3>
-      <p data-cms="prog3_desc">Treating the robot's plan as a prediction, and testing it against what the surgeon actually finds.</p>
-    </a>
-    <a class="program" href="research.html#agents"><h3 data-cms="prog4_title">AI agents in the clinical workflow</h3>
-      <p data-cms="prog4_desc">Agentic software for evidence synthesis, cohort building, and documentation, held to a clinical standard.</p>
-    </a>
-    <a class="program" href="research.html#technique"><h3 data-cms="prog5_title">Surgical technique innovation</h3>
-      <p data-cms="prog5_desc">New approaches and repair strategies, taken from anatomic insight to the operating room, then measured.</p>
-    </a>
-  </div>
-</section>
-
-<!-- ============ Selected work ============ -->
-<section id="work" style="padding-top: 0;">
-  <div class="wrap">
-    <div class="section-head">
-      <div><h2 data-cms="work_heading">Selected work</h2></div>
-    </div>
-    <div class="work-grid">
-      <div class="work-card">
-        <span class="tag" data-cms="work1_tag">POPULATION-SCALE EVIDENCE</span>
-        <h3 data-cms="work1_title">A medication-wide association study of hip and knee osteoarthritis across 50 drugs</h3>
-        <p data-cms="work1_desc">Screening dozens of medications at once for their association with osteoarthritis in a federated clinical dataset.</p>      </div>
-      <div class="work-card">
-        <span class="tag" data-cms="work2_tag">COMPUTATIONAL BIOMECHANICS</span>
-        <h3 data-cms="work2_title">Load-sharing mechanics of scaffold augmentation in gluteus medius repair</h3>
-        <p data-cms="work2_desc">How a scaffold redistributes load across a tendon repair, modeled patient by patient.</p>      </div>
-      <div class="work-card">
-        <span class="tag" data-cms="work3_tag">ROBOTICS &amp; INTRAOPERATIVE DATA</span>
-        <h3 data-cms="work3_title">Native coronal deformity and gap prediction in robotic-assisted knee replacement</h3>
-        <p data-cms="work3_desc">Why the robot underpredicts the medial gap as native deformity increases.</p>      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ Lab news ============ -->
-<section id="news" style="padding-top: 0;">
-  <div class="wrap">
-    <div class="section-head"><div><h2 data-cms="news_heading">Lab news</h2></div></div>
-    <div data-cms-list="news" data-cms-tpl="news">
-      <div class="news-item"><div class="date">2026</div><div class="body"><span class="cat">Conference</span><a href="https://docsf.health" target="_blank" rel="noopener">DOCSF, the Digital Orthopaedics Conference founded by our principal investigator, returns to San Francisco.</a></div></div>
-      <div class="news-item"><div class="date">Sep 2026</div><div class="body"><span class="cat">Conference</span><a href="https://personalizedarthroplasty.org/events/" target="_blank" rel="noopener">The Personalized Arthroplasty Society, also founded by our principal investigator, holds its annual meeting in Montreal.</a></div></div>
-      <div class="news-item"><div class="date">Sep 2025</div><div class="body"><span class="cat">Publication</span><a href="https://doi.org/10.52965/001c.143293" target="_blank" rel="noopener">A systematic review of biologic augmentation in gluteus medius tendon repair, led by lab members, appears in Orthopaedic Reviews.</a></div></div>
-      <div class="news-item"><div class="date">Ongoing</div><div class="body"><span class="cat">Recruiting</span><a href="join.html">We are taking on students, residents, and collaborators on a rolling basis.</a></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ Get involved ============ -->
 <section class="band home-cta">
   <div class="wrap">
@@ -225,7 +155,7 @@
 <script src="vendor/gsap/gsap.min.js?v=3.13.0"></script>
 <script src="vendor/gsap/ScrollTrigger.min.js?v=3.13.0"></script>
 <script src="site.js?v=22"></script>
-<script src="home.js?v=22"></script>
+<script src="home.js?v=23"></script>
 <script type="module" src="femur3d.js?v=23"></script>
 <!-- Analytics: GoatCounter (free, no cookies). To enable: create an account
      at goatcounter.com with code "cosilab", then uncomment the line below.

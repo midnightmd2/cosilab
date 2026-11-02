@@ -77,3 +77,7 @@
   .hero-fig { min-height: 400px; }
   #femur-canvas { height: 400px; }
 }
+
+/* Keep the homepage background quiet around the anatomical figure. */
+body.home { background: #fff; }
+.home .ambient { display: none; }

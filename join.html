@@ -7,17 +7,17 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#052049">
 <title>Join · COSI Lab</title>
-<meta name="description" content="The COSI Lab recruits undergraduates, medical students, orthopaedic trainees, and postdoctoral collaborators on a rolling basis.">
+<meta name="description" content="Research at COSI Lab for students, orthopaedic trainees, postdoctoral researchers, and collaborators. Read about the lab and apply using the application form.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="COSI Lab">
 <meta property="og:title" content="Join · COSI Lab">
-<meta property="og:description" content="The COSI Lab recruits undergraduates, medical students, orthopaedic trainees, and postdoctoral collaborators on a rolling basis.">
+<meta property="og:description" content="Research at COSI Lab for students, orthopaedic trainees, postdoctoral researchers, and collaborators. Read about the lab and apply using the application form.">
 <meta property="og:url" content="https://cosilab.ucsf.edu/join.html">
 <link rel="canonical" href="https://cosilab.ucsf.edu/join.html">
 <meta property="og:image" content="https://cosilab.ucsf.edu/og-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Join · COSI Lab">
-<meta name="twitter:description" content="The COSI Lab recruits undergraduates, medical students, orthopaedic trainees, and postdoctoral collaborators on a rolling basis.">
+<meta name="twitter:description" content="Research at COSI Lab for students, orthopaedic trainees, postdoctoral researchers, and collaborators. Read about the lab and apply using the application form.">
 <meta name="twitter:image" content="https://cosilab.ucsf.edu/og-card.png">
 <link rel="preload" href="vendor/fonts/inter-300-700-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="vendor/fonts/eb-garamond-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -29,12 +29,12 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css?v=37">
-<script defer src="cms.js?v=9"></script>
+<link rel="stylesheet" href="join.css?v=1">
+<script defer src="cms.js?v=10"></script>
 </head>
-<body data-content="content/join.json">
+<body class="join-page" data-content="content/join.json">
 <a class="skip-link" href="#main">Skip to main content</a>
 
-<div class="ambient" aria-hidden="true"><i></i><i></i></div>
 
 <header>
   <div class="wrap nav">
@@ -52,65 +52,47 @@
 
 <main id="main" tabindex="-1">
 
-<div class="page-head">
-  <div class="wrap inner">
-    
-    <h1 data-cms="page_title">Join the lab</h1>
-    <p data-cms="page_intro">We recruit undergraduates, medical students, orthopaedic residents and fellows, and postdoctoral collaborators on a rolling basis. You will own real projects and see them through to publication, working alongside skilled clinicians and engineers.</p>
-    <p style="margin-top:22px;"><a href="https://forms.gle/bK2tjyAQ835LVkv39" target="_blank" rel="noopener" class="btn btn-teal" data-cms="apply_button">Apply to join</a></p>
+<div class="wrap join-content">
+  <div class="join-intro">
+    <div class="join-intro-copy">
+      <h1 data-cms="page_title">Join the lab</h1>
+      <p data-cms="page_intro">COSI Lab studies hip and knee surgery using clinical data, imaging, biomechanical modeling, and surgical robotics. We welcome students, orthopaedic trainees, and researchers interested in this work.</p>
+    </div>
+    <aside class="join-apply" aria-labelledby="apply-heading">
+      <h2 id="apply-heading" data-cms="apply_heading">How to apply</h2>
+      <p data-cms="apply_text">Review our current research, then use the application form to tell us about your background and the work you are interested in.</p>
+      <a href="https://forms.gle/bK2tjyAQ835LVkv39" target="_blank" rel="noopener" class="btn btn-solid" data-cms="apply_form_button">Application form</a>
+      <a class="join-research-link" href="research.html">Read about our current research <span aria-hidden="true">→</span></a>
+    </aside>
   </div>
-</div>
 
-<!-- Open positions -->
-<section style="padding-top: 44px; padding-bottom: 0;">
-  <div class="wrap">
-    <div class="section-head"><div><h2 data-cms="openings_heading">Open positions</h2></div></div>
-    <div data-cms-list="openings" data-cms-tpl="position" data-cms-empty-hide="section"></div>
-  </div>
-</section>
-
-<!-- Levels -->
-<section style="padding-top: 48px;">
-  <div class="wrap">
-    <div class="section-head"><div><h2 data-cms="recruit_heading">Who we recruit</h2></div></div>
-    <div class="levels">
-      <div class="level">
+  <section class="join-audiences" aria-labelledby="recruit-heading">
+    <h2 id="recruit-heading" data-cms="recruit_heading">Who can apply</h2>
+    <div class="join-audience-list">
+      <div class="join-audience">
         <h3 data-cms="level1_title">Undergraduates</h3>
-        <p data-cms="level1_desc">You take on a defined part of a study with close mentorship, and learn data handling, the literature, and how a question becomes a result. Sustained contributors earn authorship.</p>
+        <p data-cms="level1_desc">Students interested in clinical or computational orthopaedic research.</p>
       </div>
-      <div class="level">
+      <div class="join-audience">
         <h3 data-cms="level2_title">Medical students</h3>
-        <p data-cms="level2_desc">You run your own clinical or computational project from question to submission, and present at AAOS and allied meetings, building a focused body of published work during medical school.</p>
+        <p data-cms="level2_desc">Students interested in research on hip and knee surgery, including clinical outcomes and surgical technology.</p>
       </div>
-      <div class="level">
+      <div class="join-audience">
         <h3 data-cms="level3_title">Orthopaedic residents and fellows</h3>
-        <p data-cms="level3_desc">Bring a clinical question and use the lab's existing data, tooling, and mentorship to pursue it without building infrastructure from scratch. Work spans biomechanics, robotics, and large-database studies.</p>
+        <p data-cms="level3_desc">Trainees with clinical research questions in outcomes, biomechanics, or surgical robotics.</p>
       </div>
-      <div class="level">
-        <h3 data-cms="level4_title">Postdocs and collaborators</h3>
-        <p data-cms="level4_desc">If you work in machine learning, biomechanics, causal inference, or related fields, we have clinical problems and the data to pursue them. We host visiting scholars and maintain collaborations across institutions.</p>
+      <div class="join-audience">
+        <h3 data-cms="level4_title">Postdoctoral researchers and collaborators</h3>
+        <p data-cms="level4_desc">Researchers in machine learning, biomechanics, statistics, and related fields.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- What we look for -->
-<section style="padding-top: 0;">
-  <div class="wrap">
-    <div class="section-head"><div><h2 data-cms="values_heading">What we value</h2></div></div>
-    <p class="thesis" data-cms="values_text">We care most about initiative. People do well here when they bring their own ideas and carry them through to publication. The technical skills (programming, statistics, imaging, mechanics) can be learned in the lab.</p>
-  </div>
-</section>
-
-<!-- Contact -->
-<section class="join">
-  <div class="wrap" style="text-align:center;">
-    
-    <h2 style="margin: 12px 0 16px;" data-cms="apply_heading">How to apply</h2>
-    <p class="jl" style="margin: 0 auto 28px;" data-cms="apply_text">Read through the research and find what you would want to work on, then send the short application form. If there is a fit, we will talk it through and settle on the right project.</p>
-    <a href="https://forms.gle/bK2tjyAQ835LVkv39" target="_blank" rel="noopener" class="btn btn-light" data-cms="apply_form_button">Open the application form</a>
-  </div>
-</section>
+  <section class="join-openings" aria-labelledby="openings-heading" hidden>
+    <h2 id="openings-heading" data-cms="openings_heading">Open positions</h2>
+    <div data-cms-list="openings" data-cms-tpl="position" data-cms-empty-hide="section"></div>
+  </section>
+</div>
 
 </main>
 
