@@ -1,8 +1,9 @@
 # vendored / self-hosted assets
 
-Everything here is served from our own origin, so the site has **no third-party
-runtime dependencies** (supply-chain safety) and the Content-Security-Policy can
-stay strict: `default-src 'self'`.
+The visual libraries and fonts here are served from our own origin. The site
+also uses the UCSF administrator-supplied Siteimprove analytics loader. Its
+specific script URL and account collector are the explicit external exceptions
+in the Content Security Policy; `default-src 'self'` remains unchanged.
 
 ## three/ — Three.js r0.165 (ES modules + addons)
 Loaded via the import map in `index.html`. Replace wholesale on upgrade.
@@ -17,6 +18,16 @@ Source: Google Fonts css2. `fonts.css` + 5 woff2, Latin range only — covers al
 Western accents, em-dash, curly quotes, `·`, `©`, `€`, `™`. If a name ever needs
 Latin-Extended (e.g. ł, ě, ő) or another range, re-add those `@font-face` blocks
 from the Google css2 response and drop the woff2 alongside.
+
+## UCSF Siteimprove analytics
+
+`/analytics.js` contains the administrator-supplied asynchronous loader for
+`https://siteimproveanalytics.com/js/siteanalyze_8343.js`. Every HTML page loads
+it once, just before `</body>`. The account's current pixel collector is
+`https://8343.global.siteimproveanalytics.io`; the CSP allows that image origin
+and the exact tracking-script URL. Other CSP restrictions remain in place.
+Account privacy, consent and cookie settings are managed separately in UCSF's
+Siteimprove configuration; this loader does not set or change those options.
 
 ## Content-Security-Policy hashes
 The CSP in every `*.html` whitelists `index.html`'s two inline scripts — the
