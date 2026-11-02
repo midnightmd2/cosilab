@@ -1,7 +1,13 @@
 {
   "page_title": "Selected Publications",
-  "page_intro": "Selected publications from COSI Lab and its principal investigator, Stefano A. Bini, MD.",
   "publications": [
+    {
+      "title": "MRI for the detection of hip abductor tendon tears in symptomatic patients with total hip arthroplasty following a lateral surgical approach",
+      "authors": "Marth AA, Allen M, Liu Y, Joseph GB, Bini SA, Link TM, Feuerriegel GC",
+      "meta": "European Radiology · 2026",
+      "link": "https://link.springer.com/article/10.1007/s00330-026-12856-2",
+      "published_date": "2026-10-30"
+    },
     {
       "title": "Custom and off-the-shelf large language models routinely misinterpret implant technique guides",
       "authors": "Woo JJ, Yang AJ, Saboo YS, … Ramkumar PN",
@@ -201,16 +207,8 @@
       "link": "https://doi.org/10.1016/j.arth.2018.02.067"
     }
   ],
-  "selected_publication_links": [
-    "https://doi.org/10.2106/JBJS.OA.26.00076",
-    "https://doi.org/10.52965/001c.143293",
-    "https://doi.org/10.1016/j.artd.2025.101656",
-    "https://doi.org/10.1177/23259671241290320",
-    "https://doi.org/10.3390/jpm12111780",
-    "https://doi.org/10.1007/s00402-021-03787-2",
-    "https://doi.org/10.1016/j.arth.2020.06.075",
-    "https://doi.org/10.1016/j.arth.2020.06.042",
-    "https://doi.org/10.1302/0301-620X.102B6.BJJ-2019-1577.R1",
-    "https://doi.org/10.1016/j.arth.2019.07.022"
-  ]
+  "publication_window": {
+    "start": "2016-11-01",
+    "end": "2026-11-01"
+  }
 }

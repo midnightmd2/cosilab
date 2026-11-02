@@ -36,11 +36,12 @@ content:
     path: content/publications.json
     fields:
       - { name: page_title, label: Page title, type: string }
-      - { name: page_intro, label: Page intro, type: text }
-      - name: selected_publication_links
-        label: "Selected publication URLs (display order)"
-        type: string
-        list: true
+      - name: publication_window
+        label: Publication date window
+        type: object
+        fields:
+          - { name: start, label: "Start (YYYY-MM-DD)", type: string }
+          - { name: end, label: "End (YYYY-MM-DD)", type: string }
       - name: publications
         label: "Full bibliography (newest first)"
         type: object
@@ -49,6 +50,7 @@ content:
           - { name: title, label: Title, type: text }
           - { name: authors, label: Authors, type: string }
           - { name: meta, label: "Venue line (journal · year)", type: string }
+          - { name: published_date, label: "Exact publication date when verified (YYYY-MM-DD)", type: string }
           - { name: link, label: "Link (DOI or URL)", type: string }
 
   - name: people
@@ -98,7 +100,6 @@ content:
     fields:
       - { name: page_title, label: Page title, type: string }
       - { name: page_intro, label: Page intro, type: text }
-      - { name: worked_heading, label: "Who we've worked with — heading", type: string }
       - { name: google_role, label: "Google — role", type: string }
       - { name: conmed_role, label: "ConMed — role", type: string }
       - { name: zimmer_role, label: "Zimmer Biomet — role", type: string }
@@ -144,6 +145,8 @@ content:
       - { name: level3_desc, label: "Level 3 — description", type: text }
       - { name: level4_title, label: "Level 4 — title", type: string }
       - { name: level4_desc, label: "Level 4 — description", type: text }
+      - { name: level5_title, label: "Level 5 — title", type: string }
+      - { name: level5_desc, label: "Level 5 — description", type: text }
       - { name: apply_heading, label: "How to apply — heading", type: string }
       - { name: apply_text, label: "How to apply — text", type: text }
       - { name: apply_form_button, label: "Application button label", type: string }

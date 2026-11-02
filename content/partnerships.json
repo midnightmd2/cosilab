@@ -1,13 +1,10 @@
 {
   "page_title": "Partnerships",
   "page_intro": "Our mission is to advance musculoskeletal care through innovation. Collaboration with industry is an important part of that work. Below are some of the companies we have worked with.",
-
-  "worked_heading": "Who we've worked with",
   "google_role": "Machine learning and digital health",
   "conmed_role": "Surgical devices and instrumentation",
   "zimmer_role": "Orthopaedic implants and surgical robotics",
   "tensor_role": "The Tensor Lab for Computational Medicine",
-
   "models_heading": "What a partnership looks like",
   "model1_tag": "PILOTS & VALIDATION",
   "model1_title": "Evaluate a technology",
@@ -18,7 +15,6 @@
   "model3_tag": "ADVISORY & CO-DEVELOPMENT",
   "model3_title": "Shape what's next",
   "model3_desc": "Anatomic insight, biomechanical modeling, and clinical-workflow knowledge, applied while a product is still being designed.",
-
   "cta_heading": "Work with the lab",
   "cta_text": "If your team is building technology for orthopaedic or surgical care and wants a research partner, we would like to hear from you.",
   "cta_button": "Partner with us"

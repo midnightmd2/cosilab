@@ -33,13 +33,18 @@
       var arr = d[box.getAttribute('data-cms-list')];
       if (!Array.isArray(arr)) return;
       var tpl = box.getAttribute('data-cms-tpl');
-      var selectionKey = box.getAttribute('data-cms-selection');
-      if (selectionKey) {
-        var selection = d[selectionKey];
-        if (!Array.isArray(selection)) return;
-        arr = selection.map(function (link) {
-          return arr.find(function (item) { return item.link === link; });
-        }).filter(Boolean);
+      var windowKey = box.getAttribute('data-cms-window');
+      if (windowKey) {
+        var period = d[windowKey];
+        if (!period || !period.start || !period.end) return;
+        arr = arr.filter(function (item) {
+          if (/^\d{4}-\d{2}-\d{2}$/.test(item.published_date || '')) {
+            return item.published_date >= period.start && item.published_date <= period.end;
+          }
+          // Year-only records use inclusive boundary years; never invent dates.
+          var match = String(item.meta || '').match(/\b((?:19|20)\d{2})\s*$/);
+          return !!match && Number(match[1]) >= Number(period.start.slice(0, 4)) && Number(match[1]) <= Number(period.end.slice(0, 4));
+        });
       }
       box.innerHTML = arr.map(function (it) {
         if (tpl === 'member') {

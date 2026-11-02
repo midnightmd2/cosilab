@@ -1,58 +1,79 @@
-/* One native scrolling row, with the existing partner marks and descriptions. */
-.partnerships-page .partner-scroll-help {
-  margin: -16px 0 18px;
-  font-size: 13px;
-  line-height: 1.6;
-  color: var(--slate);
-}
-
-.partnerships-page .partner-scroll {
-  display: flex;
-  flex-wrap: nowrap;
+/* Static by default; JavaScript enables one seamless, linear logo loop. */
+.partnerships-page .partner-marquee { position: relative; }
+.partnerships-page .partner-group {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 32px;
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
-  scrollbar-color: var(--slate) var(--line);
-  scrollbar-width: auto;
-  padding: 8px 6px 22px;
 }
-
-.partnerships-page .partner-scroll::-webkit-scrollbar { height: 10px; }
-.partnerships-page .partner-scroll::-webkit-scrollbar-track { background: var(--line); }
-.partnerships-page .partner-scroll::-webkit-scrollbar-thumb {
-  background: var(--slate);
-  border: 2px solid var(--line);
-  border-radius: 10px;
-}
-
-.partnerships-page .partner-scroll .logo-cell {
+.partnerships-page .partner-group .logo-cell {
   display: grid;
   grid-template-rows: 72px auto;
   justify-items: center;
   align-items: center;
-  flex: 0 0 270px;
   gap: 18px;
-  scroll-snap-align: start;
+  min-width: 0;
 }
-
-.partnerships-page .partner-scroll .plogo {
+.partnerships-page .partner-group .plogo {
   height: 32px;
   width: auto;
-  max-width: 230px;
+  max-width: 100%;
   align-self: center;
   margin: 0;
 }
-
-.partnerships-page .partner-scroll svg[aria-label="Google"] { height: 44px; }
-.partnerships-page .partner-scroll img.plogo { height: 66px; }
-.partnerships-page .partner-scroll .role {
+.partnerships-page .partner-group svg[aria-label="Google"] { height: 44px; }
+.partnerships-page .partner-group img.plogo { height: 66px; }
+.partnerships-page .partner-group .role {
   max-width: 28ch;
   text-align: center;
   align-self: start;
 }
+.partnerships-page .partner-pause {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line-2);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .6);
+  color: var(--navy);
+  font-size: 20px;
+  cursor: pointer;
+}
+.partnerships-page .partner-pause[hidden] { display: none; }
+.partnerships-page .partner-marquee.is-animated { padding-top: 50px; }
+.partnerships-page .is-animated .partner-viewport { overflow: hidden; }
+.partnerships-page .is-animated .partner-track {
+  display: flex;
+  width: max-content;
+  animation: partner-loop 40s linear infinite;
+  will-change: transform;
+}
+.partnerships-page .is-animated .partner-group {
+  display: flex;
+  flex: 0 0 auto;
+  width: max-content;
+  padding-right: 32px;
+}
+.partnerships-page .is-animated .logo-cell { flex: 0 0 270px; }
+.partnerships-page .partner-marquee:hover .partner-track,
+.partnerships-page .partner-marquee:focus-within .partner-track,
+.partnerships-page .partner-marquee.is-paused .partner-track { animation-play-state: paused; }
+@keyframes partner-loop { to { transform: translateX(-50%); } }
 
 @media (max-width: 560px) {
-  .partnerships-page .partner-scroll { gap: 24px; }
-  .partnerships-page .partner-scroll .logo-cell { flex-basis: 250px; }
+  .partnerships-page .partner-group { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
+  .partnerships-page .is-animated .partner-group { gap: 24px; padding-right: 24px; }
+  .partnerships-page .is-animated .logo-cell { flex-basis: 250px; }
+}
+@media (max-width: 380px) {
+  .partnerships-page .partner-group { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .partnerships-page .partner-marquee.is-animated { padding-top: 0; }
+  .partnerships-page .is-animated .partner-viewport { overflow: visible; }
+  .partnerships-page .is-animated .partner-track { display: block; width: auto; animation: none; transform: none; }
+  .partnerships-page .is-animated .partner-group { display: grid; width: auto; padding-right: 0; }
+  .partnerships-page .partner-group[aria-hidden="true"],
+  .partnerships-page .partner-pause { display: none; }
 }
