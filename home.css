@@ -63,7 +63,7 @@
 .involve-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 4vw, 56px); margin-top: clamp(28px, 4vw, 44px); }
 .inv { border-top: 1px solid rgba(255,255,255,.25); padding-top: 26px; }
 .inv h3 { font-family: var(--display); font-weight: 500; color: #fff; font-size: 24px; margin-bottom: 10px; }
-.inv p { color: rgba(255,255,255,.85); font-size: 15.5px; line-height: 1.6; max-width: 44ch; margin-bottom: 22px; }
+.inv p { color: #fff; font-size: 15.5px; line-height: 1.6; max-width: 44ch; margin-bottom: 22px; }
 @media (max-width: 700px) { .involve-grid { grid-template-columns: 1fr; } }
 
 @media (max-width: 900px) {
